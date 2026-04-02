@@ -45,10 +45,10 @@ export default async function HomePage() {
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">
             <div className="max-w-4xl">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">Arizona Rule of Law Ambassador Program</p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-[-0.06em] text-paper md:text-6xl">
+              <h1 className="mt-4 text-4xl font-semibold tracking-[-0.06em] text-white md:text-6xl">
                 Everything an ambassador needs to prepare, present, and follow up.
               </h1>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-paper/86">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/82">
                 Open the presentation for the room, review the certification modules before speaking, use the presenter tools to rehearse, and keep the resources ready for follow-up.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -56,10 +56,10 @@ export default async function HomePage() {
                   Open presentation
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link href="/presenter" className="inline-flex items-center gap-2 rounded-full border border-paper/14 bg-paper/5 px-6 py-3.5 text-sm font-semibold text-paper transition hover:border-gold/45 hover:text-gold">
+                <Link href="/presenter" className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-gold/45 hover:text-gold">
                   Open presenter
                 </Link>
-                <Link href="/presentation/standalone" className="inline-flex items-center gap-2 rounded-full border border-paper/14 bg-paper/5 px-6 py-3.5 text-sm font-semibold text-paper transition hover:border-gold/45 hover:text-gold">
+                <Link href="/presentation/standalone" className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-gold/45 hover:text-gold">
                   Standalone mode
                 </Link>
               </div>
@@ -91,23 +91,25 @@ export default async function HomePage() {
           </div>
         </section>
 
-        <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {tabs.map((item) => (
-            <Link key={item.title} href={item.href} className="rounded-[1.5rem] border border-paper/10 bg-paper p-5 text-ink transition hover:border-gold/35 hover:-translate-y-0.5">
-              <item.icon className="h-5 w-5 text-gold" />
-              <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em] text-ink">{item.title}</h2>
-              <p className="mt-3 text-sm leading-7 text-ink/72">{item.body}</p>
-            </Link>
-          ))}
+        <section className="rounded-[2rem] border border-paper/10 bg-paper text-ink shadow-horizon">
+          <div className="grid divide-y divide-ink/10 md:grid-cols-2 md:divide-x md:divide-y-0 xl:grid-cols-4">
+            {tabs.map((item) => (
+              <Link key={item.title} href={item.href} className="p-6 transition hover:bg-ink/[0.02]">
+                <item.icon className="h-5 w-5 text-gold" />
+                <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em] text-ink">{item.title}</h2>
+                <p className="mt-3 text-sm leading-7 text-ink/72">{item.body}</p>
+              </Link>
+            ))}
+          </div>
         </section>
 
         <section className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem]">
           <div className="rounded-[1.75rem] border border-paper/10 bg-[#111b2b] p-6">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Live presentation</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-paper md:text-4xl">
+            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-white md:text-4xl">
               Use Presentation to rehearse. Use Standalone when the audience is in the room.
             </h2>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-paper/84">
+            <p className="mt-4 max-w-3xl text-base leading-8 text-white/80">
               Presentation mode keeps navigation and support materials visible. Standalone mode removes the extra interface and shows one clear scene at a time for the audience.
             </p>
           </div>

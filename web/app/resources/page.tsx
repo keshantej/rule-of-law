@@ -10,11 +10,11 @@ export default async function ResourcesPage() {
     <main className="px-5 py-8 md:px-8 md:py-10">
       <div className="mx-auto max-w-7xl">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Resources</p>
-        <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-[-0.05em] text-paper md:text-6xl">
+        <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-[-0.05em] text-white md:text-6xl">
           Download the program materials and Arizona resource links.
         </h1>
         <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1fr)_24rem]">
-          <div className="max-w-3xl text-lg leading-8 text-paper/86">
+          <div className="max-w-3xl text-lg leading-8 text-white/80">
             Keep this page open when you need the handout, the field guide, the manual, or a trusted link to share with an audience.
           </div>
           <div className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
@@ -50,9 +50,13 @@ export default async function ResourcesPage() {
             ))}
           </div>
         </section>
-        <div className="mt-8 space-y-6">
+        <div className="mt-8 rounded-[2rem] border border-paper/10 bg-paper text-ink shadow-horizon">
           {groups.map((group) => (
-            <section id={group.resource_group_id} key={group.resource_group_id} className="rounded-[2rem] border border-paper/10 bg-paper p-6 text-ink md:p-8">
+            <section
+              id={group.resource_group_id}
+              key={group.resource_group_id}
+              className="border-t border-ink/10 p-6 first:border-t-0 md:p-8"
+            >
               <div className="grid gap-6 lg:grid-cols-[minmax(14rem,18rem)_minmax(0,1fr)]">
                 <div>
                   <h2 className="text-2xl font-semibold tracking-[-0.04em] text-ink">{group.title}</h2>

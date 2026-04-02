@@ -90,10 +90,10 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
         <section className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
           <div className="max-w-4xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Certification</p>
-            <h1 className="mt-3 text-4xl font-semibold tracking-[-0.05em] text-paper md:text-6xl">
+            <h1 className="mt-3 text-4xl font-semibold tracking-[-0.05em] text-white md:text-6xl">
               Review the teaching points and complete the knowledge checks before presenting.
             </h1>
-            <p className="mt-5 max-w-3xl text-lg leading-8 text-paper/86">
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
               Work through one module at a time. Read the lesson, review the takeaways, and use the quiz to confirm the main points before you rehearse.
             </p>
           </div>
@@ -196,37 +196,37 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
               </aside>
             </div>
 
-            <article className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">What to learn</p>
-              <div className="mt-4 grid gap-3 md:grid-cols-3">
-                {module.learning_objectives.map((objective) => (
-                  <div key={objective} className="rounded-2xl border border-ink/10 bg-white px-4 py-4 text-sm leading-6 text-ink/78">
-                    {objective}
-                  </div>
-                ))}
-              </div>
-            </article>
-
-            <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
-              <article className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Lesson content</p>
-                <div className="mt-4 space-y-5">
-                  {renderLessonBody(module.lesson_body_markdown)}
-                </div>
-              </article>
-
-              <article className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Key takeaways</p>
-                <div className="mt-4 space-y-3">
-                  {module.key_takeaways.map((takeaway) => (
-                    <div key={takeaway} className="flex items-start gap-3 rounded-2xl border border-ink/10 bg-white px-4 py-4 text-sm leading-7 text-ink/78">
-                      <GraduationCap className="mt-1 h-4 w-4 text-gold" />
-                      <span>{takeaway}</span>
+            <article className="rounded-[1.75rem] border border-paper/10 bg-paper text-ink shadow-horizon">
+              <div className="border-b border-ink/10 p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">What to learn</p>
+                <div className="mt-4 grid gap-3 md:grid-cols-3">
+                  {module.learning_objectives.map((objective) => (
+                    <div key={objective} className="rounded-2xl border border-ink/10 bg-white px-4 py-4 text-sm leading-6 text-ink/78">
+                      {objective}
                     </div>
                   ))}
                 </div>
-              </article>
-            </div>
+              </div>
+              <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_20rem]">
+                <div className="p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Lesson content</p>
+                  <div className="mt-4 space-y-5">
+                    {renderLessonBody(module.lesson_body_markdown)}
+                  </div>
+                </div>
+                <div className="border-t border-ink/10 p-6 lg:border-l lg:border-t-0">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Key takeaways</p>
+                  <div className="mt-4 space-y-3">
+                    {module.key_takeaways.map((takeaway) => (
+                      <div key={takeaway} className="flex items-start gap-3 rounded-2xl border border-ink/10 bg-white px-4 py-4 text-sm leading-7 text-ink/78">
+                        <GraduationCap className="mt-1 h-4 w-4 text-gold" />
+                        <span>{takeaway}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </article>
 
             {quiz ? (
               <article className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">

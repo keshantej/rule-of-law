@@ -147,7 +147,7 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
   }
 
   return (
-    <div className="grid min-h-[calc(100svh-73px)] lg:grid-cols-[minmax(0,1fr)_20rem]">
+    <div className="grid min-h-[calc(100svh-73px)] lg:grid-cols-[minmax(0,1fr)_19rem]">
       <section className="relative overflow-hidden bg-[#0d1727] px-5 py-8 md:px-8 md:py-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(205,161,93,0.16),transparent_28%),radial-gradient(circle_at_76%_14%,rgba(155,35,50,0.12),transparent_22%)]" />
         <div className="absolute right-[6%] top-20 text-[8rem] font-semibold tracking-[-0.08em] text-paper/[0.05] md:text-[13rem]">
@@ -164,7 +164,7 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                 <span className="rounded-full border border-paper/10 bg-paper/5 px-3 py-2">Scene {currentIndex + 1}</span>
                 {isSpeaker ? <span className="rounded-full border border-paper/10 bg-paper/5 px-3 py-2">{sceneMinutes} min focus</span> : null}
               </div>
-              <h1 className="max-w-4xl text-4xl font-semibold tracking-[-0.04em] text-paper md:text-6xl">{deferredScene.title}</h1>
+              <h1 className="max-w-4xl text-4xl font-semibold tracking-[-0.04em] text-white md:text-6xl">{deferredScene.title}</h1>
             </div>
             <div className="hidden rounded-full border border-paper/10 bg-paper/5 px-4 py-2 text-xs uppercase tracking-[0.24em] text-paper/65 md:block">
               {isSpeaker ? "Presenter view" : "Presentation view"}
@@ -181,7 +181,7 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
             <div className="space-y-5">
               {deferredScene.display_lines.map((line, index) => (
                 <div key={line} className={cn("max-w-3xl border-l border-paper/12 pl-6", index === 0 && "border-gold")}>
-                  <p className={cn("text-2xl leading-tight text-paper md:text-4xl", index === 0 ? "font-semibold tracking-[-0.03em] md:text-5xl" : "font-medium text-paper/78")}>
+                  <p className={cn("text-2xl leading-tight text-white md:text-4xl", index === 0 ? "font-semibold tracking-[-0.03em] md:text-5xl" : "font-medium text-white/78")}>
                     {line}
                   </p>
                 </div>
@@ -201,28 +201,7 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                   <p className="text-sm leading-7 text-paper/76">{deferredScene.speaker_notes}</p>
                 </div>
               </div>
-            ) : (
-              <div className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
-                <div className="flex h-full flex-col justify-between gap-6">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Current point</p>
-                    <p className="mt-4 max-w-sm font-editorial text-3xl leading-tight tracking-[-0.03em] text-ink">
-                      {deferredScene.display_lines[1] ?? deferredScene.kicker}
-                    </p>
-                  </div>
-                  <div className="space-y-3 text-sm leading-6 text-ink/76">
-                    <div className="rounded-[1.25rem] border border-ink/10 bg-white px-4 py-4">
-                      <p className="text-[11px] uppercase tracking-[0.2em] text-gold/85">Scene summary</p>
-                      <p className="mt-2">{deferredScene.display_lines[0]}</p>
-                    </div>
-                    <div className="rounded-[1.25rem] border border-ink/10 bg-white px-4 py-4">
-                      <p className="text-[11px] uppercase tracking-[0.2em] text-gold/85">Next action</p>
-                      <p className="mt-2">Open Standalone mode for the room, or Presenter mode if you need notes and timing.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
+            ) : null}
           </motion.div>
 
           <div className="flex flex-wrap items-center justify-between gap-4 border-t border-paper/10 pt-6">
@@ -338,25 +317,36 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
           ) : null}
 
           <div className="rounded-[1.5rem] border border-paper/10 bg-paper px-4 py-4 text-ink">
-            <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
-              <ListTree className="h-4 w-4" />
-              Scene flow
-            </p>
-            <div className="space-y-2">
-              {scenes.map((scene, index) => (
-                <button
-                  key={scene.scene_id}
-                  type="button"
-                  onClick={() => startTransition(() => setSceneIndex(index))}
-                  className={cn(
-                    "w-full rounded-2xl px-3 py-3 text-left text-sm transition",
-                    index === currentIndex ? "bg-ink text-paper" : "bg-white text-ink/82 hover:border-gold/35"
-                  )}
-                >
-                  <p className="text-[11px] uppercase tracking-[0.22em] opacity-70">{scene.kicker}</p>
-                  <p className="mt-1 font-medium">{scene.title}</p>
-                </button>
-              ))}
+            {!isSpeaker ? (
+              <div className="border-b border-ink/10 pb-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Current point</p>
+                <p className="mt-3 font-editorial text-2xl leading-tight text-ink">
+                  {deferredScene.display_lines[1] ?? deferredScene.kicker}
+                </p>
+                <p className="mt-3 text-sm leading-6 text-ink/72">{deferredScene.display_lines[0]}</p>
+              </div>
+            ) : null}
+            <div className={cn("space-y-3", !isSpeaker && "pt-4")}>
+              <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
+                <ListTree className="h-4 w-4" />
+                Scene flow
+              </p>
+              <div className="space-y-2">
+                {scenes.map((scene, index) => (
+                  <button
+                    key={scene.scene_id}
+                    type="button"
+                    onClick={() => startTransition(() => setSceneIndex(index))}
+                    className={cn(
+                      "w-full rounded-2xl px-3 py-3 text-left text-sm transition",
+                      index === currentIndex ? "bg-ink text-paper" : "bg-white text-ink/82 hover:border-gold/35"
+                    )}
+                  >
+                    <p className="text-[11px] uppercase tracking-[0.22em] opacity-70">{scene.kicker}</p>
+                    <p className="mt-1 font-medium">{scene.title}</p>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
