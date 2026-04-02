@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${instrumentSans.variable} ${newsreader.variable}`}>
-      <body className="bg-paper text-ink antialiased">
+      <body className="antialiased">
         <ServiceWorkerRegister />
         <SiteHeader />
         {children}

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, ClipboardCheck, GraduationCap, ShieldCheck } from "lucide-react";
+import { ArrowRight, Award, CheckCircle2, ChevronLeft, ChevronRight, ClipboardCheck, GraduationCap, ShieldCheck } from "lucide-react";
 
 import type { DownloadAsset, LMSArtifact } from "@/lib/types";
 
@@ -20,8 +20,8 @@ function renderLessonBody(markdown: string) {
   return blocks.map((block, index) => {
     if (block.startsWith("### ")) {
       return (
-        <div key={`heading-${index}`} className="border-t border-ink/10 pt-5 first:border-t-0 first:pt-0">
-          <h3 className="text-xl font-semibold tracking-[-0.03em] text-ink">{block.replace(/^###\s+/, "")}</h3>
+        <div key={`heading-${index}`} className="border-t border-white/[0.06] pt-5 first:border-t-0 first:pt-0">
+          <h3 className="text-lg font-semibold tracking-[-0.02em] text-white">{block.replace(/^###\s+/, "")}</h3>
         </div>
       );
     }
@@ -31,10 +31,10 @@ function renderLessonBody(markdown: string) {
 
     if (listLines.length === lines.length) {
       return (
-        <div key={`list-${index}`} className="space-y-3">
+        <div key={`list-${index}`} className="space-y-2.5">
           {listLines.map((line) => (
-            <div key={line} className="flex items-start gap-3 text-sm leading-7 text-ink/78">
-              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-gold" />
+            <div key={line} className="flex items-start gap-3 text-sm leading-7 text-white/55">
+              <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold/50" />
               <p className="flex-1">{line.replace(/^[-*]\s+/, "")}</p>
             </div>
           ))}
@@ -43,7 +43,7 @@ function renderLessonBody(markdown: string) {
     }
 
     return (
-      <p key={`paragraph-${index}`} className="text-sm leading-8 text-ink/78">
+      <p key={`paragraph-${index}`} className="text-sm leading-8 text-white/55">
         {block}
       </p>
     );
@@ -85,110 +85,115 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
   const isCorrect = selectedChoice === quiz?.answer;
 
   return (
-    <main className="px-5 py-8 md:px-8 md:py-10">
+    <main className="px-5 py-10 md:px-8 md:py-14">
       <div className="mx-auto max-w-7xl space-y-8">
-        <section className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
-          <div className="max-w-4xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Certification</p>
-            <h1 className="mt-3 text-4xl font-semibold tracking-[-0.05em] text-white md:text-6xl">
+        {/* Header */}
+        <section className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_19rem]">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/[0.06] px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.28em] text-gold">
+              <Award className="h-3.5 w-3.5" />
+              Certification
+            </div>
+            <h1 className="mt-5 text-3xl font-semibold leading-[1.12] tracking-[-0.04em] text-white md:text-5xl">
               Review the teaching points and complete the knowledge checks before presenting.
             </h1>
-            <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
+            <p className="mt-4 max-w-2xl text-base leading-7 text-white/55">
               Work through one module at a time. Read the lesson, review the takeaways, and use the quiz to confirm the main points before you rehearse.
             </p>
           </div>
 
-          <aside className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
+          <aside className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-5">
             <div className="flex items-center justify-between gap-3">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Module progress</p>
-                <p className="mt-2 text-3xl font-semibold tracking-[-0.04em] text-ink">{moduleCompletion}%</p>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Module progress</p>
+                <p className="mt-1.5 text-3xl font-semibold tracking-[-0.04em] text-white">{moduleCompletion}%</p>
               </div>
-              <div className="rounded-full border border-ink/10 bg-paper p-3 text-gold">
+              <div className="rounded-xl bg-gold/10 p-2.5 text-gold">
                 <ShieldCheck className="h-5 w-5" />
               </div>
             </div>
-            <div className="mt-4 h-2 overflow-hidden rounded-full bg-ink/10">
-              <div className="h-full rounded-full bg-gradient-to-r from-ember to-gold transition-all duration-300" style={{ width: `${moduleCompletion}%` }} />
+            <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/[0.06]">
+              <div className="h-full rounded-full bg-gradient-to-r from-ember/80 to-gold/80 transition-all duration-300" style={{ width: `${moduleCompletion}%` }} />
             </div>
-            <div className="mt-5 space-y-3">
+            <div className="mt-4 space-y-2">
               {certificationChecklist.map((item) => (
-                <div key={item} className="flex items-start gap-3 rounded-2xl border border-ink/10 bg-white px-4 py-3 text-sm leading-6 text-ink/78">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 text-gold" />
+                <div key={item} className="flex items-start gap-2.5 rounded-lg border border-white/[0.04] bg-white/[0.02] px-3 py-2.5 text-xs leading-5 text-white/50">
+                  <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/60" />
                   <span>{item}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-5 flex flex-wrap gap-2 border-t border-ink/10 pt-5">
-              <Link href="/presenter" className="inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-sm font-semibold text-paper transition hover:bg-ember">
+            <div className="mt-4 flex flex-wrap gap-2 border-t border-white/[0.06] pt-4">
+              <Link href="/presenter" className="inline-flex items-center gap-2 rounded-lg bg-gold px-4 py-2 text-xs font-semibold text-ink transition hover:bg-gold/90">
                 Open presenter
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-3.5 w-3.5" />
               </Link>
-              <Link href="/presentation" className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:border-gold/45 hover:text-gold">
+              <Link href="/presentation" className="inline-flex items-center gap-2 rounded-lg border border-white/[0.08] bg-white/[0.03] px-4 py-2 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold">
                 Open presentation
               </Link>
             </div>
           </aside>
         </section>
 
-        <section className="grid gap-6 xl:grid-cols-[17rem_minmax(0,1fr)]">
-          <aside className="rounded-[1.75rem] border border-paper/10 bg-paper p-5 text-ink">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Modules</p>
-            <div className="mt-4 space-y-2">
+        {/* Module content */}
+        <section className="grid gap-6 xl:grid-cols-[16rem_minmax(0,1fr)]">
+          {/* Module list sidebar */}
+          <aside className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-4">
+            <p className="px-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Modules</p>
+            <div className="mt-3 space-y-1.5">
               {lms.modules.map((entry, index) => (
                 <button
                   key={entry.module_id}
                   type="button"
                   onClick={() => setModuleIndex(index)}
                   className={[
-                    "w-full rounded-2xl px-4 py-4 text-left text-sm transition",
-                    index === moduleIndex ? "bg-ink text-paper" : "bg-white text-ink/80 hover:border-gold/40"
+                    "w-full rounded-lg px-3 py-3 text-left text-xs transition",
+                    index === moduleIndex
+                      ? "bg-gold/15 text-gold ring-1 ring-gold/20"
+                      : "text-paper/45 hover:bg-white/[0.03] hover:text-paper/65"
                   ].join(" ")}
                 >
-                  <p className="text-[11px] uppercase tracking-[0.22em] opacity-70">Module {index + 1}</p>
+                  <p className="text-[10px] uppercase tracking-[0.22em] opacity-60">Module {index + 1}</p>
                   <p className="mt-1 font-semibold">{entry.title}</p>
                 </button>
               ))}
             </div>
           </aside>
 
-          <div className="space-y-6">
-            <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
-              <article className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
-                <div className="flex flex-wrap items-start justify-between gap-4">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Module overview</p>
-                    <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-ink">{module.title}</h2>
-                  </div>
-                  <div className="rounded-full border border-ink/10 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-ink/58">
-                    {module.quiz_questions.length} questions
-                  </div>
+          <div className="space-y-5">
+            {/* Module overview + next step */}
+            <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_19rem]">
+              <article className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Module overview</p>
+                <h2 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">{module.title}</h2>
+                <div className="mt-1 inline-block rounded-md bg-white/[0.04] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-paper/35">
+                  {module.quiz_questions.length} questions
                 </div>
-                <p className="mt-4 text-base leading-8 text-ink/78">{module.overview}</p>
+                <p className="mt-3 text-sm leading-7 text-white/55">{module.overview}</p>
               </article>
 
-              <aside className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
+              <aside className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-5">
                 <div className="flex items-center gap-3">
-                  <div className="rounded-full border border-ink/10 bg-white p-3 text-gold">
+                  <div className="rounded-xl bg-gold/10 p-2.5 text-gold">
                     <ClipboardCheck className="h-4 w-4" />
                   </div>
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Next step</p>
-                    <p className="mt-1 text-lg font-semibold tracking-[-0.03em] text-ink">Finish this module, then rehearse in Presenter.</p>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold/80">Next step</p>
+                    <p className="mt-1 text-sm font-semibold text-white/80">Finish this module, then rehearse.</p>
                   </div>
                 </div>
-                <div className="mt-4 space-y-3 text-sm leading-7 text-ink/74">
+                <div className="mt-4 space-y-2 text-xs leading-6 text-white/45">
                   <p>Read the lesson content once without rushing.</p>
-                  <p>Use the takeaways as your short explanation notes.</p>
-                  <p>Answer the quiz and review the feedback before moving on.</p>
+                  <p>Use the takeaways as short explanation notes.</p>
+                  <p>Answer the quiz and review the feedback.</p>
                 </div>
-                <div className="mt-5 border-t border-ink/10 pt-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Downloads</p>
-                  <div className="mt-3 space-y-2">
+                <div className="mt-4 border-t border-white/[0.06] pt-4">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold/80">Downloads</p>
+                  <div className="mt-3 space-y-1.5">
                     {downloads.map((asset) => (
-                      <a key={asset.asset_id} href={asset.href} className="block rounded-xl border border-ink/10 bg-white px-3 py-3 text-sm transition hover:border-gold/40 hover:text-gold">
-                        <p className="font-semibold text-ink">{asset.title}</p>
-                        <p className="mt-1 text-xs uppercase tracking-[0.18em] text-ink/52">{asset.format}</p>
+                      <a key={asset.asset_id} href={asset.href} className="block rounded-lg border border-white/[0.04] bg-white/[0.02] px-3 py-2.5 text-xs transition hover:border-gold/20 hover:text-gold">
+                        <p className="font-semibold text-paper/60">{asset.title}</p>
+                        <p className="mt-0.5 text-[10px] uppercase tracking-[0.18em] text-paper/30">{asset.format}</p>
                       </a>
                     ))}
                   </div>
@@ -196,30 +201,31 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
               </aside>
             </div>
 
-            <article className="rounded-[1.75rem] border border-paper/10 bg-paper text-ink shadow-horizon">
-              <div className="border-b border-ink/10 p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">What to learn</p>
+            {/* Learning objectives + lesson content */}
+            <article className="overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.03]">
+              <div className="border-b border-white/[0.06] p-6">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">What to learn</p>
                 <div className="mt-4 grid gap-3 md:grid-cols-3">
                   {module.learning_objectives.map((objective) => (
-                    <div key={objective} className="rounded-2xl border border-ink/10 bg-white px-4 py-4 text-sm leading-6 text-ink/78">
+                    <div key={objective} className="rounded-xl border border-white/[0.04] bg-white/[0.02] px-4 py-3.5 text-xs leading-5 text-white/50">
                       {objective}
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_20rem]">
+              <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_19rem]">
                 <div className="p-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Lesson content</p>
-                  <div className="mt-4 space-y-5">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Lesson content</p>
+                  <div className="mt-4 space-y-4">
                     {renderLessonBody(module.lesson_body_markdown)}
                   </div>
                 </div>
-                <div className="border-t border-ink/10 p-6 lg:border-l lg:border-t-0">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Key takeaways</p>
-                  <div className="mt-4 space-y-3">
+                <div className="border-t border-white/[0.06] p-6 lg:border-l lg:border-t-0">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Key takeaways</p>
+                  <div className="mt-4 space-y-2.5">
                     {module.key_takeaways.map((takeaway) => (
-                      <div key={takeaway} className="flex items-start gap-3 rounded-2xl border border-ink/10 bg-white px-4 py-4 text-sm leading-7 text-ink/78">
-                        <GraduationCap className="mt-1 h-4 w-4 text-gold" />
+                      <div key={takeaway} className="flex items-start gap-2.5 rounded-xl border border-white/[0.04] bg-white/[0.02] px-3.5 py-3.5 text-xs leading-6 text-white/50">
+                        <GraduationCap className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/60" />
                         <span>{takeaway}</span>
                       </div>
                     ))}
@@ -228,55 +234,58 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
               </div>
             </article>
 
+            {/* Quiz */}
             {quiz ? (
-              <article className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
+              <article className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6">
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Knowledge check</p>
-                    <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-ink">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Knowledge check</p>
+                    <h3 className="mt-2 text-xl font-semibold tracking-[-0.03em] text-white">
                       Question {quizIndex + 1} of {module.quiz_questions.length}
                     </h3>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1.5">
                     <button
                       type="button"
                       onClick={() => setQuizIndex((value) => Math.max(value - 1, 0))}
                       disabled={quizIndex === 0}
-                      className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:border-gold/45 hover:text-gold disabled:cursor-not-allowed disabled:opacity-45"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-white/[0.08] bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold disabled:cursor-not-allowed disabled:opacity-35"
                     >
-                      <ChevronLeft className="h-4 w-4" />
-                      Previous
+                      <ChevronLeft className="h-3.5 w-3.5" />
+                      Prev
                     </button>
                     <button
                       type="button"
                       onClick={() => setQuizIndex((value) => Math.min(value + 1, module.quiz_questions.length - 1))}
                       disabled={quizIndex === module.quiz_questions.length - 1}
-                      className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:border-gold/45 hover:text-gold disabled:cursor-not-allowed disabled:opacity-45"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-white/[0.08] bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold disabled:cursor-not-allowed disabled:opacity-35"
                     >
                       Next
-                      <ChevronRight className="h-4 w-4" />
+                      <ChevronRight className="h-3.5 w-3.5" />
                     </button>
                   </div>
                 </div>
 
-                <div className="mt-5 rounded-[1.25rem] border border-ink/10 bg-white px-5 py-5">
-                  <p className="font-semibold text-ink">{quiz.question}</p>
-                  <div className="mt-4 space-y-2 text-sm leading-6 text-ink/78">
+                <div className="mt-5 rounded-xl border border-white/[0.06] bg-white/[0.02] px-5 py-5">
+                  <p className="font-medium text-white/80">{quiz.question}</p>
+                  <div className="mt-4 space-y-2 text-sm text-white/55">
                     {quiz.choices.map((choice) => (
                       <button
                         key={choice}
                         type="button"
                         onClick={() => setResponses((state) => ({ ...state, [quizKey]: choice }))}
                         className={[
-                          "flex w-full items-start gap-3 rounded-xl border px-4 py-3 text-left transition",
-                          selectedChoice === choice ? "border-gold/45 bg-paper text-ink" : "border-ink/10 bg-white hover:border-gold/35"
+                          "flex w-full items-start gap-3 rounded-lg border px-4 py-3 text-left text-xs transition",
+                          selectedChoice === choice
+                            ? "border-gold/30 bg-gold/[0.06] text-white/75"
+                            : "border-white/[0.06] bg-white/[0.01] hover:border-white/10"
                         ].join(" ")}
                       >
                         <span className={[
-                          "mt-1 h-4 w-4 rounded-full border",
-                          selectedChoice === choice ? "border-gold bg-gold/15" : "border-ink/20"
+                          "mt-0.5 h-3.5 w-3.5 shrink-0 rounded-full border",
+                          selectedChoice === choice ? "border-gold bg-gold/20" : "border-white/15"
                         ].join(" ")} />
-                        <span className="flex-1">{choice}</span>
+                        <span className="flex-1 leading-5">{choice}</span>
                       </button>
                     ))}
                   </div>
@@ -286,7 +295,7 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
                       type="button"
                       onClick={() => setRevealed((state) => ({ ...state, [quizKey]: true }))}
                       disabled={!selectedChoice}
-                      className="rounded-full bg-ink px-4 py-2 text-sm font-semibold text-paper transition hover:bg-ember disabled:cursor-not-allowed disabled:opacity-45"
+                      className="rounded-lg bg-gold px-4 py-2 text-xs font-semibold text-ink transition hover:bg-gold/90 disabled:cursor-not-allowed disabled:opacity-35"
                     >
                       Check answer
                     </button>
@@ -294,7 +303,7 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
                       <button
                         type="button"
                         onClick={() => setRevealed((state) => ({ ...state, [quizKey]: false }))}
-                        className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:border-gold/45 hover:text-gold"
+                        className="rounded-lg border border-white/[0.08] px-4 py-2 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold"
                       >
                         Hide feedback
                       </button>
@@ -303,34 +312,37 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
 
                   {isOpen ? (
                     <div className={[
-                      "mt-4 rounded-xl border px-4 py-4 text-sm leading-7",
-                      isCorrect ? "border-green-300 bg-green-50 text-ink" : "border-gold/30 bg-paper text-ink/82"
+                      "mt-4 rounded-xl border px-4 py-4 text-xs leading-6",
+                      isCorrect
+                        ? "border-green-500/20 bg-green-500/[0.06] text-white/70"
+                        : "border-gold/20 bg-gold/[0.06] text-white/60"
                     ].join(" ")}>
-                      <p className="font-semibold text-ink">
+                      <p className="font-semibold text-white/85">
                         {isCorrect ? "Correct." : "Review this one again."}
                       </p>
-                      <p className="mt-2"><span className="font-semibold text-ink">Answer:</span> {quiz.answer}</p>
-                      <p className="mt-2"><span className="font-semibold text-ink">Why:</span> {quiz.rationale}</p>
+                      <p className="mt-2"><span className="font-semibold text-white/75">Answer:</span> {quiz.answer}</p>
+                      <p className="mt-2"><span className="font-semibold text-white/75">Why:</span> {quiz.rationale}</p>
                     </div>
                   ) : null}
                 </div>
               </article>
             ) : null}
 
-            <article className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Reflection and discussion</p>
+            {/* Reflection */}
+            <article className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Reflection and discussion</p>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
-                <div className="rounded-2xl border border-ink/10 bg-white px-4 py-4">
-                  <p className="text-sm font-semibold text-ink">Reflection prompts</p>
-                  <div className="mt-3 space-y-2 text-sm leading-7 text-ink/78">
+                <div className="rounded-xl border border-white/[0.04] bg-white/[0.02] px-4 py-4">
+                  <p className="text-xs font-semibold text-white/70">Reflection prompts</p>
+                  <div className="mt-3 space-y-2 text-xs leading-6 text-white/45">
                     {module.reflection_questions.map((question) => (
                       <p key={question}>{question}</p>
                     ))}
                   </div>
                 </div>
-                <div className="rounded-2xl border border-ink/10 bg-white px-4 py-4">
-                  <p className="text-sm font-semibold text-ink">Discussion prompt</p>
-                  <p className="mt-3 text-sm leading-7 text-ink/78">
+                <div className="rounded-xl border border-white/[0.04] bg-white/[0.02] px-4 py-4">
+                  <p className="text-xs font-semibold text-white/70">Discussion prompt</p>
+                  <p className="mt-3 text-xs leading-6 text-white/45">
                     {module.discussion_prompt || "Use this module as a basis for small-group discussion after review."}
                   </p>
                 </div>
