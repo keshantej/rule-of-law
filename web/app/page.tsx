@@ -15,25 +15,25 @@ export default async function HomePage() {
   const tabs = [
     {
       title: "Presentation",
-      body: "Audience-facing scenes with standalone mode for live delivery.",
+      body: "Scene-by-scene civic education presentation with standalone delivery mode for live audiences.",
       href: "/presentation",
       icon: Presentation
     },
     {
       title: "Certification",
-      body: "Knowledge checks to confirm your grasp of the material.",
+      body: "Module-based learning with quizzes and reflection prompts to solidify your understanding of the material.",
       href: "/certification",
       icon: Award
     },
     {
       title: "Resources",
-      body: "Downloadable files, partner links, and follow-up materials.",
+      body: "Downloadable handouts, field guides, Arizona partner links, and audience follow-up materials.",
       href: "/resources",
       icon: FolderOpen
     },
     {
       title: "Presenter",
-      body: "Talk tracks, timing, and facilitation guidance.",
+      body: "Timed talk tracks, facilitation guidance, and preparation tools for every presentation format.",
       href: "/presenter",
       icon: ScrollText
     }
@@ -49,10 +49,10 @@ export default async function HomePage() {
               Arizona Rule of Law Ambassador Program
             </p>
             <h1 className="mt-4 max-w-lg text-3xl font-semibold leading-[1.12] tracking-[-0.03em] text-white sm:text-4xl">
-              Prepare, present, and follow up.
+              Equip yourself to champion the Rule of Law.
             </h1>
-            <p className="mt-4 max-w-md text-sm leading-6 text-white/45">
-              Everything an ambassador needs — presentation, certification, scripts, and resource materials — in one place.
+            <p className="mt-4 max-w-lg text-sm leading-6 text-white/45">
+              The Ambassador Program provides Arizona attorneys and civic leaders with a complete set of presentation materials, certification training, facilitation guides, and audience resources — everything you need to deliver a compelling, nonpartisan civic education experience.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link href="/presentation" className="inline-flex items-center gap-2 rounded-xl bg-gold px-5 py-3 text-sm font-semibold text-ink transition hover:bg-gold/90">
@@ -74,19 +74,19 @@ export default async function HomePage() {
               <div className="mt-3 space-y-2.5 text-xs leading-5 text-white/40">
                 <div className="flex items-start gap-2.5">
                   <span className="mt-px flex h-4 w-4 shrink-0 items-center justify-center rounded text-[9px] font-bold text-gold/60 ring-1 ring-gold/20">1</span>
-                  <p><span className="text-white/60">Presenter</span> — pick length, review script.</p>
+                  <p><span className="text-white/60">Presenter</span> — select your talk format and review the scripted guide.</p>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="mt-px flex h-4 w-4 shrink-0 items-center justify-center rounded text-[9px] font-bold text-gold/60 ring-1 ring-gold/20">2</span>
-                  <p><span className="text-white/60">Certification</span> — study the material.</p>
+                  <p><span className="text-white/60">Certification</span> — work through each module and confirm your understanding.</p>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="mt-px flex h-4 w-4 shrink-0 items-center justify-center rounded text-[9px] font-bold text-gold/60 ring-1 ring-gold/20">3</span>
-                  <p><span className="text-white/60">Present</span> — go live with Standalone.</p>
+                  <p><span className="text-white/60">Present</span> — open Standalone mode for live audience delivery.</p>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="mt-px flex h-4 w-4 shrink-0 items-center justify-center rounded text-[9px] font-bold text-gold/60 ring-1 ring-gold/20">4</span>
-                  <p><span className="text-white/60">Resources</span> — share follow-up links.</p>
+                  <p><span className="text-white/60">Resources</span> — distribute handouts and follow-up materials.</p>
                 </div>
               </div>
             </div>
@@ -124,14 +124,15 @@ export default async function HomePage() {
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Recommended</p>
             <h2 className="mt-2 max-w-lg text-2xl font-semibold tracking-[-0.02em] text-white">
-              {track45?.title ?? "45-minute presenter flow"}
+              Recommended: {track45?.title ?? "45-Minute Format"}
             </h2>
             <p className="mt-2 max-w-lg text-sm leading-6 text-white/40">
-              Best default for bar events, civic groups, and schools. Open Presenter to rehearse, then switch to Standalone for delivery.
+              The 45-minute format is the standard for bar association events, civic groups, and educational settings. It covers all four core principles with time for audience discussion and reflection.
             </p>
           </div>
-          <div className="text-sm leading-6 text-white/35">
-            Use Presentation mode to rehearse with navigation visible. Use Standalone when the audience is in the room.
+          <div className="space-y-2 text-sm leading-6 text-white/35">
+            <p>Use <span className="text-white/50">Presentation</span> mode to rehearse with full navigation and speaker notes visible.</p>
+            <p>Switch to <span className="text-white/50">Standalone</span> mode when presenting to a live audience for a clean, distraction-free display.</p>
           </div>
         </section>
 

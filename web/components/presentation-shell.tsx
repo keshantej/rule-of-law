@@ -105,6 +105,9 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                 </p>
               ))}
             </div>
+            {deferredScene.speaker_notes ? (
+              <p className="mt-8 max-w-3xl text-base leading-7 text-paper/25">{deferredScene.speaker_notes}</p>
+            ) : null}
           </motion.section>
 
           <div className="mx-auto w-full max-w-6xl space-y-4">
@@ -172,6 +175,23 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                   </p>
                 </div>
               ))}
+              {/* Public mode: show speaker notes as context */}
+              {!isSpeaker && deferredScene.speaker_notes ? (
+                <div className="mt-4 max-w-3xl border-t border-white/[0.04] pt-4">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold/40">Context</p>
+                  <p className="mt-2 text-xs leading-6 text-white/35">{deferredScene.speaker_notes}</p>
+                </div>
+              ) : null}
+              {/* Public mode: show facilitation cues */}
+              {!isSpeaker && deferredScene.speaker_only_blocks.length > 0 ? (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {deferredScene.speaker_only_blocks.filter(b => b.title === "Facilitation Cue").map((b) => (
+                    <div key={b.body} className="rounded-lg bg-gold/[0.04] px-3 py-2 text-[11px] leading-5 text-white/30 ring-1 ring-gold/[0.08]">
+                      <span className="font-medium text-gold/50">Discussion prompt:</span> {b.body}
+                    </div>
+                  ))}
+                </div>
+              ) : null}
             </div>
             {isSpeaker ? (
               <div className="space-y-4">
@@ -182,9 +202,22 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                   </div>
                 ) : null}
                 <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Notes</p>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Speaker Notes</p>
                   <p className="mt-1.5 text-xs leading-6 text-paper/40">{deferredScene.speaker_notes}</p>
                 </div>
+                {deferredScene.speaker_only_blocks.length > 0 ? (
+                  <div>
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Facilitation</p>
+                    <div className="mt-1.5 space-y-2">
+                      {deferredScene.speaker_only_blocks.map((b) => (
+                        <div key={b.title} className="text-[11px] leading-5">
+                          <span className="font-medium text-paper/50">{b.title}:</span>{" "}
+                          <span className="text-paper/35">{b.body}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
               </div>
             ) : null}
           </motion.div>
@@ -259,10 +292,13 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
           <div>
             {!isSpeaker ? (
               <div className="mb-4">
-                <p className="font-editorial text-sm leading-tight text-white/70">
-                  {deferredScene.display_lines[1] ?? deferredScene.kicker}
+                <p className="text-sm font-medium leading-tight text-white/70">
+                  {deferredScene.title}
                 </p>
-                <p className="mt-1.5 text-[11px] leading-4 text-paper/30">{deferredScene.display_lines[0]}</p>
+                <p className="mt-1 text-[11px] leading-4 text-paper/30">{deferredScene.kicker}</p>
+                {deferredScene.visual_treatment ? (
+                  <p className="mt-2 text-[10px] leading-4 text-paper/20 italic">{deferredScene.visual_treatment}</p>
+                ) : null}
               </div>
             ) : null}
             <p className="flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">

@@ -80,12 +80,12 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
         {/* Header */}
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem]">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Certification</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Ambassador Certification</p>
             <h1 className="mt-3 max-w-lg text-3xl font-semibold leading-[1.12] tracking-[-0.03em] text-white sm:text-4xl">
-              Know the material before you present it.
+              Master the material before you present it.
             </h1>
             <p className="mt-3 max-w-md text-sm leading-6 text-white/45">
-              Work through each module, then use the quiz to confirm your understanding.
+              Each module covers a foundational aspect of the Rule of Law curriculum. Study the lesson content, test your understanding with knowledge checks, and use the reflection prompts to deepen your preparation.
             </p>
           </div>
           <aside className="space-y-4">
