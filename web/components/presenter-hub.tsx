@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, ChevronDown, Clock3, Mic2, NotebookText, Presentation, ShieldCheck } from "lucide-react";
+import { ArrowRight, ChevronDown, ChevronRight, Clock3, Download, Mic2 } from "lucide-react";
 
 import type { DownloadAsset, SpeakerTrack, ToolkitItem } from "@/lib/types";
 
@@ -14,31 +14,27 @@ interface PresenterHubProps {
 
 function CollapsibleScript({ item }: { item: ToolkitItem }) {
   const [open, setOpen] = useState(false);
-
   return (
-    <article className="rounded-2xl border border-white/[0.06] bg-white/[0.03] overflow-hidden">
+    <div>
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-start justify-between gap-4 p-5 text-left transition hover:bg-white/[0.02]"
+        className="group flex w-full items-center justify-between gap-4 py-4 text-left"
       >
-        <div>
-          <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-gold/70">{item.type.replaceAll("_", " ")}</p>
-          <h3 className="mt-2 text-lg font-semibold tracking-[-0.03em] text-white">{item.title}</h3>
-        </div>
         <div className="flex items-center gap-3">
-          <span className="hidden rounded-md bg-white/[0.04] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-paper/30 sm:block">
-            {item.type === "talk_track" ? "Speaker script" : "Presenter support"}
-          </span>
-          <ChevronDown className={`h-4 w-4 text-paper/40 transition ${open ? "rotate-180" : ""}`} />
+          <ChevronRight className={`h-4 w-4 text-paper/25 transition ${open ? "rotate-90" : ""}`} />
+          <span className="text-base font-semibold text-white/80 transition group-hover:text-white">{item.title}</span>
         </div>
+        <span className="rounded-md bg-white/[0.04] px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.2em] text-paper/25">
+          {item.type === "talk_track" ? "Script" : "Guide"}
+        </span>
       </button>
       {open ? (
-        <div className="border-t border-white/[0.04] px-5 py-5">
-          <p className="whitespace-pre-line text-sm leading-7 text-white/50">{item.body}</p>
+        <div className="pb-4 pl-7">
+          <p className="whitespace-pre-line text-sm leading-7 text-white/45">{item.body}</p>
         </div>
       ) : null}
-    </article>
+    </div>
   );
 }
 
@@ -48,122 +44,72 @@ export function PresenterHub({ tracks, items, downloads }: PresenterHubProps) {
   const recommendedTrack = tracks.find((track) => track.minutes === 45) ?? tracks[0];
 
   return (
-    <main className="px-5 py-10 md:px-8 md:py-14">
-      <div className="mx-auto max-w-7xl">
+    <main className="px-5 py-12 md:px-8 md:py-16">
+      <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/[0.06] px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.28em] text-gold">
-          <Mic2 className="h-3.5 w-3.5" />
-          Presenter
-        </div>
-        <h1 className="mt-5 max-w-3xl text-3xl font-semibold leading-[1.12] tracking-[-0.04em] text-white md:text-5xl">
-          Choose the talk length, review the script, and rehearse.
+        <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Presenter</p>
+        <h1 className="mt-3 max-w-xl text-3xl font-semibold leading-[1.15] tracking-[-0.03em] text-white sm:text-4xl">
+          Review, rehearse, deliver.
         </h1>
-        <p className="mt-4 max-w-2xl text-base leading-7 text-white/55">
-          This page is for speaker preparation. Use it to review the talk track, check the timing, and keep the presentation files close at hand.
+        <p className="mt-3 max-w-lg text-sm leading-6 text-white/45">
+          Pick a talk length, study the script, then open presenter mode for the live session.
         </p>
 
-        {/* Start here + checklist */}
-        <div className="mt-10 grid gap-5 lg:grid-cols-[minmax(0,1fr)_20rem]">
-          <section className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6 md:p-8">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Start here</p>
-            <div className="mt-4 grid gap-6 md:grid-cols-[minmax(0,1fr)_17rem]">
-              <div>
-                <h2 className="text-2xl font-semibold tracking-[-0.03em] text-white">Pick the format that fits the room, then rehearse from presenter mode.</h2>
-                <p className="mt-3 max-w-xl text-sm leading-7 text-white/50">
-                  Most speakers should start with the 45-minute version, then shorten or expand if the schedule requires it.
-                </p>
-                <div className="mt-5 flex flex-wrap gap-3">
-                  <Link href={`/presentation/speaker?duration=${recommendedTrack?.minutes ?? 45}`} className="inline-flex items-center gap-2 rounded-xl bg-gold px-5 py-3 text-sm font-semibold text-ink transition hover:bg-gold/90">
-                    Open recommended presenter mode
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
-                  <Link href="/certification" className="inline-flex items-center gap-2 rounded-xl border border-white/[0.08] bg-white/[0.03] px-5 py-3 text-sm font-medium text-paper/60 transition hover:border-gold/30 hover:text-gold">
-                    Review certification
-                  </Link>
-                </div>
-              </div>
-              <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-5">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-gold/70">Suggested sequence</p>
-                <div className="mt-4 space-y-3 text-xs leading-6 text-white/50">
-                  <div className="flex items-start gap-2.5">
-                    <Mic2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/60" />
-                    <p><span className="font-medium text-white/70">Choose a timed format</span> that matches the room.</p>
-                  </div>
-                  <div className="flex items-start gap-2.5">
-                    <NotebookText className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/60" />
-                    <p><span className="font-medium text-white/70">Review the script and notes</span> before opening speaker mode.</p>
-                  </div>
-                  <div className="flex items-start gap-2.5">
-                    <Presentation className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/60" />
-                    <p><span className="font-medium text-white/70">Switch to Presentation</span> or Standalone for the audience.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <aside className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-5">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Preparation checklist</p>
-            <div className="mt-4 space-y-2.5 text-xs leading-6 text-white/45">
-              <p>Confirm the talk length.</p>
-              <p>Review the script and difficult-questions guidance.</p>
-              <p>Open presenter mode before the session begins.</p>
-              <p>Keep the handout and field guide ready to share.</p>
-            </div>
-          </aside>
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <Link href={`/presentation/speaker?duration=${recommendedTrack?.minutes ?? 45}`} className="inline-flex items-center gap-2 rounded-xl bg-gold px-5 py-3 text-sm font-semibold text-ink transition hover:bg-gold/90">
+            Open presenter mode
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+          <Link href="/certification" className="inline-flex items-center gap-2 rounded-xl border border-white/8 px-5 py-3 text-sm font-medium text-paper/50 transition hover:border-white/15 hover:text-white/70">
+            Review certification
+          </Link>
         </div>
 
-        {/* Format cards */}
-        <section className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-          {tracks.map((track) => (
-            <div key={track.minutes} className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-5 transition hover:border-gold/15 card-lift">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-gold/70">{track.minutes} minute format</p>
-              <h2 className="mt-2.5 text-lg font-semibold tracking-[-0.02em] text-white">{track.title}</h2>
-              <p className="mt-2 text-xs leading-6 text-white/45">
-                {track.scene_ids.length} scenes with pacing cues for live delivery.
-              </p>
-              <Link href={`/presentation/speaker?duration=${track.minutes}`} className="mt-4 inline-flex rounded-lg border border-white/[0.08] px-3.5 py-2 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold">
-                Open presenter mode
+        {/* Format selector */}
+        <section className="mt-16">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Choose a format</p>
+          <div className="mt-5 grid gap-px overflow-hidden rounded-2xl bg-white/[0.04] sm:grid-cols-2 xl:grid-cols-4">
+            {tracks.map((track) => (
+              <Link
+                key={track.minutes}
+                href={`/presentation/speaker?duration=${track.minutes}`}
+                className="group flex flex-col justify-between bg-[#0f1a2a] p-5 transition hover:bg-[#141f33]"
+              >
+                <div>
+                  <div className="flex items-center gap-2 text-white/70">
+                    <Clock3 className="h-3.5 w-3.5 text-gold/50" />
+                    <span className="text-2xl font-semibold tracking-tight">{track.minutes}m</span>
+                  </div>
+                  <p className="mt-1.5 text-xs leading-5 text-white/35">{track.scene_ids.length} scenes</p>
+                </div>
+                <div className="mt-4 flex items-center gap-1 text-xs font-medium text-gold/50 transition group-hover:text-gold/80">
+                  Open
+                  <ChevronRight className="h-3 w-3" />
+                </div>
               </Link>
-            </div>
-          ))}
-          <div className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-5 transition hover:border-gold/15 card-lift">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-gold/70">Audience mode</p>
-            <h2 className="mt-2.5 text-lg font-semibold tracking-[-0.02em] text-white">Presentation tab</h2>
-            <p className="mt-2 text-xs leading-6 text-white/45">
-              Open the clean public view to see exactly what the audience will see.
-            </p>
-            <Link href="/presentation" className="mt-4 inline-flex rounded-lg border border-white/[0.08] px-3.5 py-2 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold">
-              Open presentation
-            </Link>
+            ))}
           </div>
         </section>
 
-        {/* Talk tracks + sidebar */}
-        <div className="mt-12 grid gap-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
-          <div className="space-y-10">
-            {/* Talk tracks (collapsible) */}
+        {/* Two-column: scripts + sidebar */}
+        <div className="mt-16 grid gap-12 lg:grid-cols-[minmax(0,1fr)_16rem]">
+          <div className="space-y-12">
+            {/* Talk tracks */}
             <section>
-              <div className="mb-5">
-                <div className="divider-gradient mb-5" />
-                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Talk tracks</p>
-                <h2 className="mt-2 text-2xl font-semibold tracking-[-0.03em] text-white">Timed scripts for 20, 45, and 60 minute sessions.</h2>
-              </div>
-              <div className="space-y-3">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Talk tracks</p>
+              <p className="mt-1 text-sm text-white/35">Expand a script to review.</p>
+              <div className="mt-4 divide-y divide-white/[0.04]">
                 {talkTracks.map((item) => (
                   <CollapsibleScript key={item.toolkit_id} item={item} />
                 ))}
               </div>
             </section>
 
-            {/* Facilitation guidance (collapsible) */}
+            {/* Facilitation guidance */}
             <section>
-              <div className="mb-5">
-                <div className="divider-gradient mb-5" />
-                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold/80">Facilitation guidance</p>
-                <h2 className="mt-2 text-2xl font-semibold tracking-[-0.03em] text-white">Preparation guidance, difficult questions, and support.</h2>
-              </div>
-              <div className="space-y-3">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Facilitation</p>
+              <p className="mt-1 text-sm text-white/35">Difficult questions, checklists, and speaker support.</p>
+              <div className="mt-4 divide-y divide-white/[0.04]">
                 {supportItems.map((item) => (
                   <CollapsibleScript key={item.toolkit_id} item={item} />
                 ))}
@@ -171,48 +117,38 @@ export function PresenterHub({ tracks, items, downloads }: PresenterHubProps) {
             </section>
           </div>
 
-          <aside className="space-y-4 lg:sticky lg:top-[72px] lg:h-fit">
-            <div className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold/80">Quick actions</p>
+          {/* Sidebar */}
+          <aside className="space-y-8 lg:sticky lg:top-[72px] lg:h-fit">
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Before you present</p>
+              <div className="mt-3 space-y-2.5 text-xs leading-5 text-white/35">
+                <p>Confirm the talk length.</p>
+                <p>Review difficult-questions guidance.</p>
+                <p>Open presenter mode before the session.</p>
+                <p>Have the handout and field guide ready.</p>
+              </div>
+            </div>
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Quick links</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
-                <Link href="/presentation/speaker" className="rounded-lg border border-white/[0.08] px-3 py-1.5 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold">
+                <Link href="/presentation/speaker" className="rounded-md bg-white/[0.04] px-2.5 py-1.5 text-xs text-paper/40 transition hover:text-gold/70">
                   Presenter mode
                 </Link>
-                <a href="#preparation" className="rounded-lg border border-white/[0.08] px-3 py-1.5 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold">
-                  Prep checklist
-                </a>
-                <a href="#questions" className="rounded-lg border border-white/[0.08] px-3 py-1.5 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold">
-                  Difficult questions
-                </a>
-                <Link href="/resources" className="rounded-lg border border-white/[0.08] px-3 py-1.5 text-xs font-medium text-paper/55 transition hover:border-gold/30 hover:text-gold">
+                <Link href="/resources" className="rounded-md bg-white/[0.04] px-2.5 py-1.5 text-xs text-paper/40 transition hover:text-gold/70">
                   Resources
+                </Link>
+                <Link href="/presentation" className="rounded-md bg-white/[0.04] px-2.5 py-1.5 text-xs text-paper/40 transition hover:text-gold/70">
+                  Presentation
                 </Link>
               </div>
             </div>
-            <div className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold/80">Event-ready checklist</p>
-              <div className="mt-4 space-y-3 text-xs leading-6 text-white/45">
-                <div className="flex items-start gap-2.5">
-                  <Clock3 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/60" />
-                  <p>Confirm the talk length and open the matching presenter mode before the session.</p>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <ShieldCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/60" />
-                  <p>Review the difficult-questions guidance so the conversation stays educational.</p>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <NotebookText className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/60" />
-                  <p>Keep the handout, field guide, and manual ready for printing or follow-up.</p>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-2xl border border-white/[0.06] bg-white/[0.03] p-5">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold/80">Downloads</p>
-              <div className="mt-4 space-y-2">
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Downloads</p>
+              <div className="mt-3 space-y-1">
                 {downloads.map((asset) => (
-                  <Link key={asset.asset_id} href={asset.href} className="block rounded-xl border border-white/[0.04] bg-white/[0.02] px-4 py-3.5 transition hover:border-gold/20 hover:text-gold">
-                    <p className="text-xs font-semibold text-paper/60">{asset.title}</p>
-                    <p className="mt-1 text-[11px] text-paper/30">{asset.description}</p>
+                  <Link key={asset.asset_id} href={asset.href} className="group flex items-center justify-between py-2 text-xs">
+                    <span className="text-paper/40 transition group-hover:text-gold/70">{asset.title}</span>
+                    <Download className="h-3 w-3 text-paper/20 transition group-hover:text-gold/50" />
                   </Link>
                 ))}
               </div>
