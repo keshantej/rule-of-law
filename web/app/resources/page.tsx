@@ -12,10 +12,10 @@ export default async function ResourcesPage() {
         {/* Header */}
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold/70">Resources</p>
         <h1 className="mt-3 max-w-md text-3xl font-semibold leading-[1.12] tracking-[-0.03em] text-white sm:text-4xl">
-          Materials and links.
+          Supporting materials and partner resources.
         </h1>
-        <p className="mt-3 max-w-md text-sm leading-6 text-white/45">
-          Downloads, Arizona partner links, and follow-up materials for presenters and audiences.
+        <p className="mt-3 max-w-lg text-sm leading-6 text-white/45">
+          Downloadable presentation materials, audience handouts, Arizona civic partner links, and follow-up resources. Use these to prepare for your session and to provide attendees with next steps after the presentation.
         </p>
 
         {/* Quick jump */}
