@@ -17,10 +17,10 @@ test("standalone route exposes standalone presentation label", async ({ page }) 
 
 test("presenter route includes presenter workspace heading", async ({ page }) => {
   await page.goto("/presenter");
-  await expect(page.getByRole("heading", { name: /Prepare the talk, choose a timed format/i })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Choose the talk length, review the script, and rehearse/i })).toBeVisible();
 });
 
 test("certification route includes certification heading", async ({ page }) => {
   await page.goto("/certification");
-  await expect(page.getByRole("heading", { name: /Review the training modules, lesson content/i })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Review the teaching points and complete the knowledge checks/i })).toBeVisible();
 });
