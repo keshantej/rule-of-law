@@ -147,7 +147,7 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
   }
 
   return (
-    <div className="grid min-h-[calc(100svh-73px)] lg:grid-cols-[minmax(0,1fr)_22rem]">
+    <div className="grid min-h-[calc(100svh-73px)] lg:grid-cols-[minmax(0,1fr)_20rem]">
       <section className="relative overflow-hidden bg-[#0d1727] px-5 py-8 md:px-8 md:py-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(205,161,93,0.16),transparent_28%),radial-gradient(circle_at_76%_14%,rgba(155,35,50,0.12),transparent_22%)]" />
         <div className="absolute right-[6%] top-20 text-[8rem] font-semibold tracking-[-0.08em] text-paper/[0.05] md:text-[13rem]">
@@ -202,20 +202,20 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                 </div>
               </div>
             ) : (
-              <div className="rounded-[1.75rem] border border-paper/10 bg-paper/5 p-6">
+              <div className="rounded-[1.75rem] border border-paper/10 bg-paper p-6 text-ink">
                 <div className="flex h-full flex-col justify-between gap-6">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">Current point</p>
-                    <p className="mt-4 max-w-sm font-editorial text-3xl leading-tight tracking-[-0.03em] text-paper">
+                    <p className="mt-4 max-w-sm font-editorial text-3xl leading-tight tracking-[-0.03em] text-ink">
                       {deferredScene.display_lines[1] ?? deferredScene.kicker}
                     </p>
                   </div>
-                  <div className="space-y-3 text-sm leading-6 text-paper/72">
-                    <div className="rounded-[1.25rem] border border-paper/10 bg-[#111b2b] px-4 py-4">
+                  <div className="space-y-3 text-sm leading-6 text-ink/76">
+                    <div className="rounded-[1.25rem] border border-ink/10 bg-white px-4 py-4">
                       <p className="text-[11px] uppercase tracking-[0.2em] text-gold/85">Scene summary</p>
                       <p className="mt-2">{deferredScene.display_lines[0]}</p>
                     </div>
-                    <div className="rounded-[1.25rem] border border-paper/10 bg-[#111b2b] px-4 py-4">
+                    <div className="rounded-[1.25rem] border border-ink/10 bg-white px-4 py-4">
                       <p className="text-[11px] uppercase tracking-[0.2em] text-gold/85">Next action</p>
                       <p className="mt-2">Open Standalone mode for the room, or Presenter mode if you need notes and timing.</p>
                     </div>
@@ -262,42 +262,42 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
       <aside className="border-l border-paper/10 bg-ink">
         <div className="sticky top-[73px] flex h-[calc(100svh-73px)] flex-col gap-6 overflow-y-auto px-5 py-6">
           {isSpeaker ? (
-            <div className="rounded-[1.5rem] border border-paper/10 bg-paper/5 px-4 py-4">
+            <div className="rounded-[1.5rem] border border-paper/10 bg-paper px-4 py-4 text-ink">
               <div className="mb-3 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.24em] text-gold">
                 <span className="inline-flex items-center gap-2"><Clock3 className="h-4 w-4" /> Timing</span>
                 <span>{formatMinutes(totalMinutes)}</span>
               </div>
               <div className="flex items-end justify-between">
                 <div>
-                  <p className="text-3xl font-semibold tracking-[-0.04em] text-paper">{remainingMinutes}</p>
-                  <p className="text-sm text-paper/60">remaining</p>
+                  <p className="text-3xl font-semibold tracking-[-0.04em] text-ink">{remainingMinutes}</p>
+                  <p className="text-sm text-ink/60">remaining</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <button
                     type="button"
                     onClick={() => setIsRunning((value) => !value)}
-                    className="rounded-full border border-paper/10 px-3 py-2 text-sm text-paper/72 transition hover:border-gold/40 hover:text-gold"
+                    className="rounded-full border border-ink/10 px-3 py-2 text-sm text-ink/72 transition hover:border-gold/40 hover:text-gold"
                   >
                     {isRunning ? "Pause" : "Resume"}
                   </button>
                   <button
                     type="button"
                     onClick={() => setElapsed(0)}
-                    className="rounded-full border border-paper/10 px-3 py-2 text-sm text-paper/72 transition hover:border-gold/40 hover:text-gold"
+                    className="rounded-full border border-ink/10 px-3 py-2 text-sm text-ink/72 transition hover:border-gold/40 hover:text-gold"
                   >
                     Reset
                   </button>
                   <button
                     type="button"
                     onClick={() => setShowDrawer((value) => !value)}
-                    className="rounded-full border border-paper/10 px-3 py-2 text-sm text-paper/72 transition hover:border-gold/40 hover:text-gold"
+                    className="rounded-full border border-ink/10 px-3 py-2 text-sm text-ink/72 transition hover:border-gold/40 hover:text-gold"
                   >
                     {showDrawer ? "Hide notes" : "Show notes"}
                   </button>
                 </div>
               </div>
               {track?.transition_note ? (
-                <div className="mt-4 border-t border-paper/10 pt-4 text-sm leading-6 text-paper/70">
+                <div className="mt-4 border-t border-ink/10 pt-4 text-sm leading-6 text-ink/72">
                   {track.transition_note}
                 </div>
               ) : null}
@@ -310,7 +310,7 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                       "rounded-full px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] transition",
                       currentDuration === duration
                         ? "bg-paper text-ink"
-                        : "border border-paper/10 bg-paper/5 text-paper/70 hover:border-gold/40 hover:text-gold"
+                        : "border border-ink/10 bg-white text-ink/70 hover:border-gold/40 hover:text-gold"
                     )}
                   >
                     {duration} min
@@ -321,23 +321,23 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
           ) : null}
 
           {!isSpeaker ? (
-            <div className="rounded-[1.5rem] border border-paper/10 bg-paper/5 px-4 py-4">
+            <div className="rounded-[1.5rem] border border-paper/10 bg-paper px-4 py-4 text-ink">
               <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-gold">Presentation tools</p>
               <div className="flex flex-wrap gap-2">
-                <Link href={`/presentation/standalone?duration=${currentDuration}`} className="rounded-full border border-paper/10 bg-paper/10 px-4 py-2 text-sm text-paper transition hover:border-gold/40 hover:text-gold">
+                <Link href={`/presentation/standalone?duration=${currentDuration}`} className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm text-ink transition hover:border-gold/40 hover:text-gold">
                   Standalone mode
                 </Link>
-                <Link href={`/presentation/speaker?duration=${currentDuration}`} className="rounded-full border border-paper/10 bg-paper/10 px-4 py-2 text-sm text-paper transition hover:border-gold/40 hover:text-gold">
+                <Link href={`/presentation/speaker?duration=${currentDuration}`} className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm text-ink transition hover:border-gold/40 hover:text-gold">
                   Presenter mode
                 </Link>
-                <Link href="/resources" className="rounded-full border border-paper/10 bg-paper/10 px-4 py-2 text-sm text-paper transition hover:border-gold/40 hover:text-gold">
+                <Link href="/resources" className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm text-ink transition hover:border-gold/40 hover:text-gold">
                   Resources
                 </Link>
               </div>
             </div>
           ) : null}
 
-          <div className="rounded-[1.5rem] border border-paper/10 bg-paper/5 px-4 py-4">
+          <div className="rounded-[1.5rem] border border-paper/10 bg-paper px-4 py-4 text-ink">
             <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
               <ListTree className="h-4 w-4" />
               Scene flow
@@ -350,7 +350,7 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                   onClick={() => startTransition(() => setSceneIndex(index))}
                   className={cn(
                     "w-full rounded-2xl px-3 py-3 text-left text-sm transition",
-                    index === currentIndex ? "bg-paper text-ink" : "bg-[#111b2b] text-paper/78 hover:bg-[#162338]"
+                    index === currentIndex ? "bg-ink text-paper" : "bg-white text-ink/82 hover:border-gold/35"
                   )}
                 >
                   <p className="text-[11px] uppercase tracking-[0.22em] opacity-70">{scene.kicker}</p>
@@ -361,16 +361,16 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
           </div>
 
           {showDrawer && isSpeaker ? (
-            <div className="rounded-[1.5rem] border border-paper/10 bg-paper/5 px-4 py-4">
+            <div className="rounded-[1.5rem] border border-paper/10 bg-paper px-4 py-4 text-ink">
               <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
                 <MessageSquareQuote className="h-4 w-4" />
                 Presenter drawer
               </p>
-              <div className="space-y-4 text-sm leading-6 text-paper/78">
+              <div className="space-y-4 text-sm leading-6 text-ink/78">
                 {currentScene.speaker_only_blocks.length ? (
                   currentScene.speaker_only_blocks.map((block) => (
                     <div key={block.title}>
-                      <p className="font-semibold text-paper">{block.title}</p>
+                      <p className="font-semibold text-ink">{block.title}</p>
                       <p>{block.body}</p>
                     </div>
                   ))
@@ -380,7 +380,7 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                 {nextScene ? (
                   <div className="border-t border-paper/10 pt-4">
                     <p className="mb-1 text-xs font-semibold uppercase tracking-[0.24em] text-gold">Next scene</p>
-                    <p className="font-semibold text-paper">{nextScene.title}</p>
+                    <p className="font-semibold text-ink">{nextScene.title}</p>
                     <p>{nextScene.display_lines[0]}</p>
                   </div>
                 ) : null}
@@ -388,22 +388,22 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
             </div>
           ) : null}
 
-          <div className="rounded-[1.5rem] border border-paper/10 bg-paper/5 px-4 py-4">
+          <div className="rounded-[1.5rem] border border-paper/10 bg-paper px-4 py-4 text-ink">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-gold">{isSpeaker ? "Active resources" : "Related resources"}</p>
             <div className="space-y-3">
               {activeResources.map((group) => (
-                <div key={group.resource_group_id} className="rounded-2xl bg-[#111b2b] px-3 py-3">
-                  <p className="font-semibold text-paper">{group.title}</p>
-                  <p className="mt-1 text-sm leading-6 text-paper/70">{group.description}</p>
+                <div key={group.resource_group_id} className="rounded-2xl bg-white px-3 py-3">
+                  <p className="font-semibold text-ink">{group.title}</p>
+                  <p className="mt-1 text-sm leading-6 text-ink/72">{group.description}</p>
                   {group.links.length ? (
                     <div className="mt-3 flex flex-wrap gap-2">
                       {group.links.slice(0, 2).map((link) =>
                         /^https?:\/\//.test(link.href) ? (
-                          <Link key={`${group.resource_group_id}-${link.label}`} href={link.href} className="rounded-full bg-paper/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-paper/60 transition hover:text-gold">
+                          <Link key={`${group.resource_group_id}-${link.label}`} href={link.href} className="rounded-full bg-paper px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/60 transition hover:text-gold">
                             {link.label}
                           </Link>
                         ) : (
-                          <span key={`${group.resource_group_id}-${link.label}`} className="rounded-full bg-paper/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-paper/60">
+                          <span key={`${group.resource_group_id}-${link.label}`} className="rounded-full bg-paper px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-ink/60">
                             {link.label}
                           </span>
                         )
@@ -416,18 +416,18 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
           </div>
 
           {isSpeaker ? (
-            <div className="rounded-[1.5rem] border border-paper/10 bg-paper/5 px-4 py-4">
+            <div className="rounded-[1.5rem] border border-paper/10 bg-paper px-4 py-4 text-ink">
               <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-gold">Downloads</p>
               <div className="space-y-2">
                 {downloads.map((asset) => (
                   <Link
                     key={asset.asset_id}
                     href={asset.href}
-                    className="flex items-center justify-between rounded-2xl bg-[#111b2b] px-3 py-3 text-sm text-paper transition hover:text-gold"
+                    className="flex items-center justify-between rounded-2xl bg-white px-3 py-3 text-sm text-ink transition hover:text-gold"
                   >
                     <div>
                       <span className="block">{asset.title}</span>
-                      <span className="text-xs uppercase tracking-[0.2em] text-paper/45">{asset.format}</span>
+                      <span className="text-xs uppercase tracking-[0.2em] text-ink/45">{asset.format}</span>
                     </div>
                     <ExternalLink className="h-4 w-4" />
                   </Link>

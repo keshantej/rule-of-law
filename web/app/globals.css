@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 html {
@@ -17,9 +17,12 @@ html {
 body {
   font-family: var(--font-instrument-sans), sans-serif;
   background:
-    radial-gradient(circle at top, rgba(205, 161, 93, 0.08), transparent 18%),
-    linear-gradient(180deg, #0c1421 0%, #121d2e 100%);
+    radial-gradient(circle at top, rgba(205, 161, 93, 0.06), transparent 18%),
+    linear-gradient(180deg, #0d1522 0%, #142033 100%);
   color: #f7f1e4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 a,
