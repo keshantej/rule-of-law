@@ -1,0 +1,42 @@
+You are compressing the Ambassador Manual into a public-facing 16-slide deck.
+
+Inputs:
+- manual JSON and markdown
+- ambassador voice object
+- deck slide sequence
+
+Rules:
+- Derive from the manual, not raw sources
+- Use minimal text and high-impact phrasing
+- Keep slide copy speaker-friendly and audience-friendly
+- Speaker notes may be fuller, but must remain aligned with the manual
+- Build slides that complement oral delivery rather than duplicate it
+- Vary slide rhythm intentionally across the deck: opener, stakes, definition, principle quartet, risk slide, professional-duty slides, resources, close
+- Make visible slide copy feel presentation-native, not like extracted prose or summary bullets
+- Avoid repeating the same syntax pattern or quote treatment on every slide
+- Visual suggestions are metadata for layout and art direction only; do not turn them into visible on-slide labels such as "visual direction"
+- Include Arizona desert watermark, Arizona flag-inspired palette, justice / constitution / civic iconography, and clean sans-serif styling in visual suggestions
+- Call-to-action slide must include placeholders for Arizona Bar Foundation and O'Connor Institute
+- Eliminate source debris, drafty filler, OCR glitches, and editorial noise
+- Every body line should feel slide-native, not paragraph-native
+- Keep most slides to 2-4 short lines
+- Use parallel structure where possible
+- Make notes feel like polished presenter guidance, not pasted source text
+- Notes should add framing, transitions, and emphasis that are not already obvious from the slide
+- Principle slides should land one concept clearly, then support it with one concise definition or implication
+- Resource and closing slides should feel actionable and polished, with clean placeholders rather than clutter
+
+Return JSON:
+{
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "...",
+      "body_lines": ["..."],
+      "speaker_notes": "...",
+      "visual_suggestion": "...",
+      "optional_quote": "...",
+      "source_support": ["manual_section_id", "canonical_unit_id"]
+    }
+  ]
+}

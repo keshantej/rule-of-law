@@ -1,0 +1,47 @@
+{
+  "deliverable_id": "handout",
+  "artifact_type": "audience_handout",
+  "generated_at": "2026-04-01T01:32:59Z",
+  "units": [
+    {
+      "unit_id": "handout_78845028ef85",
+      "title": "What the Rule of Law Means",
+      "source_support": [
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "handout_c3a95e26008f",
+      "title": "Four Core Principles",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "handout_6d54a67328c1",
+      "title": "Why It Matters",
+      "source_support": [
+        "manual_c96fb3b8851c"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "handout_efb1bd53b713",
+      "title": "What Citizens Can Do",
+      "source_support": [
+        "manual_5c9573295b06"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "handout_eff50ae9ed67",
+      "title": "Arizona Resources",
+      "source_support": [
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": []
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "deliverable_id": "deck",
+  "artifact_type": "presentation_deck",
+  "generated_at": "2026-03-31T03:38:21Z",
+  "units": [
+    {
+      "unit_id": "slide_1",
+      "title": "Ambassador Program",
+      "source_support": [
+        "manual_8bfee944f39f"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_2",
+      "title": "Why We're Here",
+      "source_support": [
+        "manual_c96fb3b8851c",
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_3",
+      "title": "What Is the Rule of Law?",
+      "source_support": [
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_4",
+      "title": "Why It Matters",
+      "source_support": [
+        "manual_c96fb3b8851c"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_5",
+      "title": "Accountability",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_6",
+      "title": "Just Law",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_7",
+      "title": "Open Government",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_8",
+      "title": "Accessible, Impartial Justice",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_9",
+      "title": "What Happens When It Weakens",
+      "source_support": [
+        "manual_c4d7c20a9373"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_10",
+      "title": "Why Lawyers Must Lead",
+      "source_support": [
+        "manual_dcbafe565952"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_11",
+      "title": "The Ambassador Role",
+      "source_support": [
+        "manual_cefa307a323b"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_12",
+      "title": "Communicating Effectively",
+      "source_support": [
+        "manual_666a19ecc166",
+        "manual_57ab995d8954"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_13",
+      "title": "What Citizens Can Do",
+      "source_support": [
+        "manual_5c9573295b06"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_14",
+      "title": "Arizona-Specific Resources",
+      "source_support": [
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_15",
+      "title": "Call to Action",
+      "source_support": [
+        "manual_5c9573295b06",
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "slide_16",
+      "title": "Closing / Additional Resources",
+      "source_support": [
+        "manual_e3c3011015eb",
+        "manual_73973cfd168d"
+      ],
+      "generated_scaffolding": []
+    }
+  ]
+}

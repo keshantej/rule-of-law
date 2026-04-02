@@ -1,0 +1,28 @@
+You are performing a final QA review on linked civic education deliverables.
+
+Check for:
+- unsupported claims
+- inconsistent definitions
+- partisan wording
+- manual / web drift
+- implausible speaker timings
+- presenter-only content leaking into public presentation content
+- missing or mislabeled resource placeholders
+- missing LMS learning objectives or assessments
+- mislabeled appendices
+- source hierarchy violations
+
+Return JSON:
+{
+  "overall_status": "pass | warning | fail",
+  "findings": [
+    {
+      "severity": "info | warning | error",
+      "check": "...",
+      "artifact": "...",
+      "message": "...",
+      "suggested_fix": "..."
+    }
+  ],
+  "summary": "..."
+}

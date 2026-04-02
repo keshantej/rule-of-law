@@ -1,0 +1,128 @@
+You are transforming the Arizona Rule of Law Ambassador materials into a polished web presentation artifact.
+
+Inputs:
+- manual artifact
+- field guide and handout artifacts
+- canonical voice and source hierarchy
+- deterministic web scene draft
+
+Rules:
+- The web app replaces the PowerPoint deck as the primary presentation surface
+- Keep the content aligned with the manual and field guide, not raw PDFs
+- Write for a premium civic web experience: elegant, clear, restrained, modern, and institutionally serious
+- Public-facing display copy must stay concise and presentation-native
+- Speaker notes and speaker-only blocks may be fuller, but must stay clearly separated from public content
+- Preserve source fidelity for substantive claims
+- Do not invent statistics, quotations, endorsements, or institutional positions
+- Use speaker-only blocks for transitions, likely questions, and facilitation prompts
+- Respect the ambassador voice: nonpartisan, plain English, civically grounded
+- Resource links may remain placeholders, but they must be labeled clearly
+- Do not remove provenance or generated-scaffolding metadata
+- Treat the deterministic draft as a starting point to improve, not a ceiling
+- Make the scene sequence feel intentional, cumulative, and presentation-native
+- Public display lines should be crisp, memorable, and varied from scene to scene without sounding slogan-heavy
+- Speaker notes should help a real presenter explain the point, connect it to the prior scene, and know what to emphasize
+- Speaker-only blocks should be genuinely useful in the room: transitions, facilitation prompts, audience questions, and presenter reminders
+- Ensure the 20 / 45 / 60 minute tracks each feel coherent and practical for live delivery
+- Resource groups and download labels should be immediately understandable to staff and presenters
+- Avoid repeated sentence patterns, thin filler, generic AI language, or over-compressed summaries that lose meaning
+- Keep the audience-facing experience clean while ensuring the companion speaker content is thorough
+- Make toolkit bodies easier to scan and more operational where appropriate
+- Preserve stable IDs, source support, and metadata exactly; improve the language, structure, and usefulness around them
+
+Quality targets:
+- The presentation should feel like a premium web experience, not slide text pasted into a browser
+- The app should work for both audience browsing and live presenter use
+- Each scene should have one dominant idea, one clear takeaway, and a useful speaker frame
+- The overall artifact should be strong enough that staff could publish it with light final review
+- Definitions, principles, lawyer role, and CTA language should remain consistent across scenes and toolkit entries
+
+Return JSON:
+{
+  "presentation": {
+    "title": "...",
+    "scenes": [
+      {
+        "scene_id": "...",
+        "slug": "...",
+        "title": "...",
+        "kicker": "...",
+        "display_lines": ["..."],
+        "speaker_notes": "...",
+        "duration_tags": [20, 45, 60],
+        "audience_mode": "public",
+        "visual_treatment": "...",
+        "speaker_only_blocks": [
+          { "title": "...", "body": "..." }
+        ],
+        "resource_refs": ["..."],
+        "source_support": ["..."],
+        "generated_scaffolding": ["..."]
+      }
+    ]
+  },
+  "speaker_tracks": [
+    {
+      "minutes": 20,
+      "title": "...",
+      "scene_ids": ["..."],
+      "steps": [
+        { "scene_id": "...", "minutes": 3, "cue": "..." }
+      ],
+      "transition_note": "..."
+    }
+  ],
+  "speaker_toolkit": [
+    {
+      "toolkit_id": "...",
+      "type": "...",
+      "title": "...",
+      "body": "...",
+      "audience": "...",
+      "speaker_only": true,
+      "source_support": ["..."]
+    }
+  ],
+  "resource_library": [
+    {
+      "resource_group_id": "...",
+      "title": "...",
+      "description": "...",
+      "links": [
+        {
+          "label": "...",
+          "href": "...",
+          "description": "...",
+          "is_placeholder": true
+        }
+      ],
+      "source_support": ["..."]
+    }
+  ],
+  "downloads": [
+    {
+      "asset_id": "...",
+      "title": "...",
+      "format": "...",
+      "href": "...",
+      "description": "...",
+      "source_path": "..."
+    }
+  ],
+  "provenance_index": [
+    {
+      "ref_id": "...",
+      "title": "...",
+      "source_support": ["..."],
+      "generated_scaffolding": ["..."]
+    }
+  ],
+  "qa_annotations": [
+    {
+      "annotation_id": "...",
+      "level": "info",
+      "message": "...",
+      "ref_ids": ["..."]
+    }
+  ]
+}

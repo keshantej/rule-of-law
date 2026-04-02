@@ -1,0 +1,374 @@
+{
+  "versions": [
+    {
+      "minutes": 20,
+      "blocks": [
+        {
+          "title": "Opening and Purpose",
+          "minutes": 3,
+          "script": "Thank you for having me. I'm here as part of the Arizona Rule of Law Ambassador Program, a partnership between the State Bar of Arizona and the Arizona Supreme Court. Our goal is to bring conversations about our constitutional foundations directly into communities. Today, I hope you'll leave with a clearer sense of what the Rule of Law means, why it matters, and what each of us can do to support it. The Rule of Law isn't about politics-it's about fairness, predictability, and equal justice for everyone.",
+          "transition": "Let's start by defining the Rule of Law in plain English.",
+          "engagement_prompt": "What does fairness or predictability look like in your daily life?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Set a respectful, inclusive tone. Avoid assuming agreement on current events.",
+          "source_support": [
+            "manual_8bfee944f39f"
+          ]
+        },
+        {
+          "title": "What the Rule of Law Is",
+          "minutes": 4,
+          "script": "The Rule of Law means that everyone-including government officials-is subject to the same laws. Laws should be clear, public, and stable, and disputes are resolved through fair and accountable processes, not by favoritism or force. This is a shared civic value, not a partisan one. The World Justice Project breaks it down into four principles: accountability, just law, open government, and accessible, impartial justice.",
+          "transition": "Now that we have a definition, let's look at the principles that make it real.",
+          "engagement_prompt": "What should it mean for no one to be above the law?",
+          "likely_questions": [
+            "Is the Rule of Law just any law that gets passed?",
+            "How is the Rule of Law different from majority rule?"
+          ],
+          "speaker_tip": "Use plain language. If the discussion turns political, return to shared civic values.",
+          "source_support": [
+            "manual_f2e21168de99",
+            "manual_ef650fe7f5bf"
+          ]
+        },
+        {
+          "title": "Why It Matters",
+          "minutes": 5,
+          "script": "The Rule of Law turns conflict into process and power into responsibility. It protects our rights, creates stability, and allows us to resolve disputes peacefully. When rules are clear and applied equally, people can trust that their rights and duties will be respected. Without the Rule of Law, rights are just words on paper.",
+          "transition": "Let's talk about what happens when the Rule of Law weakens.",
+          "engagement_prompt": "Where do you most rely on fair processes in your community?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Keep examples practical and relatable. Emphasize everyday impact.",
+          "source_support": [
+            "manual_c96fb3b8851c",
+            "manual_c4d7c20a9373"
+          ]
+        },
+        {
+          "title": "Why Lawyers Must Lead",
+          "minutes": 4,
+          "script": "Lawyers have a unique responsibility to uphold the Rule of Law. Our oath is not just to clients, but to the Constitution and the legal system itself. We're trained to foster civil dialogue and to help communities understand why fair process matters. This isn't about winning arguments-it's about building trust and understanding.",
+          "transition": "Let's close with what you can do and where to find more resources.",
+          "engagement_prompt": "How might you support fairness or lawful process in your own circles?",
+          "likely_questions": [
+            "Why should lawyers speak publicly about this issue?",
+            "How do lawyers stay nonpartisan when discussing these topics?"
+          ],
+          "speaker_tip": "Frame the lawyer's role as civic, not political. Invite reflection, not debate.",
+          "source_support": [
+            "manual_dcbafe565952",
+            "manual_cefa307a323b"
+          ]
+        },
+        {
+          "title": "Closing and Call to Action",
+          "minutes": 4,
+          "script": "The Rule of Law depends on all of us. Stay informed, support fair processes, and use trusted civic institutions when questions or disputes arise. Arizona has resources to help-like the State Bar, the Arizona Bar Foundation, and the Sandra Day O'Connor Institute. Thank you for being part of this conversation and for your commitment to fairness and justice.",
+          "transition": "Thank you for your time. I'm happy to take questions or connect you with more resources.",
+          "engagement_prompt": "What's one thing you might do differently after today's discussion?",
+          "likely_questions": [
+            "Where can I learn more or get involved?",
+            "Are there local programs or events I can attend?"
+          ],
+          "speaker_tip": "End with energy and a clear invitation to stay engaged. Offer handouts or follow-up links.",
+          "source_support": [
+            "manual_5c9573295b06",
+            "manual_b4c43e89cca4"
+          ]
+        }
+      ]
+    },
+    {
+      "minutes": 45,
+      "blocks": [
+        {
+          "title": "Opening and Purpose",
+          "minutes": 4,
+          "script": "Thank you for inviting me. I'm here as part of the Arizona Rule of Law Ambassador Program, a partnership between the State Bar and the Arizona Supreme Court. Our mission is to bring conversations about our constitutional foundations into communities. Today, we'll explore what the Rule of Law means, why it matters, and how each of us can help protect it. This isn't about politics-it's about fairness, predictability, and equal justice.",
+          "transition": "Let's start by defining the Rule of Law.",
+          "engagement_prompt": "What does fairness or predictability look like in your daily life?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Set a respectful, inclusive tone. Avoid assuming agreement on current events.",
+          "source_support": [
+            "manual_8bfee944f39f"
+          ]
+        },
+        {
+          "title": "Program Orientation",
+          "minutes": 4,
+          "script": "This program is designed to help lawyers and citizens alike explain and defend the Rule of Law. The Arizona Supreme Court recently amended Rule 32 to make promoting confidence in the Rule of Law part of the State Bar's mission. As ambassadors, our job is to communicate not just content, but also a posture of respect and nonpartisanship.",
+          "transition": "Now, let's define the Rule of Law and its core concepts.",
+          "engagement_prompt": "How do you see the Rule of Law showing up in your community?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Emphasize the educator role. Invite curiosity, not debate.",
+          "source_support": [
+            "manual_e3c3011015eb"
+          ]
+        },
+        {
+          "title": "Definition and Core Concepts",
+          "minutes": 7,
+          "script": "The Rule of Law means everyone is subject to the same laws, including government officials. Laws should be clear, public, and stable. Disputes are resolved through fair, accountable processes. The World Justice Project identifies four principles: accountability, just law, open government, and accessible, impartial justice. These principles ensure that no one is above the law and that rights are protected.",
+          "transition": "Let's look more closely at each of these four principles.",
+          "engagement_prompt": "What should it mean for no one to be above the law?",
+          "likely_questions": [
+            "Is the Rule of Law just any law that gets passed?",
+            "How is the Rule of Law different from majority rule?"
+          ],
+          "speaker_tip": "Use plain language and relatable examples.",
+          "source_support": [
+            "manual_f2e21168de99"
+          ]
+        },
+        {
+          "title": "Four Core Principles",
+          "minutes": 7,
+          "script": "The four principles are: Accountability-everyone is subject to the law; Just Law-laws are clear, public, and protect rights; Open Government-decisions are made transparently; and Accessible, Impartial Justice-disputes are resolved fairly by independent decision-makers. These principles make the Rule of Law real in daily life.",
+          "transition": "Let's talk about why these principles matter for all of us.",
+          "engagement_prompt": "Where do you see these principles at work-or missing-in your experience?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Pause after each principle for audience reflection.",
+          "source_support": [
+            "manual_ef650fe7f5bf"
+          ]
+        },
+        {
+          "title": "Why It Matters",
+          "minutes": 6,
+          "script": "The Rule of Law turns conflict into process and power into responsibility. It protects our rights, creates stability, and allows us to resolve disputes peacefully. When rules are clear and applied equally, people can trust that their rights and duties will be respected. Without the Rule of Law, rights are just words on paper.",
+          "transition": "But what happens when the Rule of Law weakens?",
+          "engagement_prompt": "Where do you most rely on fair processes in your community?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Keep examples practical and relatable. Emphasize everyday impact.",
+          "source_support": [
+            "manual_c96fb3b8851c"
+          ]
+        },
+        {
+          "title": "What Happens When It Weakens",
+          "minutes": 5,
+          "script": "When the Rule of Law weakens, public confidence in fairness and accountability erodes. Rights become less secure, and institutions lose legitimacy. Disagreements are more likely to become contests of power instead of being resolved by fair process. This erosion often happens gradually, so it's important to recognize the value of lawful process before its absence becomes obvious.",
+          "transition": "Let's discuss why lawyers have a special responsibility in this area.",
+          "engagement_prompt": "Have you seen examples-here or elsewhere-where trust in fair process broke down?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Acknowledge concerns, then return to principles.",
+          "source_support": [
+            "manual_c4d7c20a9373"
+          ]
+        },
+        {
+          "title": "Why Lawyers Must Lead",
+          "minutes": 5,
+          "script": "Lawyers have a unique responsibility to uphold the Rule of Law. Our oath is not just to clients, but to the Constitution and the legal system itself. We're trained to foster civil dialogue and to help communities understand why fair process matters. This isn't about winning arguments-it's about building trust and understanding.",
+          "transition": "Let's talk about how to communicate these ideas effectively.",
+          "engagement_prompt": "What role do you think lawyers should play in public conversations about fairness?",
+          "likely_questions": [
+            "Why should lawyers speak publicly about this issue?",
+            "How do lawyers stay nonpartisan when discussing these topics?"
+          ],
+          "speaker_tip": "Frame the lawyer's role as civic, not political. Invite reflection, not debate.",
+          "source_support": [
+            "manual_dcbafe565952",
+            "manual_cefa307a323b"
+          ]
+        },
+        {
+          "title": "Communicating Effectively",
+          "minutes": 4,
+          "script": "Effective communication starts with plain English. Define the Rule of Law before analyzing it, use examples that emphasize fairness and predictability, and return to shared civic principles if the discussion becomes political. Tailor your approach to the audience-students, community groups, or professionals.",
+          "transition": "Let's wrap up with resources and next steps.",
+          "engagement_prompt": "What's one way you might talk about the Rule of Law with others?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Adapt language to your audience. Avoid legal jargon.",
+          "source_support": [
+            "manual_666a19ecc166",
+            "manual_57ab995d8954"
+          ]
+        },
+        {
+          "title": "Toolkit and Resources",
+          "minutes": 3,
+          "script": "Arizona has resources to help-like the State Bar, the Arizona Bar Foundation, and the Sandra Day O'Connor Institute. Use these for further learning, events, and civic engagement. Stay informed, support fair processes, and use trusted civic institutions when questions or disputes arise.",
+          "transition": "Thank you for your time. I'm happy to take questions or connect you with more resources.",
+          "engagement_prompt": "What's one thing you might do differently after today's discussion?",
+          "likely_questions": [
+            "Where can I learn more or get involved?",
+            "Are there local programs or events I can attend?"
+          ],
+          "speaker_tip": "End with energy and a clear invitation to stay engaged. Offer handouts or follow-up links.",
+          "source_support": [
+            "manual_5c9573295b06",
+            "manual_b4c43e89cca4"
+          ]
+        }
+      ]
+    },
+    {
+      "minutes": 60,
+      "blocks": [
+        {
+          "title": "Opening and Purpose",
+          "minutes": 5,
+          "script": "Thank you for inviting me. I'm here as part of the Arizona Rule of Law Ambassador Program, a partnership between the State Bar and the Arizona Supreme Court. Our mission is to bring conversations about our constitutional foundations into communities. Today, we'll explore what the Rule of Law means, why it matters, and how each of us can help protect it. This isn't about politics-it's about fairness, predictability, and equal justice.",
+          "transition": "Let's start by defining the Rule of Law.",
+          "engagement_prompt": "What does fairness or predictability look like in your daily life?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Set a respectful, inclusive tone. Avoid assuming agreement on current events.",
+          "source_support": [
+            "manual_8bfee944f39f"
+          ]
+        },
+        {
+          "title": "How to Use the Session",
+          "minutes": 4,
+          "script": "This session is designed to help both lawyers and citizens explain and defend the Rule of Law. The Arizona Supreme Court recently amended Rule 32 to make promoting confidence in the Rule of Law part of the State Bar's mission. As ambassadors, our job is to communicate not just content, but also a posture of respect and nonpartisanship.",
+          "transition": "Now, let's define the Rule of Law and its core concepts.",
+          "engagement_prompt": "How do you see the Rule of Law showing up in your community?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Emphasize the educator role. Invite curiosity, not debate.",
+          "source_support": [
+            "manual_e3c3011015eb"
+          ]
+        },
+        {
+          "title": "Definition and Core Concepts",
+          "minutes": 8,
+          "script": "The Rule of Law means everyone is subject to the same laws, including government officials. Laws should be clear, public, and stable. Disputes are resolved through fair, accountable processes. The World Justice Project identifies four principles: accountability, just law, open government, and accessible, impartial justice. These principles ensure that no one is above the law and that rights are protected.",
+          "transition": "Let's look more closely at each of these four principles.",
+          "engagement_prompt": "What should it mean for no one to be above the law?",
+          "likely_questions": [
+            "Is the Rule of Law just any law that gets passed?",
+            "How is the Rule of Law different from majority rule?"
+          ],
+          "speaker_tip": "Use plain language and relatable examples.",
+          "source_support": [
+            "manual_f2e21168de99"
+          ]
+        },
+        {
+          "title": "Principle One and Two",
+          "minutes": 7,
+          "script": "First, Accountability: everyone, including public officials, is subject to the law. Second, Just Law: laws must be clear, public, stable, and protective of fundamental rights. These principles ensure that power is limited and rights are protected.",
+          "transition": "Now, let's discuss the next two principles.",
+          "engagement_prompt": "Can you think of a time when clear rules made a difference in your life?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Pause after each principle for audience reflection.",
+          "source_support": [
+            "manual_ef650fe7f5bf"
+          ]
+        },
+        {
+          "title": "Principle Three and Four",
+          "minutes": 7,
+          "script": "Third, Open Government: laws and decisions should be transparent. Fourth, Accessible, Impartial Justice: disputes should be resolved fairly by independent decision-makers. These principles make the Rule of Law real in daily life.",
+          "transition": "Let's talk about why these principles matter for all of us.",
+          "engagement_prompt": "Where do you see these principles at work-or missing-in your experience?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Encourage examples from the audience.",
+          "source_support": [
+            "manual_ef650fe7f5bf"
+          ]
+        },
+        {
+          "title": "Why It Matters",
+          "minutes": 7,
+          "script": "The Rule of Law turns conflict into process and power into responsibility. It protects our rights, creates stability, and allows us to resolve disputes peacefully. When rules are clear and applied equally, people can trust that their rights and duties will be respected. Without the Rule of Law, rights are just words on paper.",
+          "transition": "But what happens when the Rule of Law weakens?",
+          "engagement_prompt": "Where do you most rely on fair processes in your community?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Keep examples practical and relatable. Emphasize everyday impact.",
+          "source_support": [
+            "manual_c96fb3b8851c"
+          ]
+        },
+        {
+          "title": "What Happens When It Weakens",
+          "minutes": 6,
+          "script": "When the Rule of Law weakens, public confidence in fairness and accountability erodes. Rights become less secure, and institutions lose legitimacy. Disagreements are more likely to become contests of power instead of being resolved by fair process. This erosion often happens gradually, so it's important to recognize the value of lawful process before its absence becomes obvious.",
+          "transition": "Let's discuss why lawyers have a special responsibility in this area.",
+          "engagement_prompt": "Have you seen examples-here or elsewhere-where trust in fair process broke down?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Acknowledge concerns, then return to principles.",
+          "source_support": [
+            "manual_c4d7c20a9373"
+          ]
+        },
+        {
+          "title": "Why Lawyers Must Lead",
+          "minutes": 6,
+          "script": "Lawyers have a unique responsibility to uphold the Rule of Law. Our oath is not just to clients, but to the Constitution and the legal system itself. We're trained to foster civil dialogue and to help communities understand why fair process matters. This isn't about winning arguments-it's about building trust and understanding.",
+          "transition": "Let's open up for discussion and questions.",
+          "engagement_prompt": "What role do you think lawyers should play in public conversations about fairness?",
+          "likely_questions": [
+            "Why should lawyers speak publicly about this issue?",
+            "How do lawyers stay nonpartisan when discussing these topics?"
+          ],
+          "speaker_tip": "Frame the lawyer's role as civic, not political. Invite reflection, not debate.",
+          "source_support": [
+            "manual_dcbafe565952",
+            "manual_cefa307a323b"
+          ]
+        },
+        {
+          "title": "Audience Engagement and Discussion",
+          "minutes": 5,
+          "script": "Let's take some time for your questions and reflections. The Rule of Law is a shared civic framework. If a question becomes political, I'll help us return to the principles of fairness, process, and equal application of law.",
+          "transition": "Let's wrap up with resources and next steps.",
+          "engagement_prompt": "What's one thing you might do differently after today's discussion?",
+          "likely_questions": [
+            "How does this principle apply in everyday civic life?"
+          ],
+          "speaker_tip": "Acknowledge emotionally charged questions, then redirect to shared constitutional principles and fair process.",
+          "source_support": [
+            "manual_666a19ecc166",
+            "manual_3d8b7cfbf412"
+          ]
+        },
+        {
+          "title": "Toolkit, Resources, and Close",
+          "minutes": 5,
+          "script": "Arizona has resources to help-like the State Bar, the Arizona Bar Foundation, and the Sandra Day O'Connor Institute. Use these for further learning, events, and civic engagement. Stay informed, support fair processes, and use trusted civic institutions when questions or disputes arise. Thank you for being part of this conversation and for your commitment to fairness and justice.",
+          "transition": "Thank you for your time. I'm happy to take questions or connect you with more resources.",
+          "engagement_prompt": "What's one thing you might do differently after today's discussion?",
+          "likely_questions": [
+            "Where can I learn more or get involved?",
+            "Are there local programs or events I can attend?"
+          ],
+          "speaker_tip": "End with energy and a clear invitation to stay engaged. Offer handouts or follow-up links.",
+          "source_support": [
+            "manual_5c9573295b06",
+            "manual_b4c43e89cca4"
+          ]
+        }
+      ]
+    }
+  ]
+}

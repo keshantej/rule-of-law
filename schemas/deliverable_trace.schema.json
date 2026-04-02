@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/deliverable_trace.schema.json",
+  "title": "DeliverableTrace",
+  "type": "object",
+  "required": [
+    "deliverable_id",
+    "artifact_type",
+    "generated_at",
+    "units"
+  ],
+  "properties": {
+    "deliverable_id": { "type": "string" },
+    "artifact_type": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["unit_id", "title", "source_support"],
+        "properties": {
+          "unit_id": { "type": "string" },
+          "title": { "type": "string" },
+          "source_support": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "generated_scaffolding": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

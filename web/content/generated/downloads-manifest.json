@@ -1,0 +1,40 @@
+{
+  "downloads": [
+    {
+      "asset_id": "download_manual_docx",
+      "title": "Ambassador manual",
+      "format": "docx",
+      "href": "/downloads/arizona_rule_of_law_ambassador_manual.docx",
+      "description": "Editable substantive manual.",
+      "source_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\outputs\\manual\\arizona_rule_of_law_ambassador_manual.docx",
+      "synced_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\web\\public\\downloads\\arizona_rule_of_law_ambassador_manual.docx"
+    },
+    {
+      "asset_id": "download_field_guide_pdf",
+      "title": "Speaker field guide",
+      "format": "pdf",
+      "href": "/downloads/arizona_rule_of_law_field_guide.pdf",
+      "description": "Printable timed speaker guide.",
+      "source_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\outputs\\field_guide\\arizona_rule_of_law_field_guide.pdf",
+      "synced_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\web\\public\\downloads\\arizona_rule_of_law_field_guide.pdf"
+    },
+    {
+      "asset_id": "download_handout_pdf",
+      "title": "Audience handout",
+      "format": "pdf",
+      "href": "/downloads/arizona_rule_of_law_handout.pdf",
+      "description": "Printable audience summary.",
+      "source_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\outputs\\handout\\arizona_rule_of_law_handout.pdf",
+      "synced_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\web\\public\\downloads\\arizona_rule_of_law_handout.pdf"
+    },
+    {
+      "asset_id": "download_lms_docx",
+      "title": "LMS modules",
+      "format": "docx",
+      "href": "/downloads/arizona_rule_of_law_lms_modules.docx",
+      "description": "Editable LMS-ready training text.",
+      "source_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\outputs\\lms\\arizona_rule_of_law_lms_modules.docx",
+      "synced_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\web\\public\\downloads\\arizona_rule_of_law_lms_modules.docx"
+    }
+  ]
+}

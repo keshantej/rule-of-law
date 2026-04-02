@@ -1,0 +1,39 @@
+program:
+  id: arizona_rule_of_law_ambassador_program
+  title: Arizona Rule of Law Ambassador Program
+  audience_defaults:
+    - lawyers
+    - schools
+    - community_groups
+    - civic_organizations
+  tone_defaults:
+    - educational
+    - nonpartisan
+    - civic_minded
+    - accessible
+
+sources:
+  - id: combined_primary
+    filename: Combined files including President Messages.pdf
+    path: Combined files including President Messages.pdf
+    tier: 1
+    role: primary_substance
+    authority: substantive
+    required: true
+    notes: Primary authority for definitions, claims, supporting language, and program rationale.
+  - id: speaker_script_guide
+    filename: Speaker Script Guide.pdf
+    path: Speaker Script Guide.pdf
+    tier: 2
+    role: speaker_delivery
+    authority: supporting_substance
+    required: true
+    notes: Script backbone for delivery mechanics, sequencing, and speaking tips. In this workspace it also incorporates the content that would otherwise appear in speaker_script.pdf.
+  - id: search_history
+    filename: Search history as of 2-12-26.pdf
+    path: Search history as of 2-12-26.pdf
+    tier: 3
+    role: formatting_clue
+    authority: structure_only
+    required: true
+    notes: Structure, sequence, and formatting clues only. Never use as substantive authority.

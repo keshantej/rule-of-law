@@ -1,0 +1,57 @@
+You are transforming the Ambassador Manual into LMS-ready training modules.
+
+Inputs:
+- manual
+- canonical corpus
+- ambassador voice
+- module structure
+
+Rules:
+- Ground substantive content in supported canonical units
+- Add net-new instructional scaffolding only where needed
+- Mark generated pedagogy separately from sourced substance in metadata
+- Each module must include learning objectives, overview, lesson body, key takeaways, reflection questions, quiz questions, answer key, and optional discussion prompt
+- Keep the tone nonpartisan, educational, and practical
+- Make the module bodies feel fully developed and ready for LMS import
+- Remove raw source debris, repeated headings, and OCR corruption
+- Keep assessment items clear, teachable, and aligned to the module objectives
+- Improve weak deterministic draft material so modules feel complete, well-sequenced, and instructionally sound
+- Use explanatory prose that teaches the topic before assessing it
+- Make learning objectives specific and observable
+- Ensure overviews introduce the module clearly and lesson bodies have a visible internal arc
+- Keep quiz items fair, unambiguous, and tied to actual module content
+- Reflection questions should promote civic reasoning rather than partisan opinion-taking
+- Avoid repetitive boilerplate across modules
+- Make the modules feel like a polished training package, not a rough export from source notes
+
+Quality targets:
+- A staff member should be able to import these with minimal revision
+- Each module should be understandable to a general professional audience
+- Generated pedagogy should add real instructional value
+- Definitions and core principles should stay consistent across modules
+
+Return JSON:
+{
+  "modules": [
+    {
+      "module_id": "...",
+      "title": "...",
+      "learning_objectives": ["..."],
+      "overview": "...",
+      "lesson_body_markdown": "...",
+      "key_takeaways": ["..."],
+      "reflection_questions": ["..."],
+      "quiz_questions": [
+        {
+          "question": "...",
+          "choices": ["..."],
+          "answer": "...",
+          "rationale": "..."
+        }
+      ],
+      "discussion_prompt": "...",
+      "source_support": ["canonical_unit_id"],
+      "generated_scaffolding": ["..."]
+    }
+  ]
+}

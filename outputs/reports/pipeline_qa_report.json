@@ -1,0 +1,196 @@
+{
+  "run_id": "run_43359784a8bc",
+  "generated_at": "2026-04-01T01:37:15+00:00",
+  "overall_status": "warning",
+  "checks": [
+    {
+      "name": "required_artifacts",
+      "status": "pass",
+      "message": "All configured artifact files are present.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "web_experience_contract",
+      "status": "pass",
+      "message": "Web experience JSON matches its schema.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "nonpartisan_language",
+      "status": "pass",
+      "message": "No prohibited partisan language detected.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "presentation_scene_count",
+      "status": "pass",
+      "message": "Web presentation contains the expected 16 scenes.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "field_guide_timings",
+      "status": "pass",
+      "message": "Field guide timings are internally consistent.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "web_speaker_tracks",
+      "status": "pass",
+      "message": "Web speaker tracks are structurally consistent.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "handout_length",
+      "status": "pass",
+      "message": "Handout length is within the target range at 300 words.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "lms_requirements",
+      "status": "pass",
+      "message": "All LMS modules include objectives and quiz questions.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "appendices_labeling",
+      "status": "pass",
+      "message": "Appendices section is present and labeled.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "definition_consistency",
+      "status": "warning",
+      "message": "Definition language differs more than expected across deliverables.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "web_alignment",
+      "status": "pass",
+      "message": "Every web scene is linked to one or more manual sections.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "presenter_separation",
+      "status": "pass",
+      "message": "Presenter-only content is structurally separated from public scene content.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "resource_links",
+      "status": "pass",
+      "message": "Web resource links are present and placeholder flags are consistent.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "traceability_support",
+      "status": "pass",
+      "message": "Manual sections and web scenes maintain source support or explicit generated-scaffolding labels.",
+      "artifact": null,
+      "details": []
+    },
+    {
+      "name": "llm_review::unsupported claims",
+      "status": "pass",
+      "message": "The introductory letter makes broad claims about the civic duty of lawyers and the impact of Rule of Law Day without direct citation to source material. However, these claims are generally supported by the listed canons and are appropriate for a framing letter.",
+      "artifact": "manual_8bfee944f39f",
+      "details": [
+        "No action required, but consider adding a footnote or reference to the relevant canons for clarity."
+      ]
+    },
+    {
+      "name": "llm_review::inconsistent definitions",
+      "status": "warning",
+      "message": "The definition of 'Rule of Law' and its four principles is presented in both sections, but the language and order differ slightly. This could cause confusion for learners.",
+      "artifact": "manual_f2e21168de99, manual_ef650fe7f5bf",
+      "details": [
+        "Standardize the definition and order of the four principles across all sections for consistency."
+      ]
+    },
+    {
+      "name": "llm_review::partisan wording",
+      "status": "pass",
+      "message": "No overtly partisan language detected. The manual emphasizes nonpartisan values and explicitly states that the Rule of Law is not a political issue.",
+      "artifact": "all sections",
+      "details": [
+        "No action required."
+      ]
+    },
+    {
+      "name": "llm_review::manual / web drift",
+      "status": "pass",
+      "message": "No evidence of drift from source canons or web resources. Generated scaffolding is clearly labeled.",
+      "artifact": "manual_f2e21168de99, manual_ef650fe7f5bf",
+      "details": [
+        "No action required."
+      ]
+    },
+    {
+      "name": "llm_review::implausible speaker timings",
+      "status": "pass",
+      "message": "No speaker timings present in the manual content.",
+      "artifact": "all sections",
+      "details": [
+        "No action required."
+      ]
+    },
+    {
+      "name": "llm_review::presenter-only content leaking into public presentation content",
+      "status": "pass",
+      "message": "No presenter-only notes or content detected in public-facing sections.",
+      "artifact": "all sections",
+      "details": [
+        "No action required."
+      ]
+    },
+    {
+      "name": "llm_review::missing or mislabeled resource placeholders",
+      "status": "warning",
+      "message": "No explicit resource placeholders (e.g., for slides, handouts, or external links) are present in the 'How to Use This Manual' section, which may limit usability for presenters.",
+      "artifact": "manual_e3c3011015eb",
+      "details": [
+        "Add clear placeholders or references for supplementary resources where appropriate."
+      ]
+    },
+    {
+      "name": "llm_review::missing LMS learning objectives or assessments",
+      "status": "warning",
+      "message": "No learning objectives or assessment items are present in the manual. This is a critical omission for LMS integration and effective civic education.",
+      "artifact": "all sections",
+      "details": [
+        "Add a section at the beginning or end of the manual listing clear learning objectives and suggested assessment questions or activities."
+      ]
+    },
+    {
+      "name": "llm_review::mislabeled appendices",
+      "status": "pass",
+      "message": "No appendices are present or referenced in the provided content.",
+      "artifact": "all sections",
+      "details": [
+        "No action required unless appendices are intended."
+      ]
+    },
+    {
+      "name": "llm_review::source hierarchy violations",
+      "status": "pass",
+      "message": "Source hierarchy is respected; primary canons are cited for substantive claims, and generated scaffolding is clearly labeled.",
+      "artifact": "all sections",
+      "details": [
+        "No action required."
+      ]
+    }
+  ],
+  "summary": "QA status is warning. 24 checks ran with 0 failures and 4 warnings."
+}

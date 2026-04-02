@@ -1,0 +1,1316 @@
+{
+  "presentation": {
+    "title": "Arizona Rule of Law Ambassador Presentation",
+    "scenes": [
+      {
+        "scene_id": "scene_56e44065a564",
+        "slug": "opening",
+        "title": "Opening",
+        "kicker": "Arizona Rule of Law Ambassador Program",
+        "display_lines": [
+          "Defending the Rule of Law",
+          "Arizona's civic commitment"
+        ],
+        "speaker_notes": "Welcome the audience and frame the session as a civic conversation, not a political debate. Explain that the presentation will define the Rule of Law, show why it matters in daily public life, and offer practical ways to discuss it constructively in Arizona communities.",
+        "duration_tags": [
+          20,
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Full-bleed Arizona desert horizon with restrained civic typography and a red-gold sun mark.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What does fairness or predictability look like in your daily life?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "How does this principle apply in everyday civic life?"
+          },
+          {
+            "title": "Transition",
+            "body": "Let's start by defining the Rule of Law in plain English."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_8bfee944f39f"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+          "Display-language compression was generated to fit the scene-based presentation format."
+        ]
+      },
+      {
+        "scene_id": "scene_f984723e0c51",
+        "slug": "why-we-re-here",
+        "title": "Why We're Here",
+        "kicker": "Civic Purpose",
+        "display_lines": [
+          "Build civic understanding.",
+          "Protect fair process.",
+          "Keep trust anchored in law."
+        ],
+        "speaker_notes": "Connect the session to public trust, fair process, and the legal profession's service role. Make clear that the aim is civic understanding, not partisan persuasion.",
+        "duration_tags": [
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Editorial civic collage with courthouse geometry, desert light, and strong typographic hierarchy.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "Where do you most rely on fair processes in your community?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "How does this principle apply in everyday civic life?"
+          },
+          {
+            "title": "Transition",
+            "body": "Let's talk about what happens when the Rule of Law weakens."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_e3c3011015eb",
+          "manual_c96fb3b8851c"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_62e05f0ae8d4",
+        "slug": "what-is-the-rule-of-law",
+        "title": "What Is the Rule of Law?",
+        "kicker": "Plain-English Definition",
+        "display_lines": [
+          "Rules over arbitrary power.",
+          "Fair process over favoritism.",
+          "Rights protected through accountable institutions."
+        ],
+        "speaker_notes": "Give the plain-English definition first: the Rule of Law means power is exercised through known rules and fair institutions rather than arbitrary will. Then emphasize that it protects rights, governs power, and makes fairness reliable instead of discretionary.",
+        "duration_tags": [
+          20,
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Minimal legal iconography with a calm, bright content field and disciplined spacing.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What should it mean for no one to be above the law?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "Is the Rule of Law just any law that gets passed?"
+          },
+          {
+            "title": "Transition",
+            "body": "Now that we have a definition, let's look at the principles that make it real."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_f2e21168de99"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_6d54a67328c1",
+        "slug": "why-it-matters",
+        "title": "Why It Matters",
+        "kicker": "Shared Public Value",
+        "display_lines": [
+          "It protects liberty.",
+          "It disciplines power.",
+          "It keeps disagreement peaceful."
+        ],
+        "speaker_notes": "Translate the principle into everyday value: stable expectations, fair treatment, and a way to resolve disagreement without force or favoritism.",
+        "duration_tags": [
+          20,
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Panoramic civic composition with human scale, institutional lines, and warm atmospheric gradient.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "Where do you most rely on fair processes in your community?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "How does this principle apply in everyday civic life?"
+          },
+          {
+            "title": "Transition",
+            "body": "Let's talk about what happens when the Rule of Law weakens."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_c96fb3b8851c"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_80e7ca034d58",
+        "slug": "accountability",
+        "title": "Accountability",
+        "kicker": "Core Principle One",
+        "display_lines": [
+          "No person or institution is above the law."
+        ],
+        "speaker_notes": "Land the first pillar clearly: everyone is subject to the law. Keep it memorable and grounded.",
+        "duration_tags": [
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Principle chapter slide with oversized numeral, gold rule, and one dominant message.",
+        "speaker_only_blocks": [],
+        "resource_refs": [],
+        "source_support": [
+          "manual_ef650fe7f5bf"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_a538c0d9f9b1",
+        "slug": "just-law",
+        "title": "Just Law",
+        "kicker": "Core Principle Two",
+        "display_lines": [
+          "Laws should be clear, public, stable, and rights-protecting."
+        ],
+        "speaker_notes": "Stress clarity, visibility, stability, and rights protection. Avoid abstract legal jargon.",
+        "duration_tags": [
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Principle chapter slide with editorial document texture and clear visual hierarchy.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What should it mean for no one to be above the law?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "Is the Rule of Law just any law that gets passed?"
+          },
+          {
+            "title": "Transition",
+            "body": "Now that we have a definition, let's look at the principles that make it real."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_ef650fe7f5bf"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_49a8ba1ab125",
+        "slug": "open-government",
+        "title": "Open Government",
+        "kicker": "Core Principle Three",
+        "display_lines": [
+          "Legal rules and processes should be transparent."
+        ],
+        "speaker_notes": "Connect transparency to public trust and accountability. Explain why visibility into process matters.",
+        "duration_tags": [
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Principle chapter slide with openness motif, transparency overlays, and desert light.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What does fairness or predictability look like in your daily life?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "How does this principle apply in everyday civic life?"
+          },
+          {
+            "title": "Transition",
+            "body": "Let's start by defining the Rule of Law in plain English."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_ef650fe7f5bf"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_b3a9906537cd",
+        "slug": "accessible-impartial-justice",
+        "title": "Accessible, Impartial Justice",
+        "kicker": "Core Principle Four",
+        "display_lines": [
+          "Disputes should be resolved fairly by independent decision-makers."
+        ],
+        "speaker_notes": "Emphasize that justice must be fair, competent, independent, and available to ordinary people.",
+        "duration_tags": [
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Principle chapter slide with courtroom silhouette, grounded contrast, and generous whitespace.",
+        "speaker_only_blocks": [],
+        "resource_refs": [],
+        "source_support": [
+          "manual_ef650fe7f5bf"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_c4d7c20a9373",
+        "slug": "what-happens-when-it-weakens",
+        "title": "What Happens When It Weakens",
+        "kicker": "Institutional Stakes",
+        "display_lines": [
+          "Trust erodes.",
+          "Rights feel less secure.",
+          "Power starts replacing process."
+        ],
+        "speaker_notes": "Avoid alarmism. Focus on the civic consequences of weakened lawful process: less trust, less legitimacy, and more raw power.",
+        "duration_tags": [
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Muted warning composition with faded institutional forms and tension without alarmism.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What should it mean for no one to be above the law?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "Is the Rule of Law just any law that gets passed?"
+          },
+          {
+            "title": "Transition",
+            "body": "Now that we have a definition, let's look at the principles that make it real."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_c4d7c20a9373"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_dcbafe565952",
+        "slug": "why-lawyers-must-lead",
+        "title": "Why Lawyers Must Lead",
+        "kicker": "Professional Duty",
+        "display_lines": [
+          "Explain the principle.",
+          "Model civic restraint.",
+          "Defend lawful process."
+        ],
+        "speaker_notes": "Frame lawyers as civic translators and stewards, not partisan advocates. Connect oath, public service, and public understanding.",
+        "duration_tags": [
+          20,
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Confident professional portrait treatment without hero worship; oath and service framing.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "Where do you most rely on fair processes in your community?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "How does this principle apply in everyday civic life?"
+          },
+          {
+            "title": "Transition",
+            "body": "Let's talk about what happens when the Rule of Law weakens."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_dcbafe565952"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_cefa307a323b",
+        "slug": "the-ambassador-role",
+        "title": "The Ambassador Role",
+        "kicker": "Public Service in Practice",
+        "display_lines": [
+          "Clarify the issue.",
+          "Stay nonpartisan.",
+          "Invite civic responsibility."
+        ],
+        "speaker_notes": "Clarify what the speaker is here to do and not do: explain clearly, stay nonpartisan, and invite responsibility.",
+        "duration_tags": [
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Speaker-in-room composition with audience silhouette and clear facilitation cues.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What should it mean for no one to be above the law?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "Is the Rule of Law just any law that gets passed?"
+          },
+          {
+            "title": "Transition",
+            "body": "Now that we have a definition, let's look at the principles that make it real."
+          }
+        ],
+        "resource_refs": [
+          "resources_speaker-toolkit"
+        ],
+        "source_support": [
+          "manual_cefa307a323b"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_3802e5a7a8a6",
+        "slug": "communicating-effectively",
+        "title": "Communicating Effectively",
+        "kicker": "How to Speak About It",
+        "display_lines": [
+          "Start in plain English.",
+          "Use examples people recognize.",
+          "Return to shared principles."
+        ],
+        "speaker_notes": "Use simple language, practical examples, and redirection to shared principles whenever the discussion drifts.",
+        "duration_tags": [
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Conversation-focused layout with sequence cues and emphasis on listening, clarity, and redirection.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What's one way you might talk about the Rule of Law with others?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "How does this principle apply in everyday civic life?"
+          },
+          {
+            "title": "Transition",
+            "body": "Let's wrap up with resources and next steps."
+          }
+        ],
+        "resource_refs": [
+          "resources_speaker-toolkit"
+        ],
+        "source_support": [
+          "manual_666a19ecc166",
+          "manual_57ab995d8954"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_efb1bd53b713",
+        "slug": "what-citizens-can-do",
+        "title": "What Citizens Can Do",
+        "kicker": "Public Role",
+        "display_lines": [
+          "Learn the principle.",
+          "Expect fair process.",
+          "Use trusted civic institutions."
+        ],
+        "speaker_notes": "Give the audience practical civic actions. Make it feel realistic and attainable.",
+        "duration_tags": [
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Action-oriented editorial checklist with clean civic pathways and practical next steps.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What should it mean for no one to be above the law?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "Is the Rule of Law just any law that gets passed?"
+          },
+          {
+            "title": "Transition",
+            "body": "Now that we have a definition, let's look at the principles that make it real."
+          }
+        ],
+        "resource_refs": [],
+        "source_support": [
+          "manual_5c9573295b06"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_929a98598e6f",
+        "slug": "arizona-specific-resources",
+        "title": "Arizona-Specific Resources",
+        "kicker": "Local Institutions",
+        "display_lines": [
+          "State Bar of Arizona",
+          "Arizona Bar Foundation [placeholder]",
+          "O'Connor Institute [placeholder]"
+        ],
+        "speaker_notes": "Slow down and point clearly to follow-up institutions, partner resources, and local next steps.",
+        "duration_tags": [
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Resource grid with Arizona map fragments, partner slots, and easy scanning.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What's one thing you might do differently after today's discussion?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "Where can I learn more or get involved?"
+          },
+          {
+            "title": "Transition",
+            "body": "Thank you for your time. I'm happy to take questions or connect you with more resources."
+          }
+        ],
+        "resource_refs": [
+          "resources_arizona-partners",
+          "resources_follow-up"
+        ],
+        "source_support": [
+          "manual_b4c43e89cca4"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+        ]
+      },
+      {
+        "scene_id": "scene_1071c77031b8",
+        "slug": "call-to-action",
+        "title": "Call to Action",
+        "kicker": "Closing Invitation",
+        "display_lines": [
+          "Teach the principle.",
+          "Model respectful civic dialogue.",
+          "Connect people to trusted institutions."
+        ],
+        "speaker_notes": "Close with a public-service invitation, not a campaign ask. Encourage people to teach the principle, model the tone, and connect to trusted institutions.",
+        "duration_tags": [
+          20,
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Elegant closing scene with strong CTA hierarchy and partner links anchored at the edge.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What does fairness or predictability look like in your daily life?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "How does this principle apply in everyday civic life?"
+          },
+          {
+            "title": "Transition",
+            "body": "Let's start by defining the Rule of Law in plain English."
+          }
+        ],
+        "resource_refs": [
+          "resources_arizona-partners",
+          "resources_follow-up"
+        ],
+        "source_support": [
+          "manual_5c9573295b06",
+          "manual_b4c43e89cca4"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+          "Display-language compression was generated to fit the scene-based presentation format."
+        ]
+      },
+      {
+        "scene_id": "scene_3e8127aaf0f5",
+        "slug": "closing-further-learning",
+        "title": "Closing / Further Learning",
+        "kicker": "Continue the Work",
+        "display_lines": [
+          "Teach the principle.",
+          "Protect fair process.",
+          "Keep the conversation civic."
+        ],
+        "speaker_notes": "End calmly and confidently. Point people to the handout, manual, and Arizona partner resources for follow-up.",
+        "duration_tags": [
+          20,
+          45,
+          60
+        ],
+        "audience_mode": "public",
+        "visual_treatment": "Quiet final scene with soft horizon, concise recap, and clear follow-up paths.",
+        "speaker_only_blocks": [
+          {
+            "title": "Facilitation Cue",
+            "body": "What's one thing you might do differently after today's discussion?"
+          },
+          {
+            "title": "Likely Audience Question",
+            "body": "Where can I learn more or get involved?"
+          },
+          {
+            "title": "Transition",
+            "body": "Thank you for your time. I'm happy to take questions or connect you with more resources."
+          }
+        ],
+        "resource_refs": [
+          "resources_arizona-partners",
+          "resources_follow-up"
+        ],
+        "source_support": [
+          "manual_e3c3011015eb",
+          "manual_73973cfd168d"
+        ],
+        "generated_scaffolding": [
+          "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+          "Display-language compression was generated to fit the scene-based presentation format."
+        ]
+      }
+    ]
+  },
+  "speaker_tracks": [
+    {
+      "minutes": 20,
+      "title": "20-minute presenter flow",
+      "scene_ids": [
+        "scene_56e44065a564",
+        "scene_62e05f0ae8d4",
+        "scene_6d54a67328c1",
+        "scene_dcbafe565952",
+        "scene_1071c77031b8",
+        "scene_3e8127aaf0f5"
+      ],
+      "steps": [
+        {
+          "scene_id": "scene_56e44065a564",
+          "minutes": 3,
+          "cue": "Opening and Purpose"
+        },
+        {
+          "scene_id": "scene_62e05f0ae8d4",
+          "minutes": 4,
+          "cue": "What the Rule of Law Is"
+        },
+        {
+          "scene_id": "scene_6d54a67328c1",
+          "minutes": 5,
+          "cue": "Why It Matters"
+        },
+        {
+          "scene_id": "scene_dcbafe565952",
+          "minutes": 4,
+          "cue": "Why Lawyers Must Lead"
+        },
+        {
+          "scene_id": "scene_1071c77031b8",
+          "minutes": 4,
+          "cue": "Closing and Call to Action"
+        }
+      ],
+      "transition_note": "Use the presenter drawer for transitions, questions, and timing prompts."
+    },
+    {
+      "minutes": 45,
+      "title": "45-minute presenter flow",
+      "scene_ids": [
+        "scene_56e44065a564",
+        "scene_f984723e0c51",
+        "scene_62e05f0ae8d4",
+        "scene_80e7ca034d58",
+        "scene_a538c0d9f9b1",
+        "scene_49a8ba1ab125",
+        "scene_b3a9906537cd",
+        "scene_6d54a67328c1",
+        "scene_c4d7c20a9373",
+        "scene_dcbafe565952",
+        "scene_3802e5a7a8a6",
+        "scene_929a98598e6f",
+        "scene_1071c77031b8",
+        "scene_3e8127aaf0f5"
+      ],
+      "steps": [
+        {
+          "scene_id": "scene_56e44065a564",
+          "minutes": 4,
+          "cue": "Opening and Purpose"
+        },
+        {
+          "scene_id": "scene_f984723e0c51",
+          "minutes": 4,
+          "cue": "Program Orientation"
+        },
+        {
+          "scene_id": "scene_62e05f0ae8d4",
+          "minutes": 7,
+          "cue": "Definition and Core Concepts"
+        },
+        {
+          "scene_id": "scene_80e7ca034d58",
+          "minutes": 7,
+          "cue": "Four Core Principles"
+        },
+        {
+          "scene_id": "scene_a538c0d9f9b1",
+          "minutes": 6,
+          "cue": "Why It Matters"
+        },
+        {
+          "scene_id": "scene_49a8ba1ab125",
+          "minutes": 5,
+          "cue": "What Happens When It Weakens"
+        },
+        {
+          "scene_id": "scene_b3a9906537cd",
+          "minutes": 5,
+          "cue": "Why Lawyers Must Lead"
+        },
+        {
+          "scene_id": "scene_6d54a67328c1",
+          "minutes": 4,
+          "cue": "Communicating Effectively"
+        },
+        {
+          "scene_id": "scene_c4d7c20a9373",
+          "minutes": 3,
+          "cue": "Toolkit and Resources"
+        }
+      ],
+      "transition_note": "Use the presenter drawer for transitions, questions, and timing prompts."
+    },
+    {
+      "minutes": 60,
+      "title": "60-minute presenter flow",
+      "scene_ids": [
+        "scene_56e44065a564",
+        "scene_f984723e0c51",
+        "scene_62e05f0ae8d4",
+        "scene_80e7ca034d58",
+        "scene_a538c0d9f9b1",
+        "scene_49a8ba1ab125",
+        "scene_b3a9906537cd",
+        "scene_6d54a67328c1",
+        "scene_c4d7c20a9373",
+        "scene_dcbafe565952",
+        "scene_cefa307a323b",
+        "scene_3802e5a7a8a6",
+        "scene_efb1bd53b713",
+        "scene_929a98598e6f",
+        "scene_1071c77031b8",
+        "scene_3e8127aaf0f5"
+      ],
+      "steps": [
+        {
+          "scene_id": "scene_56e44065a564",
+          "minutes": 5,
+          "cue": "Opening and Purpose"
+        },
+        {
+          "scene_id": "scene_f984723e0c51",
+          "minutes": 4,
+          "cue": "How to Use the Session"
+        },
+        {
+          "scene_id": "scene_62e05f0ae8d4",
+          "minutes": 8,
+          "cue": "Definition and Core Concepts"
+        },
+        {
+          "scene_id": "scene_80e7ca034d58",
+          "minutes": 7,
+          "cue": "Principle One and Two"
+        },
+        {
+          "scene_id": "scene_a538c0d9f9b1",
+          "minutes": 7,
+          "cue": "Principle Three and Four"
+        },
+        {
+          "scene_id": "scene_49a8ba1ab125",
+          "minutes": 7,
+          "cue": "Why It Matters"
+        },
+        {
+          "scene_id": "scene_b3a9906537cd",
+          "minutes": 6,
+          "cue": "What Happens When It Weakens"
+        },
+        {
+          "scene_id": "scene_6d54a67328c1",
+          "minutes": 6,
+          "cue": "Why Lawyers Must Lead"
+        },
+        {
+          "scene_id": "scene_c4d7c20a9373",
+          "minutes": 5,
+          "cue": "Audience Engagement and Discussion"
+        },
+        {
+          "scene_id": "scene_dcbafe565952",
+          "minutes": 5,
+          "cue": "Toolkit, Resources, and Close"
+        }
+      ],
+      "transition_note": "Use the presenter drawer for transitions, questions, and timing prompts."
+    }
+  ],
+  "speaker_toolkit": [
+    {
+      "toolkit_id": "toolkit_6ddd206f5c5b",
+      "type": "talk_track",
+      "title": "20-minute talk track",
+      "body": "Opening and Purpose (3 min): Thank you for having me. I'm here as part of the Arizona Rule of Law Ambassador Program, a partnership between the State Bar of Arizona and the Arizona Supreme Court. Our goal is to bring conversations about our constitutional foundations directly into communities. Today, I hope you'll leave with a clearer sense of what the Rule of Law means, why it matters, and what each of us can do to support it. The Rule of Law isn't about politics-it's about fairness, predictability, and equal justice for everyone.\n\nWhat the Rule of Law Is (4 min): The Rule of Law means that everyone-including government officials-is subject to the same laws. Laws should be clear, public, and stable, and disputes are resolved through fair and accountable processes, not by favoritism or force. This is a shared civic value, not a partisan one. The World Justice Project breaks it down into four principles: accountability, just law, open government, and accessible, impartial justice.\n\nWhy It Matters (5 min): The Rule of Law turns conflict into process and power into responsibility. It protects our rights, creates stability, and allows us to resolve disputes peacefully. When rules are clear and applied equally, people can trust that their rights and duties will be respected. Without the Rule of Law, rights are just words on paper.\n\nWhy Lawyers Must Lead (4 min): Lawyers have a unique responsibility to uphold the Rule of Law. Our oath is not just to clients, but to the Constitution and the legal system itself. We're trained to foster civil dialogue and to help communities understand why fair process matters. This isn't about winning arguments-it's about building trust and understanding.",
+      "audience": "speaker",
+      "speaker_only": true,
+      "source_support": [
+        "manual_5c9573295b06",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ]
+    },
+    {
+      "toolkit_id": "toolkit_88f76e663aac",
+      "type": "talk_track",
+      "title": "45-minute talk track",
+      "body": "Opening and Purpose (4 min): Thank you for inviting me. I'm here as part of the Arizona Rule of Law Ambassador Program, a partnership between the State Bar and the Arizona Supreme Court. Our mission is to bring conversations about our constitutional foundations into communities. Today, we'll explore what the Rule of Law means, why it matters, and how each of us can help protect it. This isn't about politics-it's about fairness, predictability, and equal justice.\n\nProgram Orientation (4 min): This program is designed to help lawyers and citizens alike explain and defend the Rule of Law. The Arizona Supreme Court recently amended Rule 32 to make promoting confidence in the Rule of Law part of the State Bar's mission. As ambassadors, our job is to communicate not just content, but also a posture of respect and nonpartisanship.\n\nDefinition and Core Concepts (7 min): The Rule of Law means everyone is subject to the same laws, including government officials. Laws should be clear, public, and stable. Disputes are resolved through fair, accountable processes. The World Justice Project identifies four principles: accountability, just law, open government, and accessible, impartial justice. These principles ensure that no one is above the law and that rights are protected.\n\nFour Core Principles (7 min): The four principles are: Accountability-everyone is subject to the law; Just Law-laws are clear, public, and protect rights; Open Government-decisions are made transparently; and Accessible, Impartial Justice-disputes are resolved fairly by independent decision-makers. These principles make the Rule of Law real in daily life.",
+      "audience": "speaker",
+      "speaker_only": true,
+      "source_support": [
+        "manual_57ab995d8954",
+        "manual_5c9573295b06",
+        "manual_666a19ecc166",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_e3c3011015eb",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ]
+    },
+    {
+      "toolkit_id": "toolkit_54337a2210cb",
+      "type": "talk_track",
+      "title": "60-minute talk track",
+      "body": "Opening and Purpose (5 min): Thank you for inviting me. I'm here as part of the Arizona Rule of Law Ambassador Program, a partnership between the State Bar and the Arizona Supreme Court. Our mission is to bring conversations about our constitutional foundations into communities. Today, we'll explore what the Rule of Law means, why it matters, and how each of us can help protect it. This isn't about politics-it's about fairness, predictability, and equal justice.\n\nHow to Use the Session (4 min): This session is designed to help both lawyers and citizens explain and defend the Rule of Law. The Arizona Supreme Court recently amended Rule 32 to make promoting confidence in the Rule of Law part of the State Bar's mission. As ambassadors, our job is to communicate not just content, but also a posture of respect and nonpartisanship.\n\nDefinition and Core Concepts (8 min): The Rule of Law means everyone is subject to the same laws, including government officials. Laws should be clear, public, and stable. Disputes are resolved through fair, accountable processes. The World Justice Project identifies four principles: accountability, just law, open government, and accessible, impartial justice. These principles ensure that no one is above the law and that rights are protected.\n\nPrinciple One and Two (7 min): First, Accountability: everyone, including public officials, is subject to the law. Second, Just Law: laws must be clear, public, stable, and protective of fundamental rights. These principles ensure that power is limited and rights are protected.",
+      "audience": "speaker",
+      "speaker_only": true,
+      "source_support": [
+        "manual_3d8b7cfbf412",
+        "manual_5c9573295b06",
+        "manual_666a19ecc166",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_e3c3011015eb",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ]
+    },
+    {
+      "toolkit_id": "toolkit_3d8b7cfbf412",
+      "type": "guidance",
+      "title": "Handling Questions and Difficult Conversations",
+      "body": "When a conversation becomes political, the ambassador's task is not to referee ideology. The task is to return the discussion to constitutional process, fairness, equal application of law, and the institutions that allow disagreement to remain peaceful.\n\nHelpful moves include acknowledging the concern, clarifying the question, distinguishing principle from policy preference, and redirecting toward the Rule of Law as a shared civic framework.",
+      "audience": "speaker",
+      "speaker_only": true,
+      "source_support": []
+    },
+    {
+      "toolkit_id": "toolkit_2cf8f9fa98bb",
+      "type": "checklist",
+      "title": "Presentation Preparation Checklist",
+      "body": "Preparation matters because strong civic teaching is both substantive and practical. A well-prepared ambassador understands the material, anticipates the room, and knows how to keep the conversation respectful and useful.",
+      "audience": "speaker",
+      "speaker_only": true,
+      "source_support": []
+    },
+    {
+      "toolkit_id": "toolkit_5c9573295b06",
+      "type": "guidance",
+      "title": "Ambassador Toolkit",
+      "body": "A useful toolkit helps ambassadors stay concise, accurate, and prepared. At minimum, it should include a clear definition, a short explanation of why the Rule of Law matters, audience-appropriate examples, and a few trusted follow-up resources.",
+      "audience": "speaker",
+      "speaker_only": true,
+      "source_support": []
+    },
+    {
+      "toolkit_id": "toolkit_0c065aeebc27",
+      "type": "handout_summary",
+      "title": "Audience handout summary",
+      "body": "What the Rule of Law Means: The Rule of Law means power is exercised through known rules and fair institutions rather than arbitrary will. In practice, that means everyone, including public officials, is subject to the same law; laws are clear and public; and disputes are handled through fair, accountable processes rather than favoritism or force. It gives people confidence that the same rules will apply tomorrow as they do today, and that disputes can be addressed through lawful, accountable institutions.\n\nFour Core Principles: 1. Accountability: Everyone, including public officials, is subject to the law.\n2. Just Law: Laws are clear, publicized, stable, and protect fundamental rights.\n3. Open Government: Legal rules and decisions are transparent.\n4. Accessible, Impartial Justice: Disputes are resolved fairly by independent, ethical decision-makers.\n\nWhy It Matters: The Rule of Law turns conflict into process, power into responsibility, and rights into something more durable than aspiration. It provides stability, predictability, and protection of individual rights, enabling peaceful self-government and trust that disputes will be handled fairly. It helps communities know what to expect from institutions and gives people a fair framework for resolving disputes. It also supports civic trust by showing that public power should be exercised through rules, not personal preference or pressure.\n\nWhat Citizens Can Do: Stay informed, support fair processes, engage respectfully, and use trusted civic institutions when questions or disputes arise. Ask how rules are made, whether they are applied fairly, and whether disagreements are being handled through lawful process instead of raw pressure or favoritism. Citizens can also ask how local institutions maintain fairness, transparency, and accountability in ordinary civic life. Small actions-like asking questions, sharing trusted resources, and encouraging respectful discussion-help strengthen the civic culture around the Rule of Law.\n\nArizona Resources: Arizona Bar Foundation [link]\nSandra Day O'Connor Institute [link]\nState Bar of Arizona [link]\n\n(Use these placeholders for staff-reviewed links, event contacts, and audience follow-up resources.)",
+      "audience": "public",
+      "speaker_only": false,
+      "source_support": [
+        "manual_f2e21168de99",
+        "manual_ef650fe7f5bf",
+        "manual_c96fb3b8851c",
+        "manual_5c9573295b06",
+        "manual_b4c43e89cca4"
+      ]
+    }
+  ],
+  "resource_library": [
+    {
+      "resource_group_id": "resources_arizona-partners",
+      "title": "Arizona civic partners",
+      "description": "Trusted institutions that can extend learning, support presentations, and provide follow-up opportunities.",
+      "links": [
+        {
+          "label": "State Bar of Arizona",
+          "href": "https://www.azbar.org",
+          "description": "Professional and public-facing legal resources.",
+          "is_placeholder": false
+        },
+        {
+          "label": "Arizona Bar Foundation",
+          "href": "[placeholder]",
+          "description": "Replace with the staff-approved partner link.",
+          "is_placeholder": true
+        },
+        {
+          "label": "O'Connor Institute",
+          "href": "[placeholder]",
+          "description": "Replace with the staff-approved partner link.",
+          "is_placeholder": true
+        }
+      ],
+      "source_support": [
+        "canon_8efcd85c7eca",
+        "canon_560e4fc8b2e1",
+        "canon_813925c3b479"
+      ]
+    },
+    {
+      "resource_group_id": "resources_speaker-toolkit",
+      "title": "Speaker support",
+      "description": "Resources for preparing, adapting, and delivering a nonpartisan presentation.",
+      "links": [
+        {
+          "label": "Presentation preparation checklist",
+          "href": "/toolkit#preparation",
+          "description": "Operational prep guidance for presenters.",
+          "is_placeholder": false
+        },
+        {
+          "label": "Handling questions",
+          "href": "/toolkit#questions",
+          "description": "Nonpartisan facilitation prompts and redirect language.",
+          "is_placeholder": false
+        }
+      ],
+      "source_support": [
+        "canon_8efcd85c7eca",
+        "canon_560e4fc8b2e1",
+        "canon_813925c3b479"
+      ]
+    },
+    {
+      "resource_group_id": "resources_follow-up",
+      "title": "Follow-up and downloads",
+      "description": "Printable documents and learning materials that extend the presentation.",
+      "links": [
+        {
+          "label": "Manual download",
+          "href": "/downloads/arizona_rule_of_law_ambassador_manual.docx",
+          "description": "Editable manual backbone.",
+          "is_placeholder": false
+        },
+        {
+          "label": "Audience handout",
+          "href": "/downloads/arizona_rule_of_law_handout.pdf",
+          "description": "Printable 1-2 page handout.",
+          "is_placeholder": false
+        },
+        {
+          "label": "Speaker field guide",
+          "href": "/downloads/arizona_rule_of_law_field_guide.pdf",
+          "description": "Timed talk tracks and facilitation support.",
+          "is_placeholder": false
+        }
+      ],
+      "source_support": [
+        "canon_8efcd85c7eca",
+        "canon_560e4fc8b2e1",
+        "canon_813925c3b479"
+      ]
+    }
+  ],
+  "downloads": [
+    {
+      "asset_id": "download_manual_docx",
+      "title": "Ambassador manual",
+      "format": "docx",
+      "href": "/downloads/arizona_rule_of_law_ambassador_manual.docx",
+      "description": "Editable substantive manual.",
+      "source_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\outputs\\manual\\arizona_rule_of_law_ambassador_manual.docx"
+    },
+    {
+      "asset_id": "download_field_guide_pdf",
+      "title": "Speaker field guide",
+      "format": "pdf",
+      "href": "/downloads/arizona_rule_of_law_field_guide.pdf",
+      "description": "Printable timed speaker guide.",
+      "source_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\outputs\\field_guide\\arizona_rule_of_law_field_guide.pdf"
+    },
+    {
+      "asset_id": "download_handout_pdf",
+      "title": "Audience handout",
+      "format": "pdf",
+      "href": "/downloads/arizona_rule_of_law_handout.pdf",
+      "description": "Printable audience summary.",
+      "source_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\outputs\\handout\\arizona_rule_of_law_handout.pdf"
+    },
+    {
+      "asset_id": "download_lms_docx",
+      "title": "LMS modules",
+      "format": "docx",
+      "href": "/downloads/arizona_rule_of_law_lms_modules.docx",
+      "description": "Editable LMS-ready training text.",
+      "source_path": "C:\\Users\\Keshan\\Desktop\\Deliverable Pipeline\\outputs\\lms\\arizona_rule_of_law_lms_modules.docx"
+    }
+  ],
+  "provenance_index": [
+    {
+      "ref_id": "scene_56e44065a564",
+      "title": "Opening",
+      "source_support": [
+        "manual_8bfee944f39f"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+        "Display-language compression was generated to fit the scene-based presentation format."
+      ]
+    },
+    {
+      "ref_id": "scene_f984723e0c51",
+      "title": "Why We're Here",
+      "source_support": [
+        "manual_e3c3011015eb",
+        "manual_c96fb3b8851c"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_62e05f0ae8d4",
+      "title": "What Is the Rule of Law?",
+      "source_support": [
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_6d54a67328c1",
+      "title": "Why It Matters",
+      "source_support": [
+        "manual_c96fb3b8851c"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_80e7ca034d58",
+      "title": "Accountability",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_a538c0d9f9b1",
+      "title": "Just Law",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_49a8ba1ab125",
+      "title": "Open Government",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_b3a9906537cd",
+      "title": "Accessible, Impartial Justice",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_c4d7c20a9373",
+      "title": "What Happens When It Weakens",
+      "source_support": [
+        "manual_c4d7c20a9373"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_dcbafe565952",
+      "title": "Why Lawyers Must Lead",
+      "source_support": [
+        "manual_dcbafe565952"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_cefa307a323b",
+      "title": "The Ambassador Role",
+      "source_support": [
+        "manual_cefa307a323b"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_3802e5a7a8a6",
+      "title": "Communicating Effectively",
+      "source_support": [
+        "manual_666a19ecc166",
+        "manual_57ab995d8954"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_efb1bd53b713",
+      "title": "What Citizens Can Do",
+      "source_support": [
+        "manual_5c9573295b06"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_929a98598e6f",
+      "title": "Arizona-Specific Resources",
+      "source_support": [
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "ref_id": "scene_1071c77031b8",
+      "title": "Call to Action",
+      "source_support": [
+        "manual_5c9573295b06",
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+        "Display-language compression was generated to fit the scene-based presentation format."
+      ]
+    },
+    {
+      "ref_id": "scene_3e8127aaf0f5",
+      "title": "Closing / Further Learning",
+      "source_support": [
+        "manual_e3c3011015eb",
+        "manual_73973cfd168d"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+        "Display-language compression was generated to fit the scene-based presentation format."
+      ]
+    },
+    {
+      "ref_id": "toolkit_6ddd206f5c5b",
+      "title": "20-minute talk track",
+      "source_support": [
+        "manual_5c9573295b06",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "ref_id": "toolkit_88f76e663aac",
+      "title": "45-minute talk track",
+      "source_support": [
+        "manual_57ab995d8954",
+        "manual_5c9573295b06",
+        "manual_666a19ecc166",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_e3c3011015eb",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "ref_id": "toolkit_54337a2210cb",
+      "title": "60-minute talk track",
+      "source_support": [
+        "manual_3d8b7cfbf412",
+        "manual_5c9573295b06",
+        "manual_666a19ecc166",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_e3c3011015eb",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "ref_id": "toolkit_3d8b7cfbf412",
+      "title": "Handling Questions and Difficult Conversations",
+      "source_support": [],
+      "generated_scaffolding": []
+    },
+    {
+      "ref_id": "toolkit_2cf8f9fa98bb",
+      "title": "Presentation Preparation Checklist",
+      "source_support": [],
+      "generated_scaffolding": []
+    },
+    {
+      "ref_id": "toolkit_5c9573295b06",
+      "title": "Ambassador Toolkit",
+      "source_support": [],
+      "generated_scaffolding": []
+    },
+    {
+      "ref_id": "toolkit_0c065aeebc27",
+      "title": "Audience handout summary",
+      "source_support": [
+        "manual_f2e21168de99",
+        "manual_ef650fe7f5bf",
+        "manual_c96fb3b8851c",
+        "manual_5c9573295b06",
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": []
+    }
+  ],
+  "qa_annotations": [
+    {
+      "annotation_id": "qa_placeholder_resources",
+      "level": "warning",
+      "message": "One or more Arizona partner links remain placeholders and require staff review before publication.",
+      "ref_ids": [
+        "resources_arizona-partners"
+      ]
+    },
+    {
+      "annotation_id": "qa_presenter_mode",
+      "level": "info",
+      "message": "Speaker-only content is structurally separated for presenter mode and should remain hidden in public presentation routes.",
+      "ref_ids": [
+        "scene_56e44065a564",
+        "scene_f984723e0c51",
+        "scene_62e05f0ae8d4",
+        "scene_6d54a67328c1",
+        "scene_a538c0d9f9b1",
+        "scene_49a8ba1ab125",
+        "scene_c4d7c20a9373",
+        "scene_dcbafe565952",
+        "scene_cefa307a323b",
+        "scene_3802e5a7a8a6",
+        "scene_efb1bd53b713",
+        "scene_929a98598e6f",
+        "scene_1071c77031b8",
+        "scene_3e8127aaf0f5"
+      ]
+    }
+  ]
+}

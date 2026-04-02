@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/canonical_unit.schema.json",
+  "title": "CanonicalUnit",
+  "type": "object",
+  "required": [
+    "canonical_id",
+    "bucket",
+    "title",
+    "canonical_status",
+    "summary",
+    "supporting_chunk_ids",
+    "supporting_sources",
+    "downstream_uses",
+    "validation"
+  ],
+  "properties": {
+    "canonical_id": { "type": "string" },
+    "bucket": { "type": "string" },
+    "title": { "type": "string" },
+    "canonical_status": {
+      "type": "string",
+      "enum": ["directly_sourced", "lightly_transformed", "synthesized", "generated_scaffolding"]
+    },
+    "summary": { "type": "string" },
+    "key_points": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "quotes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "audience_level": { "type": "string" },
+    "tone_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supporting_chunk_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supporting_sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "downstream_uses": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["supported", "confidence", "flags"],
+      "properties": {
+        "supported": { "type": "boolean" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "flags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

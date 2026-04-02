@@ -1,0 +1,61 @@
+{
+  "deliverable_id": "field_guide",
+  "artifact_type": "speaker_field_guide",
+  "generated_at": "2026-04-01T01:32:59Z",
+  "units": [
+    {
+      "unit_id": "field_20",
+      "title": "20-minute field guide",
+      "source_support": [
+        "manual_5c9573295b06",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "field_45",
+      "title": "45-minute field guide",
+      "source_support": [
+        "manual_57ab995d8954",
+        "manual_5c9573295b06",
+        "manual_666a19ecc166",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_e3c3011015eb",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": []
+    },
+    {
+      "unit_id": "field_60",
+      "title": "60-minute field guide",
+      "source_support": [
+        "manual_3d8b7cfbf412",
+        "manual_5c9573295b06",
+        "manual_666a19ecc166",
+        "manual_8bfee944f39f",
+        "manual_b4c43e89cca4",
+        "manual_c4d7c20a9373",
+        "manual_c96fb3b8851c",
+        "manual_cefa307a323b",
+        "manual_dcbafe565952",
+        "manual_e3c3011015eb",
+        "manual_ef650fe7f5bf",
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": []
+    }
+  ]
+}

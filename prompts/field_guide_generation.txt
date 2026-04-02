@@ -1,0 +1,75 @@
+You are building two linked deliverables:
+1. a Speaker Field Guide
+2. an Audience Handout
+
+Inputs:
+- manual
+- canonical corpus
+- speaker script sources
+- ambassador voice
+
+Speaker Field Guide rules:
+- Create 20-minute, 45-minute, and 60-minute talk tracks
+- Include opening, timing blocks, transitions, engagement prompts, likely questions, and nonpartisan speaker tips
+- Optional local examples must be clearly labeled as placeholders unless directly supported by sources
+- Make delivery feel natural and confident rather than read aloud from dense source text
+- Remove transcript residue, staff notes, and OCR artifacts
+- Make each timed version feel intentionally designed for that duration, not merely shortened or expanded
+- Use concise spoken-language phrasing that a real presenter can deliver without sounding scripted or robotic
+- Ensure transitions logically carry the audience from one concept to the next
+- Add enough practical detail that presenter mode and the toolkit feel genuinely helpful in the room
+- Use audience prompts that invite civic reflection without forcing political disagreement
+- Likely questions should be realistic, public-facing, and answerable in a nonpartisan way
+- Speaker tips should help tone, pacing, and facilitation, not just restate the content
+- Remove repetition across blocks so the field guide feels dynamic instead of repetitive
+
+Audience Handout rules:
+- Keep it to 1-2 pages
+- Use plain English
+- Include definition, principles, why it matters, what citizens can do, and Arizona resources
+- Keep layout-friendly blocks and short paragraphs
+- Make it feel ready for public distribution, not like an internal summary
+- Make the handout feel complete and useful even if read without the presentation
+- Keep the language clean, civic, and concrete
+- Distinguish clearly between final resources and placeholders
+- Avoid over-compressing the handout to the point that it becomes vague or generic
+
+Quality targets:
+- A speaker should feel comfortable using the talk tracks with little additional drafting
+- The 20-minute version should be crisp and high-yield
+- The 45-minute version should feel balanced and room-aware
+- The 60-minute version should support deeper engagement without drag
+- The handout should work for students, civic groups, and general audiences
+
+Return JSON:
+{
+  "field_guide": {
+    "versions": [
+      {
+        "minutes": 20,
+        "blocks": [
+          {
+            "title": "...",
+            "minutes": 3,
+            "script": "...",
+            "transition": "...",
+            "engagement_prompt": "...",
+            "likely_questions": ["..."],
+            "speaker_tip": "...",
+            "source_support": ["canonical_unit_id"]
+          }
+        ]
+      }
+    ]
+  },
+  "handout": {
+    "title": "...",
+    "sections": [
+      {
+        "title": "...",
+        "body": "...",
+        "source_support": ["canonical_unit_id"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "style_name": "ambassador_voice",
+  "tone_summary": "Plainspoken, calm, and civic-minded; serious and respectful toward the law, courts, and the public; nonpartisan and institutionally responsible; emphasizes lawyers as public servants and the rule of law as a shared democratic foundation.",
+  "allowed_moves": [
+    "Explain legal concepts in accessible language",
+    "Acknowledge complexity without oversimplifying",
+    "Frame lawyers as serving the public good",
+    "Highlight the importance of fairness, accountability, and predictability in law",
+    "Emphasize equal application of the law",
+    "Encourage civic engagement and shared responsibility",
+    "Define legal terms briefly when necessary",
+    "Reference the Constitution and legal institutions respectfully"
+  ],
+  "disallowed_moves": [
+    "Use of legal jargon without explanation",
+    "Partisan or campaign-style language",
+    "Donor recognition or fundraising appeals",
+    "Op-ed style flourish or self-congratulation",
+    "Fearmongering or culture-war rhetoric",
+    "Overstating claims beyond available sources",
+    "Elitist framing of lawyers or the legal profession",
+    "Writing in a law review or generic AI essay style"
+  ],
+  "sentence_guidance": [
+    "Use clear, direct sentences.",
+    "Avoid unnecessary complexity or embellishment.",
+    "Favor active voice and plain English.",
+    "Introduce legal terms with brief definitions if needed.",
+    "Maintain a respectful and measured tone.",
+    "Avoid rhetorical questions and dramatic statements."
+  ],
+  "audience_guidance": {
+    "general_public": [
+      "Prioritize clarity and accessibility.",
+      "Connect legal principles to everyday civic life.",
+      "Avoid assuming prior legal knowledge."
+    ],
+    "lawyers": [
+      "Affirm the public service role of the profession.",
+      "Encourage reflection on institutional responsibilities.",
+      "Avoid insular or technical discussions."
+    ],
+    "students": [
+      "Support understanding of foundational legal concepts.",
+      "Encourage questions and civic curiosity.",
+      "Frame law as a tool for fairness and accountability."
+    ]
+  },
+  "bridging_text_rules": [
+    "Use transitions that connect legal ideas to civic values.",
+    "Bridge technical explanations with real-world examples.",
+    "Clarify when content is educational scaffolding rather than sourced fact, using explicit metadata."
+  ],
+  "citation_rules": [
+    "Cite sources for factual claims and legal standards.",
+    "Do not intensify or embellish claims beyond what sources support.",
+    "Distinguish between sourced substance and educational scaffolding in metadata."
+  ]
+}

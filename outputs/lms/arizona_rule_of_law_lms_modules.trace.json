@@ -1,0 +1,86 @@
+{
+  "deliverable_id": "lms",
+  "artifact_type": "lms_modules",
+  "generated_at": "2026-04-01T01:37:04Z",
+  "units": [
+    {
+      "unit_id": "lms_f2e21168de99",
+      "title": "What the Rule of Law Is",
+      "source_support": [
+        "canon_25c700b945cc",
+        "canon_111e495f73df",
+        "canon_c46eff4977bb",
+        "canon_9605b51f9013",
+        "canon_d7893efa17e7",
+        "canon_ac57c653887f",
+        "canon_6482678de12b",
+        "canon_0185652018e2"
+      ],
+      "generated_scaffolding": [
+        "Learning objectives, overview, reflection questions, quiz items, and discussion prompt were generated for LMS use."
+      ]
+    },
+    {
+      "unit_id": "lms_c96fb3b8851c",
+      "title": "Why the Rule of Law Matters",
+      "source_support": [
+        "canon_18b9a31e1c5b",
+        "canon_70196ecd20d7",
+        "canon_36d2a07b8f58"
+      ],
+      "generated_scaffolding": [
+        "Learning objectives, overview, reflection questions, quiz items, and discussion prompt were generated for LMS use."
+      ]
+    },
+    {
+      "unit_id": "lms_dcbafe565952",
+      "title": "Why Lawyers Must Lead",
+      "source_support": [
+        "canon_04ee703b672e",
+        "canon_22f0042838c5",
+        "canon_f55704fe5032",
+        "canon_9c93f2c2ae4e"
+      ],
+      "generated_scaffolding": [
+        "Learning objectives, overview, reflection questions, quiz items, and discussion prompt were generated for LMS use."
+      ]
+    },
+    {
+      "unit_id": "lms_ebda3bb1c9de",
+      "title": "How to Communicate It Effectively",
+      "source_support": [
+        "canon_2169b9be3223",
+        "canon_fd9e21976701"
+      ],
+      "generated_scaffolding": [
+        "Learning objectives, overview, reflection questions, quiz items, and discussion prompt were generated for LMS use."
+      ]
+    },
+    {
+      "unit_id": "lms_5c9573295b06",
+      "title": "Ambassador Toolkit",
+      "source_support": [
+        "canon_be6ec8586c31"
+      ],
+      "generated_scaffolding": [
+        "Learning objectives, overview, reflection questions, quiz items, and discussion prompt were generated for LMS use."
+      ]
+    },
+    {
+      "unit_id": "lms_f13281f51c55",
+      "title": "Arizona-Specific Context",
+      "source_support": [
+        "canon_8efcd85c7eca",
+        "canon_560e4fc8b2e1",
+        "canon_c66c2ffb384a",
+        "canon_2c041a35e4fd",
+        "canon_5d3928be519d",
+        "canon_358ff3577b12",
+        "canon_813925c3b479"
+      ],
+      "generated_scaffolding": [
+        "Learning objectives, overview, reflection questions, quiz items, and discussion prompt were generated for LMS use."
+      ]
+    }
+  ]
+}

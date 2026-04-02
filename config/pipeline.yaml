@@ -1,0 +1,170 @@
+program:
+  id: arizona_rule_of_law_ambassador_program
+  name: Arizona Rule of Law Ambassador Program
+  root_dir: .
+  source_manifest: inputs/manifests/source_manifest.yaml
+
+directories:
+  extracted: extracted
+  normalized: normalized
+  canonical: canonical
+  outputs: outputs
+  qa_reports: qa/reports
+  logs: logs
+  prompts: prompts
+  schemas: schemas
+
+artifact_sequence:
+  - manual
+  - field_guide
+  - handout
+  - web_experience
+  - lms
+
+canonical_buckets:
+  - Definition / Core Concept
+  - Why It Matters
+  - Institutional / Civic Stakes
+  - Lawyer's Role
+  - Public Communication
+  - Arizona-Specific Context
+  - Resources / Calls to Action
+  - Appendices / Supporting Texts
+
+manual_structure:
+  - Introductory Letter from Ted Schmidt
+  - How to Use This Manual
+  - What the Rule of Law Is
+  - Core Principles of the Rule of Law
+  - Why the Rule of Law Matters
+  - What Happens When It Weakens
+  - Why Lawyers Must Lead
+  - The Ambassador Role
+  - How to Communicate the Rule of Law Effectively
+  - Audience-Specific Communication Tips
+  - Handling Questions and Difficult Conversations
+  - Ambassador Toolkit
+  - Arizona-Specific Civic Resources
+  - Presentation Preparation Checklist
+  - Appendices
+
+deck_structure:
+  - Title
+  - Why We're Here
+  - What Is the Rule of Law?
+  - Why It Matters
+  - Core Principle 1
+  - Core Principle 2
+  - Core Principle 3
+  - Core Principle 4
+  - What Happens When It Weakens
+  - Why Lawyers Must Lead
+  - The Ambassador Role
+  - Communicating Effectively
+  - What Citizens Can Do
+  - Arizona-Specific Resources
+  - Call to Action
+  - Closing / Additional Resources
+
+presentation_structure:
+  - Opening
+  - Why We're Here
+  - What Is the Rule of Law?
+  - Why It Matters
+  - Accountability
+  - Just Law
+  - Open Government
+  - Accessible, Impartial Justice
+  - What Happens When It Weakens
+  - Why Lawyers Must Lead
+  - The Ambassador Role
+  - Communicating Effectively
+  - What Citizens Can Do
+  - Arizona-Specific Resources
+  - Call to Action
+  - Closing / Further Learning
+
+lms_modules:
+  - What the Rule of Law Is
+  - Why the Rule of Law Matters
+  - Why Lawyers Must Lead
+  - How to Communicate It Effectively
+  - Ambassador Toolkit
+  - Arizona-Specific Context
+
+audiences:
+  lawyers:
+    description: Legal professionals serving as program ambassadors.
+    reading_level: professional_plain_english
+  schools:
+    description: High school and college audiences with limited legal background.
+    reading_level: general_public
+  community_groups:
+    description: Civic and nonprofit audiences with mixed familiarity.
+    reading_level: general_public
+  civic_organizations:
+    description: Community leaders, bar groups, and civic stakeholders.
+    reading_level: general_public
+
+taxonomy:
+  content_types:
+    - substantive
+    - rhetorical
+    - anecdotal
+    - script
+    - appendix
+    - formatting_clue
+  canonical_statuses:
+    - directly_sourced
+    - lightly_transformed
+    - synthesized
+    - generated_scaffolding
+
+qa:
+  prohibited_language:
+    - woke
+    - radical left
+    - radical right
+    - stolen election
+    - deep state
+    - culture war
+    - un-american
+    - partisan attack
+  manual_target_pages:
+    min: 15
+    max: 20
+  deck_required_slide_count: 16
+  presentation_required_scene_count: 16
+  handout_word_count:
+    min: 300
+    max: 900
+  field_guide_required_versions:
+    - 20
+    - 45
+    - 60
+  lms_quiz_range:
+    min: 3
+    max: 5
+  max_bullets_per_slide: 4
+
+packaging:
+  manual_docx: outputs/manual/arizona_rule_of_law_ambassador_manual.docx
+  manual_markdown: outputs/manual/arizona_rule_of_law_ambassador_manual.md
+  manual_trace: outputs/manual/arizona_rule_of_law_ambassador_manual.trace.json
+  deck_pptx: outputs/deck_src/arizona_rule_of_law_ambassador_deck.pptx
+  deck_markdown: outputs/deck_src/arizona_rule_of_law_ambassador_deck.md
+  deck_trace: outputs/deck_src/arizona_rule_of_law_ambassador_deck.trace.json
+  field_guide_docx: outputs/field_guide/arizona_rule_of_law_field_guide.docx
+  field_guide_pdf: outputs/field_guide/arizona_rule_of_law_field_guide.pdf
+  field_guide_trace: outputs/field_guide/arizona_rule_of_law_field_guide.trace.json
+  handout_docx: outputs/handout/arizona_rule_of_law_handout.docx
+  handout_pdf: outputs/handout/arizona_rule_of_law_handout.pdf
+  handout_trace: outputs/handout/arizona_rule_of_law_handout.trace.json
+  web_experience_json: outputs/web_export/arizona_rule_of_law_web_experience.json
+  web_experience_markdown: outputs/web_export/arizona_rule_of_law_web_experience.md
+  web_experience_trace: outputs/web_export/arizona_rule_of_law_web_experience.trace.json
+  lms_docx: outputs/lms/arizona_rule_of_law_lms_modules.docx
+  lms_markdown: outputs/lms/arizona_rule_of_law_lms_modules.md
+  lms_trace: outputs/lms/arizona_rule_of_law_lms_modules.trace.json
+  qa_json: outputs/reports/pipeline_qa_report.json
+  qa_markdown: outputs/reports/pipeline_qa_report.md

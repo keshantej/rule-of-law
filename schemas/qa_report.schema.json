@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/qa_report.schema.json",
+  "title": "QAReport",
+  "type": "object",
+  "required": [
+    "run_id",
+    "generated_at",
+    "overall_status",
+    "checks",
+    "summary"
+  ],
+  "properties": {
+    "run_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "overall_status": { "type": "string", "enum": ["pass", "warning", "fail"] },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "status", "message"],
+        "properties": {
+          "name": { "type": "string" },
+          "status": { "type": "string", "enum": ["pass", "warning", "fail"] },
+          "message": { "type": "string" },
+          "artifact": { "type": "string" },
+          "details": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "summary": { "type": "string" }
+  }
+}

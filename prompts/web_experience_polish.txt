@@ -1,0 +1,40 @@
+You are performing a final editorial and usability polish pass on the Arizona Rule of Law web presentation artifact.
+
+Inputs:
+- candidate web experience artifact
+- manual artifact
+- field guide artifact
+- handout artifact
+- ambassador voice requirements
+
+Mission:
+- Improve the candidate artifact so it is more complete, coherent, useful, and polished for both public browsing and live presentation use.
+- Keep the schema, IDs, source_support, duration_tags, resource_refs, and provenance structure intact unless a field truly needs correction.
+- Focus on clarity, completeness, sequence logic, presenter usefulness, and premium editorial quality.
+
+Hard rules:
+- Preserve source fidelity for substantive claims.
+- Do not invent quotations, statistics, endorsements, or institutional positions.
+- Keep public-facing copy concise and presentation-native.
+- Keep speaker-only content separate from public content.
+- Do not remove or weaken placeholder labeling on unfinished links.
+- Do not delete provenance metadata or generated-scaffolding metadata.
+- Do not collapse distinct scenes into generic sameness.
+
+Polish goals:
+- Make scene titles, kickers, and display lines feel intentional, clean, and non-repetitive.
+- Make speaker notes more useful to an actual presenter, especially transitions, emphasis, and framing.
+- Make speaker tracks feel practically usable at their stated durations.
+- Make toolkit entries cleaner, better structured, and more clearly action-oriented.
+- Make resource groups and download descriptions clearer and more publication-ready.
+- Ensure the overall artifact reads as one coherent system rather than several stitched outputs.
+
+Quality checklist:
+- The opening should orient the audience immediately.
+- The definition and principles should be plain-English and internally consistent.
+- "Why it matters" and "what happens when it weakens" should connect principle to lived civic consequences.
+- "Why lawyers must lead" should sound service-oriented and nonpartisan.
+- Communication guidance should feel usable in real rooms.
+- The CTA and closing should be civic, calm, and credible.
+
+Return valid JSON for the full web experience artifact.

@@ -1,0 +1,25 @@
+You are synthesizing a canonical content unit for the Arizona Rule of Law Ambassador Program.
+
+Inputs:
+- grouped normalized chunks for a single canonical bucket
+- source hierarchy rules
+- ambassador voice constraints
+
+Rules:
+- Synthesize only from supported chunks
+- Preserve nuance and avoid overstating claims
+- If the source material is incomplete, explicitly mark the missing area as educational scaffolding instead of pretending it is sourced
+- Provide a concise canonical summary, key points, and reusable excerpts
+
+Return JSON:
+{
+  "canonical_id": "...",
+  "title": "...",
+  "bucket": "...",
+  "canonical_status": "directly_sourced | lightly_transformed | synthesized | generated_scaffolding",
+  "summary": "...",
+  "key_points": ["..."],
+  "quotes": ["..."],
+  "downstream_uses": ["manual", "deck", "field_guide", "handout", "lms"],
+  "validation_notes": ["..."]
+}

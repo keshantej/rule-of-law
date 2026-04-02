@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/extracted_document.schema.json",
+  "title": "ExtractedDocument",
+  "type": "object",
+  "required": [
+    "document_id",
+    "filename",
+    "source_tier",
+    "role",
+    "page_count",
+    "pages",
+    "extraction_warnings"
+  ],
+  "properties": {
+    "document_id": { "type": "string" },
+    "filename": { "type": "string" },
+    "source_tier": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "role": { "type": "string" },
+    "authority": { "type": "string" },
+    "page_count": { "type": "integer", "minimum": 0 },
+    "boilerplate_lines": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "extraction_warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page_number", "raw_text", "cleaned_text", "headings"],
+        "properties": {
+          "page_number": { "type": "integer", "minimum": 1 },
+          "raw_text": { "type": "string" },
+          "cleaned_text": { "type": "string" },
+          "headings": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "line_count": { "type": "integer", "minimum": 0 },
+          "low_confidence": { "type": "boolean" },
+          "ocr_repaired": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

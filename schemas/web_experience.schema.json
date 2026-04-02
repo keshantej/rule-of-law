@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/web_experience.schema.json",
+  "title": "WebExperienceArtifact",
+  "type": "object",
+  "required": [
+    "presentation",
+    "speaker_tracks",
+    "speaker_toolkit",
+    "resource_library",
+    "downloads",
+    "provenance_index",
+    "qa_annotations"
+  ],
+  "properties": {
+    "presentation": {
+      "type": "object",
+      "required": ["title", "scenes"],
+      "properties": {
+        "title": { "type": "string" },
+        "scenes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "scene_id",
+              "slug",
+              "title",
+              "kicker",
+              "display_lines",
+              "speaker_notes",
+              "duration_tags",
+              "audience_mode",
+              "visual_treatment",
+              "speaker_only_blocks",
+              "resource_refs",
+              "source_support",
+              "generated_scaffolding"
+            ],
+            "properties": {
+              "scene_id": { "type": "string" },
+              "slug": { "type": "string" },
+              "title": { "type": "string" },
+              "kicker": { "type": "string" },
+              "display_lines": { "type": "array", "items": { "type": "string" } },
+              "speaker_notes": { "type": "string" },
+              "duration_tags": { "type": "array", "items": { "type": "integer" } },
+              "audience_mode": { "enum": ["public", "shared"] },
+              "visual_treatment": { "type": "string" },
+              "speaker_only_blocks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["title", "body"],
+                  "properties": {
+                    "title": { "type": "string" },
+                    "body": { "type": "string" }
+                  }
+                }
+              },
+              "resource_refs": { "type": "array", "items": { "type": "string" } },
+              "source_support": { "type": "array", "items": { "type": "string" } },
+              "generated_scaffolding": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "speaker_tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["minutes", "title", "scene_ids", "steps", "transition_note"],
+        "properties": {
+          "minutes": { "type": "integer" },
+          "title": { "type": "string" },
+          "scene_ids": { "type": "array", "items": { "type": "string" } },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["scene_id", "minutes", "cue"],
+              "properties": {
+                "scene_id": { "type": "string" },
+                "minutes": { "type": "integer" },
+                "cue": { "type": "string" }
+              }
+            }
+          },
+          "transition_note": { "type": "string" }
+        }
+      }
+    },
+    "speaker_toolkit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["toolkit_id", "type", "title", "body", "audience", "speaker_only", "source_support"],
+        "properties": {
+          "toolkit_id": { "type": "string" },
+          "type": { "type": "string" },
+          "title": { "type": "string" },
+          "body": { "type": "string" },
+          "audience": { "type": "string" },
+          "speaker_only": { "type": "boolean" },
+          "source_support": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "resource_library": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["resource_group_id", "title", "description", "links", "source_support"],
+        "properties": {
+          "resource_group_id": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["label", "href", "description", "is_placeholder"],
+              "properties": {
+                "label": { "type": "string" },
+                "href": { "type": "string" },
+                "description": { "type": "string" },
+                "is_placeholder": { "type": "boolean" }
+              }
+            }
+          },
+          "source_support": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "downloads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["asset_id", "title", "format", "href", "description", "source_path"],
+        "properties": {
+          "asset_id": { "type": "string" },
+          "title": { "type": "string" },
+          "format": { "type": "string" },
+          "href": { "type": "string" },
+          "description": { "type": "string" },
+          "source_path": { "type": "string" }
+        }
+      }
+    },
+    "provenance_index": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ref_id", "title", "source_support", "generated_scaffolding"],
+        "properties": {
+          "ref_id": { "type": "string" },
+          "title": { "type": "string" },
+          "source_support": { "type": "array", "items": { "type": "string" } },
+          "generated_scaffolding": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "qa_annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["annotation_id", "level", "message", "ref_ids"],
+        "properties": {
+          "annotation_id": { "type": "string" },
+          "level": { "enum": ["info", "warning"] },
+          "message": { "type": "string" },
+          "ref_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

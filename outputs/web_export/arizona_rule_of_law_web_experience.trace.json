@@ -1,0 +1,174 @@
+{
+  "deliverable_id": "web_experience",
+  "artifact_type": "web_presentation",
+  "generated_at": "2026-04-01T01:34:10Z",
+  "units": [
+    {
+      "unit_id": "scene_56e44065a564",
+      "title": "Opening",
+      "source_support": [
+        "manual_8bfee944f39f"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+        "Display-language compression was generated to fit the scene-based presentation format."
+      ]
+    },
+    {
+      "unit_id": "scene_f984723e0c51",
+      "title": "Why We're Here",
+      "source_support": [
+        "manual_e3c3011015eb",
+        "manual_c96fb3b8851c"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_62e05f0ae8d4",
+      "title": "What Is the Rule of Law?",
+      "source_support": [
+        "manual_f2e21168de99"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_6d54a67328c1",
+      "title": "Why It Matters",
+      "source_support": [
+        "manual_c96fb3b8851c"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_80e7ca034d58",
+      "title": "Accountability",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_a538c0d9f9b1",
+      "title": "Just Law",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_49a8ba1ab125",
+      "title": "Open Government",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_b3a9906537cd",
+      "title": "Accessible, Impartial Justice",
+      "source_support": [
+        "manual_ef650fe7f5bf"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_c4d7c20a9373",
+      "title": "What Happens When It Weakens",
+      "source_support": [
+        "manual_c4d7c20a9373"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_dcbafe565952",
+      "title": "Why Lawyers Must Lead",
+      "source_support": [
+        "manual_dcbafe565952"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_cefa307a323b",
+      "title": "The Ambassador Role",
+      "source_support": [
+        "manual_cefa307a323b"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_3802e5a7a8a6",
+      "title": "Communicating Effectively",
+      "source_support": [
+        "manual_666a19ecc166",
+        "manual_57ab995d8954"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_efb1bd53b713",
+      "title": "What Citizens Can Do",
+      "source_support": [
+        "manual_5c9573295b06"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_929a98598e6f",
+      "title": "Arizona-Specific Resources",
+      "source_support": [
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use."
+      ]
+    },
+    {
+      "unit_id": "scene_1071c77031b8",
+      "title": "Call to Action",
+      "source_support": [
+        "manual_5c9573295b06",
+        "manual_b4c43e89cca4"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+        "Display-language compression was generated to fit the scene-based presentation format."
+      ]
+    },
+    {
+      "unit_id": "scene_3e8127aaf0f5",
+      "title": "Closing / Further Learning",
+      "source_support": [
+        "manual_e3c3011015eb",
+        "manual_73973cfd168d"
+      ],
+      "generated_scaffolding": [
+        "Scene framing and visual treatment were generated from manual and field guide content for web presentation use.",
+        "Display-language compression was generated to fit the scene-based presentation format."
+      ]
+    }
+  ]
+}

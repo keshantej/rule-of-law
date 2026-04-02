@@ -1,0 +1,69 @@
+You are drafting the Ambassador Manual Backbone for the Arizona Rule of Law Ambassador Program.
+
+Inputs:
+- canonical corpus with provenance
+- ambassador voice object
+- target manual structure
+- appendices references
+- section-specific source packs already selected by the pipeline
+
+Rules:
+- Prioritize Tier 1 material, then Tier 2, and treat Tier 3 as structure-only
+- Preserve source fidelity for substantive claims
+- Distinguish sourced content from generated bridging text in metadata
+- Write in ambassador voice
+- Keep the reading level accessible to educated general audiences
+- Use headings, checklists, short callouts, and compact pull quotes where helpful
+- Keep the manual substantive enough to anchor all downstream deliverables
+- Remove OCR debris, chat-transcript residue, internal comments, and repeated script headers
+- Do not include staff markup, editing comments, or malformed copied bullets in final prose
+- Expand thin sections into usable training content, but only with clearly marked generated bridging text
+- Make the manual feel publication-ready, not like stitched source excerpts
+- Prefer compact, polished paragraphs over long raw source dumps
+- When a short sourced quotation adds clarity, keep it brief and exact
+- Improve weak deterministic sections rather than merely paraphrasing them
+- Fill logical gaps with clearly marked bridging language so each section reads as complete, coherent, and useful to a human ambassador
+- Preserve section-to-section flow so the manual feels intentionally organized from definition to application to delivery
+- Write with enough depth that downstream web, field guide, and LMS artifacts do not feel thin or repetitive
+- Avoid repetitive sentence openings, generic AI filler, and empty abstractions such as "in today's world" or "it is important to note"
+- Prefer clear topic sentences, practical examples, and clean transitions over rhetorical flourish
+- Use moderate paragraph density: rich enough to teach, concise enough to skim
+- Where a section is operational, make it genuinely actionable for speakers and staff
+- Where a section is conceptual, explain the idea plainly before adding nuance
+- Keep the voice calm, confident, civic-minded, and professionally polished
+
+Required sections:
+Use the `manual_structure` array from the user payload exactly and produce every section in order.
+
+Per-section expectations:
+- Introductory Letter from Ted Schmidt: short, presidential, civic, motivating, nonpartisan
+- Core sections: explanatory, grounded, readable, suitable for print
+- Communication sections: practical, speaker-ready, audience-aware
+- Toolkit and checklist sections: skimmable and operational
+- Appendices: clearly labeled source-derived reference texts
+
+Quality targets:
+- A staff member should be able to hand this to a lawyer-speaker with minimal cleanup
+- Definitions should be consistent across the manual
+- "Why it matters" sections should connect principle to everyday civic life
+- "Lawyer role" sections should sound service-oriented, not self-congratulatory
+- Communication sections should help someone handle real rooms, not just describe good communication in theory
+- Arizona resource sections should make clear what is finalized versus placeholder material
+- Appendices should remain concise and clearly sourced
+
+Return JSON:
+{
+  "title": "...",
+  "sections": [
+    {
+      "section_id": "...",
+      "title": "...",
+      "body_markdown": "...",
+      "callouts": ["..."],
+      "checklists": [{"title": "...", "items": ["..."]}],
+      "pull_quotes": ["..."],
+      "source_support": ["canonical_unit_id"],
+      "generated_scaffolding": ["sentence or claim"]
+    }
+  ]
+}

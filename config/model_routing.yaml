@@ -1,0 +1,102 @@
+defaults:
+  mode: hybrid
+  offline_fallback_client: mock_fallback
+  request_timeout_seconds: 180
+  max_retries: 3
+  retry_backoff_seconds: 2
+  json_response_instruction: Return valid JSON that matches the requested schema exactly.
+
+clients:
+  local_primary:
+    client_class: LocalLLMClient
+    provider: openai_compatible
+    base_url: ${LOCAL_LLM_BASE_URL:-http://127.0.0.1:11434/v1}
+    api_key_env: LOCAL_LLM_API_KEY
+    model: ${LOCAL_LLM_MODEL:-qwen2.5:14b-instruct-q4_K_M}
+    temperature: 0.2
+    max_tokens: 4000
+  local_fast:
+    client_class: LocalLLMClient
+    provider: openai_compatible
+    base_url: ${LOCAL_LLM_BASE_URL:-http://127.0.0.1:11434/v1}
+    api_key_env: LOCAL_LLM_API_KEY
+    model: ${LOCAL_FAST_MODEL:-mistral-small:24b-instruct-2501-q4_K_M}
+    temperature: 0.1
+    max_tokens: 2500
+  hf_tgi:
+    client_class: APIModelClient
+    provider: openai_compatible
+    base_url: ${HF_TGI_BASE_URL:-}
+    api_key_env: HUGGING_FACE_HUB_TOKEN
+    model: ${HF_TGI_MODEL:-Qwen/Qwen2.5-7B-Instruct}
+    temperature: 0.1
+    max_tokens: 4000
+  api_primary:
+    client_class: APIModelClient
+    provider: openai_compatible
+    base_url: ${API_MODEL_BASE_URL:-https://api.openai.com/v1}
+    api_key_env: OPENAI_API_KEY
+    requires_api_key: true
+    model: ${API_MODEL_NAME:-gpt-4.1}
+    temperature: 0.15
+    max_tokens: 9000
+  api_review:
+    client_class: APIModelClient
+    provider: openai_compatible
+    base_url: ${API_REVIEW_BASE_URL:-https://api.openai.com/v1}
+    api_key_env: OPENAI_API_KEY
+    requires_api_key: true
+    model: ${API_REVIEW_MODEL:-gpt-4.1}
+    temperature: 0.0
+    max_tokens: 7000
+  mock_fallback:
+    client_class: MockModelClient
+    provider: mock
+    temperature: 0.0
+    max_tokens: 2000
+
+routes:
+  extraction_cleanup:
+    client: api_primary
+    fallback_clients: [hf_tgi, local_fast]
+    purpose: First-pass OCR cleanup and line repair when extraction quality is degraded.
+  chunk_summary:
+    client: api_primary
+    fallback_clients: [hf_tgi, local_fast]
+    purpose: Low-cost summaries of normalized chunks.
+  duplicate_review:
+    client: api_primary
+    fallback_clients: [hf_tgi, local_fast]
+    purpose: Review borderline near-duplicate passages before clustering.
+  semantic_tagging:
+    client: api_primary
+    fallback_clients: [hf_tgi, local_primary]
+    purpose: Topic labels, audience tags, and reuse tags for chunks.
+  outline_expansion:
+    client: api_primary
+    fallback_clients: [hf_tgi, local_primary]
+    purpose: Expand deterministic outlines into first-pass draft paragraphs.
+  style_harmonization:
+    client: api_primary
+    purpose: Establish and apply the ambassador voice consistently.
+  canonical_synthesis:
+    client: api_primary
+    purpose: Synthesize bucket-level canonical units from supported chunks.
+  manual_generation:
+    client: api_primary
+    purpose: Produce the authoritative manual backbone.
+  deck_generation:
+    client: api_primary
+    purpose: Compress the manual into a concise, public-facing 16-slide deck.
+  field_guide_generation:
+    client: api_primary
+    purpose: Build timed talk tracks and handout copy from manual plus scripts.
+  web_experience_generation:
+    client: api_primary
+    purpose: Transform manual and speaker resources into a scene-based web presentation artifact.
+  lms_generation:
+    client: api_primary
+    purpose: Add pedagogical scaffolding and module assessments.
+  consistency_review:
+    client: api_review
+    purpose: Final cross-deliverable fact, tone, and consistency review.

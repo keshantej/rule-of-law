@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/normalized_chunk.schema.json",
+  "title": "NormalizedChunk",
+  "type": "object",
+  "required": [
+    "chunk_id",
+    "document_id",
+    "source_filename",
+    "source_tier",
+    "page_range",
+    "heading_path",
+    "text",
+    "content_type",
+    "candidate_modules",
+    "candidate_audience",
+    "reuse_tags",
+    "provenance"
+  ],
+  "properties": {
+    "chunk_id": { "type": "string" },
+    "document_id": { "type": "string" },
+    "source_filename": { "type": "string" },
+    "source_tier": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "content_type": {
+      "type": "string",
+      "enum": ["substantive", "rhetorical", "anecdotal", "script", "appendix", "formatting_clue"]
+    },
+    "heading_path": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "text": { "type": "string" },
+    "normalized_text": { "type": "string" },
+    "page_range": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "integer", "minimum": 1 },
+        "end": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "candidate_modules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidate_audience": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "reuse_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tone_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "duplicate_cluster_id": {
+      "type": ["string", "null"]
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["authority", "support_level"],
+      "properties": {
+        "authority": { "type": "string" },
+        "support_level": { "type": "string" },
+        "lineage": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "validation_flags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

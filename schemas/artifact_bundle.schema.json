@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/artifact_bundle.schema.json",
+  "title": "ArtifactBundle",
+  "type": "object",
+  "required": ["artifact_id", "title", "paths", "traceability", "qa_summary"],
+  "properties": {
+    "artifact_id": { "type": "string" },
+    "title": { "type": "string" },
+    "paths": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "traceability": { "type": "string" },
+    "qa_summary": { "type": "string" }
+  }
+}

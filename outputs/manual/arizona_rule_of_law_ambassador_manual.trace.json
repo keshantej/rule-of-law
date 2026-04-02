@@ -1,0 +1,169 @@
+{
+  "deliverable_id": "manual",
+  "artifact_type": "manual_backbone",
+  "generated_at": "2026-04-01T01:32:18Z",
+  "units": [
+    {
+      "unit_id": "manual_8bfee944f39f",
+      "title": "Introductory Letter from Ted Schmidt",
+      "source_support": [
+        "canon_04ee703b672e",
+        "canon_22f0042838c5",
+        "canon_8efcd85c7eca",
+        "canon_560e4fc8b2e1",
+        "canon_813925c3b479",
+        "canon_36d2a07b8f58"
+      ],
+      "generated_scaffolding": [
+        "The opening framing paragraph was generated to unify the source material into a printable letter format."
+      ]
+    },
+    {
+      "unit_id": "manual_e3c3011015eb",
+      "title": "How to Use This Manual",
+      "source_support": [],
+      "generated_scaffolding": [
+        "Usage instructions and connective language were generated from the overall pipeline design."
+      ]
+    },
+    {
+      "unit_id": "manual_f2e21168de99",
+      "title": "What the Rule of Law Is",
+      "source_support": [
+        "canon_25c700b945cc",
+        "canon_111e495f73df",
+        "canon_c46eff4977bb",
+        "canon_9605b51f9013",
+        "canon_d7893efa17e7",
+        "canon_ac57c653887f",
+        "canon_8c6368948c4f",
+        "canon_6b8b92ae15b8"
+      ],
+      "generated_scaffolding": [
+        "The lead definition paragraph was generated to translate supported source language into plain English."
+      ]
+    },
+    {
+      "unit_id": "manual_ef650fe7f5bf",
+      "title": "Core Principles of the Rule of Law",
+      "source_support": [
+        "canon_25c700b945cc",
+        "canon_111e495f73df",
+        "canon_c46eff4977bb",
+        "canon_9605b51f9013",
+        "canon_d7893efa17e7",
+        "canon_ac57c653887f",
+        "canon_8c6368948c4f",
+        "canon_6b8b92ae15b8"
+      ],
+      "generated_scaffolding": [
+        "The four-principles paragraph was generated from supported source language for teachability."
+      ]
+    },
+    {
+      "unit_id": "manual_c96fb3b8851c",
+      "title": "Why the Rule of Law Matters",
+      "source_support": [
+        "canon_36d2a07b8f58"
+      ],
+      "generated_scaffolding": [
+        "The lead paragraph was generated to connect supported source claims into a readable section."
+      ]
+    },
+    {
+      "unit_id": "manual_c4d7c20a9373",
+      "title": "What Happens When It Weakens",
+      "source_support": [
+        "canon_111e495f73df",
+        "canon_9605b51f9013",
+        "canon_ac57c653887f",
+        "canon_8c6368948c4f"
+      ],
+      "generated_scaffolding": [
+        "The lead paragraph was generated to connect supported warnings into plain English."
+      ]
+    },
+    {
+      "unit_id": "manual_dcbafe565952",
+      "title": "Why Lawyers Must Lead",
+      "source_support": [
+        "canon_04ee703b672e",
+        "canon_22f0042838c5"
+      ],
+      "generated_scaffolding": [
+        "The lead paragraph was generated to unify the oath and public-service themes."
+      ]
+    },
+    {
+      "unit_id": "manual_cefa307a323b",
+      "title": "The Ambassador Role",
+      "source_support": [
+        "canon_04ee703b672e",
+        "canon_22f0042838c5"
+      ],
+      "generated_scaffolding": [
+        "The ambassador-role framing was generated for operational clarity."
+      ]
+    },
+    {
+      "unit_id": "manual_666a19ecc166",
+      "title": "How to Communicate the Rule of Law Effectively",
+      "source_support": [],
+      "generated_scaffolding": [
+        "Communication guidance was generated from supported delivery themes."
+      ]
+    },
+    {
+      "unit_id": "manual_57ab995d8954",
+      "title": "Audience-Specific Communication Tips",
+      "source_support": [],
+      "generated_scaffolding": [
+        "Audience adaptation guidance was generated to support delivery."
+      ]
+    },
+    {
+      "unit_id": "manual_3d8b7cfbf412",
+      "title": "Handling Questions and Difficult Conversations",
+      "source_support": [],
+      "generated_scaffolding": [
+        "Difficult-conversation guidance was generated from delivery best practices."
+      ]
+    },
+    {
+      "unit_id": "manual_5c9573295b06",
+      "title": "Ambassador Toolkit",
+      "source_support": [],
+      "generated_scaffolding": [
+        "Toolkit framing was generated for practical use."
+      ]
+    },
+    {
+      "unit_id": "manual_b4c43e89cca4",
+      "title": "Arizona-Specific Civic Resources",
+      "source_support": [
+        "canon_8efcd85c7eca",
+        "canon_560e4fc8b2e1",
+        "canon_813925c3b479"
+      ],
+      "generated_scaffolding": [
+        "Arizona resource framing includes generated placeholder guidance for staff editing."
+      ]
+    },
+    {
+      "unit_id": "manual_2cf8f9fa98bb",
+      "title": "Presentation Preparation Checklist",
+      "source_support": [],
+      "generated_scaffolding": [
+        "Checklist framing was generated for usability."
+      ]
+    },
+    {
+      "unit_id": "manual_73973cfd168d",
+      "title": "Appendices",
+      "source_support": [],
+      "generated_scaffolding": [
+        "Appendix introduction was generated for readability."
+      ]
+    }
+  ]
+}
