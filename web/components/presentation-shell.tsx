@@ -105,8 +105,13 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                 </p>
               ))}
             </div>
-            {deferredScene.speaker_notes ? (
-              <p className="mt-8 max-w-3xl text-base leading-7 text-paper/25">{deferredScene.speaker_notes}</p>
+            {/* Audience engagement: discussion prompts */}
+            {deferredScene.speaker_only_blocks.filter(b => b.title === "Facilitation Cue").length > 0 ? (
+              <div className="mt-10 max-w-3xl">
+                {deferredScene.speaker_only_blocks.filter(b => b.title === "Facilitation Cue").map((b) => (
+                  <p key={b.body} className="text-lg leading-8 text-paper/20 italic">{b.body}</p>
+                ))}
+              </div>
             ) : null}
           </motion.section>
 
@@ -175,47 +180,71 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
                   </p>
                 </div>
               ))}
-              {/* Public mode: show speaker notes as context */}
-              {!isSpeaker && deferredScene.speaker_notes ? (
-                <div className="mt-4 max-w-3xl border-t border-white/[0.04] pt-4">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold/40">Context</p>
-                  <p className="mt-2 text-xs leading-6 text-white/35">{deferredScene.speaker_notes}</p>
-                </div>
-              ) : null}
-              {/* Public mode: show facilitation cues */}
-              {!isSpeaker && deferredScene.speaker_only_blocks.length > 0 ? (
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {deferredScene.speaker_only_blocks.filter(b => b.title === "Facilitation Cue").map((b) => (
-                    <div key={b.body} className="rounded-lg bg-gold/[0.04] px-3 py-2 text-[11px] leading-5 text-white/30 ring-1 ring-gold/[0.08]">
-                      <span className="font-medium text-gold/50">Discussion prompt:</span> {b.body}
+              {/* Public mode: audience-relevant context */}
+              {!isSpeaker ? (
+                <div className="mt-6 max-w-3xl space-y-4">
+                  {/* Discussion prompts for audience engagement */}
+                  {deferredScene.speaker_only_blocks.filter(b => b.title === "Facilitation Cue").length > 0 ? (
+                    <div className="space-y-2">
+                      {deferredScene.speaker_only_blocks.filter(b => b.title === "Facilitation Cue").map((b) => (
+                        <div key={b.body} className="rounded-lg bg-gold/[0.04] px-4 py-3 text-sm leading-6 text-white/40 ring-1 ring-gold/[0.08]">
+                          <span className="font-medium text-gold/50">Consider: </span>{b.body}
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  ) : null}
+                  {/* Key audience questions */}
+                  {deferredScene.speaker_only_blocks.filter(b => b.title === "Likely Audience Question").length > 0 ? (
+                    <div className="border-t border-white/[0.04] pt-4">
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/25">Key Questions</p>
+                      <div className="mt-2 space-y-1.5">
+                        {deferredScene.speaker_only_blocks.filter(b => b.title === "Likely Audience Question").map((b) => (
+                          <p key={b.body} className="text-sm leading-6 text-white/30">{b.body}</p>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
               ) : null}
             </div>
             {isSpeaker ? (
               <div className="space-y-4">
                 {currentTrackStep ? (
-                  <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Cue</p>
-                    <p className="mt-1.5 text-xs leading-6 text-paper/45">{currentTrackStep.cue}</p>
+                  <div className="rounded-lg bg-gold/[0.06] px-3 py-2.5 ring-1 ring-gold/[0.1]">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/60">Section Cue — {sceneMinutes} min</p>
+                    <p className="mt-1 text-sm font-medium leading-6 text-paper/60">{currentTrackStep.cue}</p>
                   </div>
                 ) : null}
                 <div>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Speaker Notes</p>
                   <p className="mt-1.5 text-xs leading-6 text-paper/40">{deferredScene.speaker_notes}</p>
                 </div>
-                {deferredScene.speaker_only_blocks.length > 0 ? (
+                {deferredScene.speaker_only_blocks.filter(b => b.title === "Facilitation Cue").length > 0 ? (
                   <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Facilitation</p>
-                    <div className="mt-1.5 space-y-2">
-                      {deferredScene.speaker_only_blocks.map((b) => (
-                        <div key={b.title} className="text-[11px] leading-5">
-                          <span className="font-medium text-paper/50">{b.title}:</span>{" "}
-                          <span className="text-paper/35">{b.body}</span>
-                        </div>
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Discussion Prompts</p>
+                    <div className="mt-1.5 space-y-1.5">
+                      {deferredScene.speaker_only_blocks.filter(b => b.title === "Facilitation Cue").map((b) => (
+                        <p key={b.body} className="text-[11px] leading-5 text-paper/35 italic">&ldquo;{b.body}&rdquo;</p>
                       ))}
                     </div>
+                  </div>
+                ) : null}
+                {deferredScene.speaker_only_blocks.filter(b => b.title === "Likely Audience Question").length > 0 ? (
+                  <div>
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Anticipate</p>
+                    <div className="mt-1.5 space-y-1.5">
+                      {deferredScene.speaker_only_blocks.filter(b => b.title === "Likely Audience Question").map((b) => (
+                        <p key={b.body} className="text-[11px] leading-5 text-paper/35">{b.body}</p>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+                {deferredScene.speaker_only_blocks.filter(b => b.title === "Transition").length > 0 ? (
+                  <div className="border-t border-white/[0.06] pt-3">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/50">Transition</p>
+                    {deferredScene.speaker_only_blocks.filter(b => b.title === "Transition").map((b) => (
+                      <p key={b.body} className="mt-1.5 text-[11px] font-medium leading-5 text-ember/50">{b.body}</p>
+                    ))}
                   </div>
                 ) : null}
               </div>
