@@ -22,37 +22,59 @@
       ],
       "quiz_questions": [
         {
-          "question": "Which statement best summarizes the core principle of the Rule of Law?",
+          "question": "The Rule of Law is best distinguished from 'rule by law' because it requires that:",
           "choices": [
-            "Everyone, including government officials, is subject to clear and fair laws.",
-            "The law matters only when courts are involved.",
-            "Fairness depends mainly on who has more power.",
-            "Civic trust does not depend on legal institutions."
+            "Laws are enforced consistently regardless of the government's goals.",
+            "Laws exist and are applied by authorities to maintain order.",
+            "The substance and process of law meet standards of fairness, transparency, and rights protection.",
+            "Courts have the final say in all disputes between citizens."
           ],
-          "answer": "Everyone, including government officials, is subject to clear and fair laws.",
-          "rationale": "This choice captures the essence of the Rule of Law as described in the module."
+          "answer": "The substance and process of law meet standards of fairness, transparency, and rights protection.",
+          "rationale": "Rule by law means any law is enforced; Rule of Law requires that laws themselves meet substantive standards of justice and fairness."
         },
         {
-          "question": "What is the significance of Arizona's Rule of Law Day?",
+          "question": "According to the International Academy of Trial Lawyers, which of the following is NOT a requirement for laws to conform to the Rule of Law?",
           "choices": [
-            "It is a statewide event where legal professionals reaffirm their commitment to the Rule of Law.",
-            "It is a holiday for government officials only.",
-            "It marks the end of the legislative session.",
-            "It is a day for political rallies."
+            "Laws must be clearly defined and accessible.",
+            "Laws must be created through transparent processes.",
+            "Laws must reflect the majority's current policy preferences.",
+            "Laws must be impartially enforced by independent courts."
           ],
-          "answer": "It is a statewide event where legal professionals reaffirm their commitment to the Rule of Law.",
-          "rationale": "This answer reflects the actual purpose and meaning of Rule of Law Day in Arizona."
+          "answer": "Laws must reflect the majority's current policy preferences.",
+          "rationale": "The IATL definition requires clarity, accessibility, transparency, human rights consistency, and impartial enforcement — not conformity with majority preferences."
         },
         {
-          "question": "Why do legal professionals have a special responsibility regarding the Rule of Law?",
+          "question": "Arizona's Rule of Law Day is observed on:",
           "choices": [
-            "Because their professional oath and ethical obligations require them to uphold and promote it.",
-            "Because they are above the law.",
-            "Because they make the laws.",
-            "Because they are not affected by legal outcomes."
+            "July 4",
+            "February 12",
+            "The first Monday in October",
+            "Constitution Day, September 17"
           ],
-          "answer": "Because their professional oath and ethical obligations require them to uphold and promote it.",
-          "rationale": "This choice aligns with the module's explanation of lawyers' unique role."
+          "answer": "February 12",
+          "rationale": "Rule of Law Day in Arizona is observed annually on February 12."
+        },
+        {
+          "question": "Which of the following correctly identifies all four World Justice Project principles of the Rule of Law?",
+          "choices": [
+            "Accountability, due process, judicial independence, and transparency.",
+            "Accountability, just law, open government, and accessible, impartial justice.",
+            "Separation of powers, federalism, judicial review, and individual rights.",
+            "Fairness, equality, liberty, and democratic participation."
+          ],
+          "answer": "Accountability, just law, open government, and accessible, impartial justice.",
+          "rationale": "These are the four specific principles identified by the World Justice Project as presented in the module."
+        },
+        {
+          "question": "A legal professional's responsibility to the Rule of Law extends beyond client representation because:",
+          "choices": [
+            "Attorneys are elected officials with legislative duties.",
+            "The professional oath binds attorneys to uphold the Constitution and the legal system itself.",
+            "Attorneys are required to serve as judges when called upon.",
+            "Legal ethics only apply within the courtroom."
+          ],
+          "answer": "The professional oath binds attorneys to uphold the Constitution and the legal system itself.",
+          "rationale": "The attorney's oath creates obligations to the constitutional system, not just to individual clients."
         }
       ],
       "discussion_prompt": "Discuss how you would explain the Rule of Law to a mixed public audience, ensuring clarity and nonpartisanship.",
@@ -92,37 +114,59 @@
       ],
       "quiz_questions": [
         {
-          "question": "What recent trend has the World Justice Project identified regarding the Rule of Law?",
+          "question": "The World Justice Project's data shows the United States ranks approximately:",
           "choices": [
-            "A six-year global decline in Rule of Law metrics, with the U.S. ranked 26th out of 142 countries.",
-            "A steady improvement in all countries.",
-            "No change in Rule of Law metrics.",
-            "The U.S. is ranked first in the world."
+            "1st out of 142 countries in Rule of Law metrics.",
+            "10th out of 142 countries in Rule of Law metrics.",
+            "26th out of 142 countries in Rule of Law metrics.",
+            "75th out of 142 countries in Rule of Law metrics."
           ],
-          "answer": "A six-year global decline in Rule of Law metrics, with the U.S. ranked 26th out of 142 countries.",
-          "rationale": "This answer accurately reflects the data presented in the module."
+          "answer": "26th out of 142 countries in Rule of Law metrics.",
+          "rationale": "The module presents the U.S. ranking at 26th, reflecting measurable challenges in access to justice and government accountability."
         },
         {
-          "question": "Which of the following is NOT a challenge facing the Rule of Law in the United States?",
+          "question": "When the Rule of Law weakens, which of the following consequences is LEAST likely to occur?",
           "choices": [
-            "Rising polarization",
-            "Declining trust in institutions",
-            "Rapid spread of misinformation",
-            "Universal agreement on all laws"
+            "Investors and businesses lose confidence in legal protections.",
+            "Vulnerable populations gain stronger informal protections.",
+            "Public discourse deteriorates as trust in institutions declines.",
+            "Raw power begins to replace orderly processes for resolving disputes."
           ],
-          "answer": "Universal agreement on all laws",
-          "rationale": "The other choices are identified as real challenges; universal agreement is not."
+          "answer": "Vulnerable populations gain stronger informal protections.",
+          "rationale": "Weakened Rule of Law disproportionately harms vulnerable populations who depend on formal legal protections; informal protections do not compensate."
         },
         {
-          "question": "Why does the Rule of Law matter in everyday life?",
+          "question": "Which statement best explains why the Rule of Law transforms 'rights on paper' into enforceable guarantees?",
           "choices": [
-            "It provides stability, predictability, and protection of individual rights.",
-            "It only applies to lawyers and judges.",
-            "It is only relevant during elections.",
-            "It is a theoretical concept with no real impact."
+            "It ensures that every citizen can afford legal representation.",
+            "It provides the institutional framework — clear laws, fair processes, and independent courts — through which rights are actually enforced.",
+            "It guarantees that all laws will always be perfectly just.",
+            "It eliminates all disagreements about the meaning of rights."
           ],
-          "answer": "It provides stability, predictability, and protection of individual rights.",
-          "rationale": "This choice summarizes the practical importance of the Rule of Law."
+          "answer": "It provides the institutional framework — clear laws, fair processes, and independent courts — through which rights are actually enforced.",
+          "rationale": "The Rule of Law makes rights enforceable through institutional mechanisms, not through guarantees of perfection or unanimity."
+        },
+        {
+          "question": "Rising polarization threatens the Rule of Law primarily because it:",
+          "choices": [
+            "Creates more laws than courts can handle.",
+            "Undermines the shared civic commitment to fair process that makes legal institutions legitimate.",
+            "Prevents all legislation from being passed.",
+            "Forces judges to become politically active."
+          ],
+          "answer": "Undermines the shared civic commitment to fair process that makes legal institutions legitimate.",
+          "rationale": "Polarization erodes the consensus that legal processes should be respected regardless of whether one agrees with the outcome."
+        },
+        {
+          "question": "A community where contracts are routinely honored, property rights are respected, and disputes are resolved through courts rather than force demonstrates:",
+          "choices": [
+            "Economic prosperity that exists independently of legal institutions.",
+            "A strong Rule of Law providing stability and predictability for civic and economic life.",
+            "That legal professionals are unnecessary when citizens cooperate voluntarily.",
+            "That informal norms are more effective than formal legal systems."
+          ],
+          "answer": "A strong Rule of Law providing stability and predictability for civic and economic life.",
+          "rationale": "These conditions — contract enforcement, property protection, fair dispute resolution — are practical manifestations of a functioning Rule of Law."
         }
       ],
       "discussion_prompt": "Share an example of how the Rule of Law (or its absence) has affected a community decision or public trust.",
@@ -157,37 +201,59 @@
       ],
       "quiz_questions": [
         {
-          "question": "Why do lawyers in Arizona retake their oath on Rule of Law Day?",
+          "question": "The Arizona Supreme Court's amendment of Rule 32 is significant because it:",
           "choices": [
-            "To reaffirm their commitment to the Rule of Law and public service.",
-            "To celebrate a legal holiday.",
-            "To renew their law licenses.",
-            "To participate in a political rally."
+            "Requires attorneys to donate a percentage of their income to civic organizations.",
+            "Makes promoting confidence in the Rule of Law an explicit part of the State Bar's mission.",
+            "Establishes term limits for Arizona Supreme Court justices.",
+            "Creates a mandatory civic education requirement for law school graduation."
           ],
-          "answer": "To reaffirm their commitment to the Rule of Law and public service.",
-          "rationale": "This answer reflects the actual purpose of the event as described in the module."
+          "answer": "Makes promoting confidence in the Rule of Law an explicit part of the State Bar's mission.",
+          "rationale": "The Rule 32 amendment formalized the State Bar's responsibility to promote public confidence in the Rule of Law."
         },
         {
-          "question": "What is a key responsibility of lawyers in sustaining the Rule of Law?",
+          "question": "An attorney who models careful reasoning, respect for precedent, and civil discourse in community interactions is fulfilling which professional obligation?",
           "choices": [
-            "Modeling civil discourse and fostering understanding in the community.",
-            "Making laws without public input.",
-            "Acting only in the interest of their clients.",
-            "Avoiding public engagement."
+            "The duty to maximize billable hours through community networking.",
+            "The obligation to recruit new clients from civic audiences.",
+            "The ethical responsibility to uphold and promote the legal system that makes justice possible.",
+            "The requirement to provide free legal advice at public events."
           ],
-          "answer": "Modeling civil discourse and fostering understanding in the community.",
-          "rationale": "This choice aligns with the module's emphasis on lawyers' public-facing role."
+          "answer": "The ethical responsibility to uphold and promote the legal system that makes justice possible.",
+          "rationale": "These behaviors embody the broader professional obligation to the legal system, beyond duties to specific clients."
         },
         {
-          "question": "Why is the Rule of Law not self-sustaining?",
+          "question": "Why does the module argue that the Rule of Law is 'not self-sustaining'?",
           "choices": [
-            "It requires active participation, defense, and education from everyone, especially lawyers.",
-            "It is automatically enforced by technology.",
-            "It is only relevant during elections.",
-            "It does not require public involvement."
+            "Legal institutions automatically adapt to new challenges without human intervention.",
+            "Public trust and institutional legitimacy must be actively cultivated through education, participation, and professional commitment.",
+            "Constitutional amendments occur frequently enough to keep the system updated.",
+            "Technology has made legal institutions self-correcting."
           ],
-          "answer": "It requires active participation, defense, and education from everyone, especially lawyers.",
-          "rationale": "This answer reflects the module's explanation of the ongoing effort required."
+          "answer": "Public trust and institutional legitimacy must be actively cultivated through education, participation, and professional commitment.",
+          "rationale": "The Rule of Law depends on ongoing human effort — it erodes when citizens and professionals become complacent."
+        },
+        {
+          "question": "A lawyer who encounters a politically charged question during an ambassador presentation should:",
+          "choices": [
+            "Share their personal political views to build rapport with the audience.",
+            "Decline to answer and move to the next slide.",
+            "Acknowledge the concern respectfully and redirect the conversation toward shared constitutional principles.",
+            "Debate the merits of the questioner's political position."
+          ],
+          "answer": "Acknowledge the concern respectfully and redirect the conversation toward shared constitutional principles.",
+          "rationale": "The ambassador's role is to model nonpartisan civic engagement, not to engage in political debate or avoid difficult questions."
+        },
+        {
+          "question": "Which of the following best explains why lawyers are 'uniquely positioned' to champion the Rule of Law?",
+          "choices": [
+            "They have more political influence than other professionals.",
+            "Their training in reasoning, precedent, and adversarial fairness equips them with skills communities need for informed civic discourse.",
+            "They are the only professionals with a formal education.",
+            "Their clients expect them to engage in political advocacy."
+          ],
+          "answer": "Their training in reasoning, precedent, and adversarial fairness equips them with skills communities need for informed civic discourse.",
+          "rationale": "Legal training develops specific skills — careful reasoning, respect for process, and civil discourse — that translate directly to effective civic education."
         }
       ],
       "discussion_prompt": "Discuss ways lawyers can lead community conversations about the Rule of Law without appearing partisan.",
@@ -223,37 +289,59 @@
       ],
       "quiz_questions": [
         {
-          "question": "What is a key strategy for maintaining nonpartisanship during a Rule of Law presentation?",
+          "question": "An audience member says, 'The Rule of Law just protects the powerful.' The most effective ambassador response is to:",
           "choices": [
-            "Redirecting political questions to shared constitutional principles.",
-            "Taking a strong political stance.",
-            "Avoiding audience questions.",
-            "Focusing only on legal jargon."
+            "Argue that the questioner is factually wrong and cite statistics.",
+            "Agree that the system is fundamentally broken and move on.",
+            "Acknowledge the concern, distinguish between the ideal and its imperfect implementation, and redirect to the shared goal of equal accountability.",
+            "Ignore the comment and proceed with the next slide."
           ],
-          "answer": "Redirecting political questions to shared constitutional principles.",
-          "rationale": "This approach helps keep the presentation educational and nonpartisan."
+          "answer": "Acknowledge the concern, distinguish between the ideal and its imperfect implementation, and redirect to the shared goal of equal accountability.",
+          "rationale": "Effective communication requires validating concerns while redirecting toward shared principles — not dismissing, agreeing with cynicism, or avoiding."
         },
         {
-          "question": "Which of the following best describes the Rule of Law?",
+          "question": "When presenting to a high school civics class versus a bar association luncheon, an ambassador should primarily adjust:",
           "choices": [
-            "Everyone is governed by fair, clearly defined laws applied equally.",
-            "Only government officials are subject to the law.",
-            "Laws are enforced based on popularity.",
-            "Disputes are resolved by personal influence."
+            "The core principles being presented, since different audiences need different values.",
+            "The framing, vocabulary, and examples used to illustrate the same underlying principles.",
+            "The length of the presentation, since younger audiences have shorter attention spans.",
+            "Nothing — the same presentation works for all audiences."
           ],
-          "answer": "Everyone is governed by fair, clearly defined laws applied equally.",
-          "rationale": "This is the core definition provided in the module."
+          "answer": "The framing, vocabulary, and examples used to illustrate the same underlying principles.",
+          "rationale": "The principles remain the same; effective communication requires adapting how they are presented to different audiences."
         },
         {
-          "question": "Why is it important to tailor Rule of Law presentations to the audience?",
+          "question": "The module identifies which of the following as the ambassador's PRIMARY communication goal?",
           "choices": [
-            "To ensure clarity and relevance for different groups.",
-            "To promote a specific political agenda.",
-            "To avoid answering questions.",
-            "To use as much legal jargon as possible."
+            "Persuading the audience to adopt a specific political position.",
+            "Demonstrating legal expertise through technical analysis.",
+            "Modeling calm, informed, nonpartisan engagement that builds civic trust.",
+            "Covering all presentation slides within the allotted time."
           ],
-          "answer": "To ensure clarity and relevance for different groups.",
-          "rationale": "Tailoring content helps make the message accessible and effective."
+          "answer": "Modeling calm, informed, nonpartisan engagement that builds civic trust.",
+          "rationale": "The ambassador's primary goal is to model respectful civic discourse, not to persuade, impress, or merely inform."
+        },
+        {
+          "question": "Using concrete examples such as property disputes, small business licensing, or traffic enforcement is recommended because:",
+          "choices": [
+            "Legal jargon is more precise and should be avoided only when necessary.",
+            "Abstract principles become meaningful when connected to the audience's lived experience.",
+            "These examples are politically neutral, unlike other topics.",
+            "The ambassador manual requires the use of specific approved examples."
+          ],
+          "answer": "Abstract principles become meaningful when connected to the audience's lived experience.",
+          "rationale": "Concrete, relatable examples help audiences understand how the Rule of Law operates in contexts they encounter daily."
+        },
+        {
+          "question": "When a conversation becomes politically charged, the module recommends the ambassador:",
+          "choices": [
+            "End the discussion immediately to maintain neutrality.",
+            "Engage with the political substance to demonstrate knowledge.",
+            "Acknowledge the concern, then redirect toward constitutional principles such as fairness, transparency, and accountability.",
+            "Poll the audience to determine the majority political viewpoint."
+          ],
+          "answer": "Acknowledge the concern, then redirect toward constitutional principles such as fairness, transparency, and accountability.",
+          "rationale": "The recommended strategy is to validate the concern while steering the conversation back to shared, nonpartisan principles."
         }
       ],
       "discussion_prompt": "Compare two ways of answering a politically charged question and discuss which one better preserves a nonpartisan, educational tone.",
@@ -287,37 +375,59 @@
       ],
       "quiz_questions": [
         {
-          "question": "What is an essential component of the Ambassador Toolkit?",
+          "question": "The Ambassador Toolkit should include all of the following EXCEPT:",
           "choices": [
-            "A clear definition, a short explanation, audience-appropriate examples, and trusted follow-up resources.",
-            "A list of political talking points.",
-            "Only legal case studies.",
-            "A script for debates."
+            "A clear, plain-English definition of the Rule of Law.",
+            "Audience-appropriate examples connecting principles to daily life.",
+            "Talking points advocating specific policy positions or legislation.",
+            "Trusted follow-up resources for audience members."
           ],
-          "answer": "A clear definition, a short explanation, audience-appropriate examples, and trusted follow-up resources.",
-          "rationale": "This answer matches the toolkit essentials described in the module."
+          "answer": "Talking points advocating specific policy positions or legislation.",
+          "rationale": "The toolkit is explicitly nonpartisan; it provides definitions, examples, and resources — not policy advocacy."
         },
         {
-          "question": "How should ambassadors respond when conversations become contentious?",
+          "question": "An ambassador encounters an audience member who is visibly upset about a recent court decision. According to the module, the ambassador should:",
           "choices": [
-            "With curiosity, empathy, and composure.",
-            "By insisting on immediate agreement.",
-            "By avoiding the conversation.",
-            "By raising their voice."
+            "Explain why the court's decision was legally correct.",
+            "Respond with curiosity and empathy, acknowledge the concern, and redirect toward the process values that the Rule of Law protects.",
+            "Avoid the person to prevent the conversation from becoming contentious.",
+            "Agree with the audience member's frustration to build rapport."
           ],
-          "answer": "With curiosity, empathy, and composure.",
-          "rationale": "This approach models civil discourse and is recommended in the module."
+          "answer": "Respond with curiosity and empathy, acknowledge the concern, and redirect toward the process values that the Rule of Law protects.",
+          "rationale": "The module recommends composure, empathy, and redirection to process values — not legal defense, avoidance, or agreement."
         },
         {
-          "question": "What is the primary goal of an ambassador during challenging conversations?",
+          "question": "The module states that the ambassador's goal during a challenging conversation is NOT to win an argument but to:",
           "choices": [
-            "To plant seeds and demonstrate respectful engagement.",
-            "To win the argument.",
-            "To avoid all disagreement.",
-            "To provide legal advice."
+            "Avoid the topic entirely until the audience calms down.",
+            "Present as many facts as possible to overwhelm the objection.",
+            "Plant seeds of understanding and demonstrate that respectful civic engagement is possible.",
+            "Defer all questions to a legal professional with more expertise."
           ],
-          "answer": "To plant seeds and demonstrate respectful engagement.",
-          "rationale": "The module emphasizes engagement over persuasion."
+          "answer": "Plant seeds of understanding and demonstrate that respectful civic engagement is possible.",
+          "rationale": "Ambassadors model engagement and understanding, recognizing that a single conversation may not change minds but can open them."
+        },
+        {
+          "question": "Which of the following scenarios best illustrates the 'composure' principle from the Ambassador Toolkit?",
+          "choices": [
+            "An ambassador passionately debates an audience member who challenges the Rule of Law.",
+            "An ambassador calmly acknowledges a heated question, pauses, and responds by connecting the concern to the principle of accountability.",
+            "An ambassador quickly changes the subject when a difficult question arises.",
+            "An ambassador asks the audience to vote on whether the questioner's point is valid."
+          ],
+          "answer": "An ambassador calmly acknowledges a heated question, pauses, and responds by connecting the concern to the principle of accountability.",
+          "rationale": "Composure means remaining calm and connecting emotionally charged questions back to the Rule of Law's concrete principles."
+        },
+        {
+          "question": "A well-prepared ambassador differs from an unprepared one primarily in their ability to:",
+          "choices": [
+            "Recite the presentation script from memory without visual aids.",
+            "Anticipate the audience's concerns, adapt examples to the context, and maintain nonpartisan credibility under pressure.",
+            "Speak for longer than the allotted time to demonstrate thoroughness.",
+            "Provide legal advice to audience members after the presentation."
+          ],
+          "answer": "Anticipate the audience's concerns, adapt examples to the context, and maintain nonpartisan credibility under pressure.",
+          "rationale": "Preparation is about understanding the material deeply enough to adapt, not about memorization or extended speaking."
         }
       ],
       "discussion_prompt": "Discuss what resources or examples would help you tailor this presentation to a school versus a civic club.",
@@ -350,37 +460,59 @@
       ],
       "quiz_questions": [
         {
-          "question": "What recent change was recommended for the State Bar of Arizona's mission?",
+          "question": "The amendment to Arizona Supreme Court Rule 32 reflects which broader principle about public trust?",
           "choices": [
-            "To explicitly include 'promoting confidence in the Rule of Law.'",
-            "To focus only on legal services.",
-            "To eliminate public education programs.",
-            "To restrict membership to judges."
+            "Public trust in legal institutions is automatic and does not require professional effort.",
+            "Only the judiciary is responsible for maintaining public confidence in the law.",
+            "Public trust must be actively earned and maintained through deliberate professional engagement and civic education.",
+            "Public trust is primarily maintained through marketing and media campaigns."
           ],
-          "answer": "To explicitly include 'promoting confidence in the Rule of Law.'",
-          "rationale": "This answer reflects the recommendation described in the module."
+          "answer": "Public trust must be actively earned and maintained through deliberate professional engagement and civic education.",
+          "rationale": "The Rule 32 amendment reflects the principle that public confidence requires ongoing, intentional cultivation by the legal profession."
         },
         {
-          "question": "What is the purpose of Arizona's Rule of Law Day?",
+          "question": "Arizona's civic education ecosystem includes the Arizona Bar Foundation, the Sandra Day O'Connor Institute, and the State Bar's educational programs. An ambassador's relationship to these organizations is best described as:",
           "choices": [
-            "To reaffirm lawyers' commitment to the Rule of Law and connect legal tradition to civic values.",
-            "To celebrate a political party.",
-            "To close all courts for the day.",
-            "To hold legal debates."
+            "Competitive — ambassadors and these organizations seek the same audiences.",
+            "Independent — ambassadors operate separately from institutional support.",
+            "Complementary — ambassadors extend the reach of these institutions into communities that formal programs may not reach.",
+            "Supervisory — ambassadors oversee the work of these partner organizations."
           ],
-          "answer": "To reaffirm lawyers' commitment to the Rule of Law and connect legal tradition to civic values.",
-          "rationale": "This choice matches the module's explanation of Rule of Law Day."
+          "answer": "Complementary — ambassadors extend the reach of these institutions into communities that formal programs may not reach.",
+          "rationale": "Ambassadors are part of a broader civic education ecosystem, extending institutional reach to professional networks, schools, and community groups."
         },
         {
-          "question": "How do local civic education programs support the Rule of Law in Arizona?",
+          "question": "Arizona's constitutional tradition connects the Rule of Law to American democratic values primarily through the principle that:",
           "choices": [
-            "By engaging students and the public in understanding and supporting legal principles.",
-            "By focusing only on legal professionals.",
-            "By limiting access to legal information.",
-            "By discouraging public participation."
+            "Arizona's constitution is older than the U.S. Constitution.",
+            "Government legitimacy derives from adherence to laws, not the will of individuals.",
+            "State law always supersedes federal law within Arizona's borders.",
+            "The Arizona legislature has unlimited authority to define rights."
           ],
-          "answer": "By engaging students and the public in understanding and supporting legal principles.",
-          "rationale": "This answer aligns with the module's description of civic education initiatives."
+          "answer": "Government legitimacy derives from adherence to laws, not the will of individuals.",
+          "rationale": "Arizona's constitutional foundation rests on the same principle as the broader American tradition: lawful authority, not personal power, is the source of legitimate governance."
+        },
+        {
+          "question": "Which of the following would be the WEAKEST justification for an ambassador to cite when explaining why Rule of Law education matters in Arizona specifically?",
+          "choices": [
+            "Arizona has active institutional support from the Bar Foundation, the O'Connor Institute, and the State Bar.",
+            "The Rule 32 amendment formalized civic education as part of the legal profession's mission.",
+            "Arizona's geographic location near the international border makes all legal issues more contentious.",
+            "Local civic education programs engage students and the public in understanding legal principles."
+          ],
+          "answer": "Arizona's geographic location near the international border makes all legal issues more contentious.",
+          "rationale": "The module's Arizona-specific arguments focus on institutional infrastructure and professional commitments, not geographic or immigration-related justifications."
+        },
+        {
+          "question": "An ambassador preparing to present at a local school should consider Arizona-specific context by:",
+          "choices": [
+            "Focusing exclusively on Arizona law rather than constitutional principles.",
+            "Connecting Arizona's Rule of Law Day tradition and local civic education programs to the broader principles of fairness and accountability that students encounter daily.",
+            "Explaining the technical details of Rule 32 and its amendment process.",
+            "Encouraging students to pursue careers in law to support the Rule of Law."
+          ],
+          "answer": "Connecting Arizona's Rule of Law Day tradition and local civic education programs to the broader principles of fairness and accountability that students encounter daily.",
+          "rationale": "Effective local context connects Arizona-specific initiatives to universal principles in ways that are relevant and accessible to the specific audience."
         }
       ],
       "discussion_prompt": "Discuss how you would adapt a Rule of Law presentation to highlight Arizona-specific resources and examples.",

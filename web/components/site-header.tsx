@@ -26,7 +26,7 @@ export function SiteHeader() {
             AZ
           </div>
           <span className="hidden whitespace-nowrap text-xs font-medium text-paper/40 transition group-hover:text-paper/60 sm:block">
-            Arizona Rule of Law
+            Arizona Rule of Law <span className="text-paper/25">Ambassador Program</span>
           </span>
         </Link>
         <nav className="flex items-center gap-0.5 text-[13px]">
