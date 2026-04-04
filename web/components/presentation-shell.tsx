@@ -121,10 +121,10 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
             </div>
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-2">
-                <button type="button" onClick={prev} disabled={currentIndex === 0} className="rounded-lg px-3 py-1.5 text-sm text-paper/40 transition hover:text-gold disabled:opacity-25">
+                <button type="button" onClick={prev} disabled={currentIndex === 0} aria-label="Previous scene" className="rounded-lg px-3 py-1.5 text-sm text-paper/40 transition hover:text-gold disabled:opacity-25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50">
                   <ChevronLeft className="h-4 w-4" />
                 </button>
-                <button type="button" onClick={next} disabled={currentIndex === scenes.length - 1} className="rounded-lg bg-gold px-4 py-1.5 text-sm font-semibold text-ink transition hover:bg-gold/90 disabled:opacity-25">
+                <button type="button" onClick={next} disabled={currentIndex === scenes.length - 1} className="rounded-lg bg-gold px-4 py-1.5 text-sm font-semibold text-ink transition hover:bg-gold/90 disabled:opacity-25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1320]">
                   Next
                 </button>
               </div>
@@ -254,10 +254,10 @@ export function PresentationShell({ scenes, track, mode, resources, downloads, c
           {/* Nav */}
           <div className="flex items-center justify-between gap-4 border-t border-paper/[0.04] pt-4">
             <div className="flex items-center gap-2">
-              <button type="button" onClick={prev} disabled={currentIndex === 0} className="rounded-lg px-3 py-1.5 text-sm text-paper/35 transition hover:text-gold disabled:opacity-25">
+              <button type="button" onClick={prev} disabled={currentIndex === 0} aria-label="Previous scene" className="rounded-lg px-3 py-1.5 text-sm text-paper/35 transition hover:text-gold disabled:opacity-25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50">
                 <ChevronLeft className="h-4 w-4" />
               </button>
-              <button type="button" onClick={next} disabled={currentIndex === scenes.length - 1} className="rounded-lg px-3 py-1.5 text-sm text-paper/35 transition hover:text-gold disabled:opacity-25">
+              <button type="button" onClick={next} disabled={currentIndex === scenes.length - 1} aria-label="Next scene" className="rounded-lg px-3 py-1.5 text-sm text-paper/35 transition hover:text-gold disabled:opacity-25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50">
                 <ChevronRight className="h-4 w-4" />
               </button>
             </div>

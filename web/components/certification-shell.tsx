@@ -183,7 +183,8 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
                       type="button"
                       onClick={() => setQuizIndex((v) => Math.max(v - 1, 0))}
                       disabled={quizIndex === 0}
-                      className="rounded-lg p-2 text-paper/30 transition hover:text-paper/60 disabled:opacity-30"
+                      aria-label="Previous question"
+                      className="rounded-lg p-2 text-paper/30 transition hover:text-paper/60 disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
                     >
                       <ChevronLeft className="h-4 w-4" />
                     </button>
@@ -191,7 +192,8 @@ export function CertificationShell({ lms, downloads }: CertificationShellProps) 
                       type="button"
                       onClick={() => setQuizIndex((v) => Math.min(v + 1, module.quiz_questions.length - 1))}
                       disabled={quizIndex === module.quiz_questions.length - 1}
-                      className="rounded-lg p-2 text-paper/30 transition hover:text-paper/60 disabled:opacity-30"
+                      aria-label="Next question"
+                      className="rounded-lg p-2 text-paper/30 transition hover:text-paper/60 disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
                     >
                       <ChevronRight className="h-4 w-4" />
                     </button>

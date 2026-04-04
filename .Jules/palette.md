@@ -1,0 +1,3 @@
+## 2024-03-05 - Accessible Sequential Navigation
+**Learning:** Icon-only pagination controls in sequential learning UI patterns (like the knowledge check quizzes and scene-by-scene presentations in this app) frequently lack screen reader context, appearing only as "button".
+**Action:** Always verify that next/previous navigation buttons, especially when relying on `lucide-react` icons without text, have explicit `aria-label`s and `focus-visible` styling applied so keyboard and screen reader users can navigate sequentially without friction.
